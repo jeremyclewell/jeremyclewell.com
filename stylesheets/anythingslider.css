@@ -24,7 +24,7 @@
 /* line 25, ../sass/anythingslider.scss */
 div.anythingSlider {
   display: block;
-  margin: 0 auto;
+  margin: 0 0;
   overflow: visible !important;
   /* needed for Opera and Safari */
   position: relative;
@@ -151,7 +151,7 @@ div.anythingSlider .arrow a {
   width: 45px;
   text-align: center;
   outline: 0;
-  background: url(../images/default.png) no-repeat;
+  background: url(../img//h/default.png) no-repeat;
 }
 /* line 131, ../sass/anythingslider.scss */
 div.anythingSlider .arrow a span {

@@ -1,11 +1,9 @@
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+ * Import tahis file using the following HTML or equivalent:
+ * <link href="/stylesheets/screden.css" media="screen, projection" rel="stylesheet" type="text/css" /> ds*/
 
-@import "compass/reset";
-@import "boilerplate"
-@import "base"
+@import "base";
 
 html {
 /*	background-color: #212121;*/
@@ -14,40 +12,47 @@ html {
 	background-repeat: repeat-y,  ;
 }
 
-h1.fontface {font: 60px/68px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
+h1.fontface {
+	font: 60px/68px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
 	color: #fbf8e8;
 	font-variant: small-caps;
 	text-shadow: #111 3px 3px 3px;
 }
-h2.fontface {font: 40px/48px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
+h2.fontface {
+	font: 40px/48px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
 	color: #fbf8e8;
 	font-variant: small-caps;
 	text-shadow: #111 2px 2px 3px;
 }
 
-h3.fontface {font: 30px/38px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
+h3.fontface {
+	font: 30px/38px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
 	color: #fbf8e8;
 	font-variant: small-caps;
 	text-shadow: #111 1px 1px 2px;
 }
 
 
-h4.fontface {font: 15px/20px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
+h4.fontface {
+	font: 15px/20px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
 	color: #fbf8e8;
 }
 
 
-h5.fontface {font: 10px/18px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
+h5.fontface {
+	font: 10px/18px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
 	color: #fbf8e8;
 
 }
 
 
-p.style1 {font: 18px/27px 'BonvenoCFLight', Arial, sans-serif;
+p.style1 {
+	font: 18px/27px 'BonvenoCFLight', Arial, sans-serif;
 	color: #fbf8e8;
 }
 
-p.style2 {font: 18px/27px 'BonvenoCFLight', Arial, sans-serif;
+p.style2 {
+	font: 18px/27px 'BonvenoCFLight', Arial, sans-serif;
 	color: #212121;
 }
 
@@ -104,15 +109,23 @@ section {
 }
 
 #blog {
- 	background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_texture.png");
+ 	background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_bg.png");
 	background-repeat: repeat-x;
 	background-position: left top, left top, left 74px;
 }
 
+#blog .sm li {
+	background-color: #40411e;
+}
+
 #portfolio {	
- 	background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_texture.png");
+ 	background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_bg.png");
 	background-repeat: repeat-x;
 	background-position: left top, left top, left 74px;
+}
+
+#portfolio .sm li {
+	background-color: #787746;
 }
 
 section header {
@@ -145,36 +158,59 @@ section article div {
 	width: 750px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 20px;
 }
 
-.blogTitle {
+.blogTitle, .portfolioTitle {
 	float: left;
 	width: 100px;
 	text-decoration: underline;
-	
+	font-size: 5px;
 }
 
-.subnav {
-	list-style:none; 
-	width:100%; 
-	height:110px; 
+.blogTitle p, .portfolioTitle p {
+	text-decoration: underline;
+	font-size: 12px;
+}
+#blogSlider, #portfolioSlider { width: 730px; height: 77px; top: 4px; }
+.sm {
+	width: 650px;
+	float: left;
+	list-style:none;  
+	height:100px; 
 	display:block; 
 	overflow:hidden;
-	background-color: #40411e;
-	
-}
 
-.subnav li {
+	transition: position 0.5s;
+}
+.sm li {
+	padding: 5px 10px 5px 10px;
 	float:left; 
-	width: 100px;
-	display:block; 
+	display:inline;
 	overflow:hidden;
-	border: 1px solid black;
-	padding: 10px;
-	/*-moz-transform: rotate(-60deg);	
-		-webkit-transform: rotate(-60deg);	
-		-o-transform: rotate(-60deg);	
-		-ms-transform: rotate(-60deg);	
-		*/
+	width: 17%;
+
+	border-left: solid 1px #616232;
+	border-right: solid 1px #25260d;
+		transition: width 0.5s;
+		-moz-transition: width 0.5s; /* Firefox 4 */
+		-webkit-transition: width 0.5s; /* Safari and Chrome */
+		-o-transition: width 0.5s; /* Opera */
+	}
+.sm li:first-child  {
+	border-left: none;
+}
+.sm li:last-child {
+	border-right: none;
+}
+
+.blogTitle, .portfolioTitle {float: left; width: 100px; padding: 0px;}
+.blogDescription, .portfolioDescription {margin-left: 140px; width: 140px;}
+#blogNav, #portfolioNav {
+	display: inline;
+}
+#blogNavForward, #portfolioNavForward {
+	float: right;
+}
+#blogNavBack, #portfolioNavBack {
+	float: left;
 }

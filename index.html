@@ -29,16 +29,16 @@ License: http://creativecommons.org/licenses/MIT
 <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" media="print" href="css/print.css">
-<link rel="stylesheet" media="screen " href="css/anythingslider.css">
+<link rel="stylesheet" href="stylesheets/style.css">
+<link rel="stylesheet" media="print" href="stylesheets/print.css">
+<link rel="stylesheet" media="screen " href="stylesheets/anythingslider.css">
 <!-- For progressively larger displays -->
-<link rel="stylesheet" media="only screen and (min-width: 480px)" href="css/480.css">
-<link rel="stylesheet" media="only screen and (min-width: 600px)" href="css/600.css">
-<link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/768.css">
-<link rel="stylesheet" media="only screen and (min-width: 992px)" href="css/992.css">
+<link rel="stylesheet" media="only screen and (min-width: 480px)" href="stylesheets/480.css">
+<link rel="stylesheet" media="only screen and (min-width: 600px)" href="stylesheets/600.css">
+<link rel="stylesheet" media="only screen and (min-width: 768px)" href="stylesheets/768.css">
+<link rel="stylesheet" media="only screen and (min-width: 992px)" href="stylesheets/992.css">
 <!-- For Retina displays -->
-<link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)" href="css/2x.css">
+<link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)" href="stylesheets/2x.css">
 
 <!--[if (lt IE 9) & (!IEMobile)]>
 <script src="js/libs/selectivizr-min.js"></script>
@@ -71,44 +71,6 @@ License: http://creativecommons.org/licenses/MIT
 <!-- http://t.co/y1jPVnT -->
 <link rel="canonical" href="/">
 
-
-
-<style>
-#blogSlider { width: 700px; height: 100px;  }
-.sm {
-	width: 600px;
-	float: left;
-	list-style:none;  
-	height:100px; 
-	display:block; 
-	overflow:hidden;
-	transition: position 0.5s;
-}
-.sm li {
-	padding: 10px;
-	float:left; 
-	display:inline;
-	overflow:hidden;
-	border-left: solid 1px #616232;
-	border-right: solid 1px #25260d;
-		transition: width 0.5s;
-		-moz-transition: width 0.5s; /* Firefox 4 */
-		-webkit-transition: width 0.5s; /* Safari and Chrome */
-		-o-transition: width 0.5s; /* Opera */
-	}
-
-.blogTitle {float: left; width: 100px;}
-.blogDescription {margin-left: 120px; width: 90px;}
-#blogNav {
-	display: inline;
-}
-#blogNavForward {
-	float: right;
-}
-#blogNavBack {
-	float: left;
-}
-</style>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 
@@ -119,7 +81,7 @@ License: http://creativecommons.org/licenses/MIT
 		<section id="header">
 			<header>
 				<h1 class="fontface">Jeremy Austin Clewell</h1>
-				<h4 class="fontface">...too many ideas, not enough time!!!</h4>
+				<h4 class="fontface">...too many ideas, not enough time!</h4>
 			</header>
 			
 			<article>
@@ -201,7 +163,7 @@ License: http://creativecommons.org/licenses/MIT
 									</div>	
 								</div>
 							</li>
-							<li></li>
+							<li style="height: 0px;"></li>
 						</ul>
 						</li>
 						<li>
@@ -250,13 +212,21 @@ License: http://creativecommons.org/licenses/MIT
 									</div>	
 								</div>
 							</li>
-							<li></li>
+							<li>
+								<div>
+									<div class="blogTitle">
+										<p>4</p>
+										<p>Sun, Feb 29th 2010</p>
+									</div>
+									<div class="blogDescription">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor vulputate nisl eu rhoncus. Suspendisse quis enim augue, et ultrices quam. Suspendisse eget tortor tellus. </p>
+									</div>	
+								</div>
+							</li>
 						</ul>
 						</li>
 
 					</ul>
-					<div id="blogNavBack"></div>
-					<div id="blogNavForward"></div>
 				<p class="style1">BonvenoCF Light - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 			</article>
@@ -271,7 +241,118 @@ License: http://creativecommons.org/licenses/MIT
 		
 			<article>
 				<div>
-									<br /><br /><br /><br /><br /><br /><br /><br />
+					<ul id="portfolioSlider">
+
+						<li>
+						<ul id="sm" class="sm" >
+							<li>
+								<div>
+									<div class="portfolioTitle">
+										<p>1</p>
+										<p>Sun, Feb 29th 2010</p>
+									</div>
+									<div class="portfolioDescription">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor vulputate nisl eu rhoncus. Suspendisse quis enim augue, et ultrices quam. Suspendisse eget tortor tellus. </p>
+									</div>	
+								</div>
+							</li>
+							<li>
+								<div>
+									<div class="portfolioTitle">
+										<p>2</p>
+										<p>Sun, Feb 29th 2010</p>
+									</div>
+									<div class="portfolioDescription">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor vulputate nisl eu rhoncus. Suspendisse quis enim augue, et ultrices quam. Suspendisse eget tortor tellus. </p>
+									</div>	
+								</div>
+							</li>
+							<li>
+								<div>
+									<div class="portfolioTitle">
+										<p>3</p>
+										<p>Sun, Feb 29th 2010</p>
+									</div>
+									<div class="portfolioDescription">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor vulputate nisl eu rhoncus. Suspendisse quis enim augue, et ultrices quam. Suspendisse eget tortor tellus. </p>
+									</div>	
+								</div>
+							</li>
+							<li>
+								<div>
+									<div class="portfolioTitle">
+										<p>4</p>
+										<p>Sun, Feb 29th 2010</p>
+									</div>
+									<div class="portfolioDescription">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor vulputate nisl eu rhoncus. Suspendisse quis enim augue, et ultrices quam. Suspendisse eget tortor tellus. </p>
+									</div>	
+								</div>
+							</li>
+							<li>
+								<div>
+									<div class="portfolioTitle">
+										<p>4</p>
+										<p>Sun, Feb 29th 2010</p>
+									</div>
+									<div class="portfolioDescription">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor vulputate nisl eu rhoncus. Suspendisse quis enim augue, et ultrices quam. Suspendisse eget tortor tellus. </p>
+									</div>	
+								</div>
+							</li>
+						</ul>
+						</li>
+						<li>
+						<ul id="sm2" class="sm">
+							<li>
+								<div>
+									<div class="portfolioTitle">
+										<p>1</p>
+										<p>Sun, Feb 29th 2010</p>
+									</div>
+									<div class="portfolioDescription">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor vulputate nisl eu rhoncus. Suspendisse quis enim augue, et ultrices quam. Suspendisse eget tortor tellus. </p>
+									</div>	
+								</div>
+							</li>
+							<li>
+								<div>
+									<div class="portfolioTitle">
+										<p>2</p>
+										<p>Sun, Feb 29th 2010</p>
+									</div>
+									<div class="portfolioDescription">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor vulputate nisl eu rhoncus. Suspendisse quis enim augue, et ultrices quam. Suspendisse eget tortor tellus. </p>
+									</div>	
+								</div>
+							</li>
+							<li>
+								<div>
+									<div class="portfolioTitle">
+										<p>3</p>
+										<p>Sun, Feb 29th 2010</p>
+									</div>
+									<div class="portfolioDescription">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor vulputate nisl eu rhoncus. Suspendisse quis enim augue, et ultrices quam. Suspendisse eget tortor tellus. </p>
+									</div>	
+								</div>
+							</li>
+							<li>
+								<div>
+									<div class="portfolioTitle">
+										<p>4</p>
+										<p>Sun, Feb 29th 2010</p>
+									</div>
+									<div class="portfolioDescription">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor vulputate nisl eu rhoncus. Suspendisse quis enim augue, et ultrices quam. Suspendisse eget tortor tellus. </p>
+									</div>	
+								</div>
+							</li>
+							<li></li>
+						</ul>
+						</li>
+
+					</ul>
 				<p class="style1">BonvenoCF Light - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 			</article>
