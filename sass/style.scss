@@ -5,6 +5,7 @@
 
 @import "base";
 
+
 html {
 /*	background-color: #212121;*/
 	background-image: url("../img/h/html_bg_2.png"), url("../img/h/html_bg_1.jpg");
@@ -115,7 +116,12 @@ section {
 }
 
 #blog .sm li {
-	background-color: #40411e;
+	background-color: #787746;
+	@include background-image(url("../img/h/nav_texture.png")); 
+	height: 78px;
+	border-left: solid 1px #878654;
+	border-right: solid 1px #656439;
+
 }
 
 #portfolio {	
@@ -125,7 +131,11 @@ section {
 }
 
 #portfolio .sm li {
-	background-color: #787746;
+	background-color: #434420;
+	background-image: url("../img/h/nav_texture.png");
+	height: 78px;
+	border-left: solid 1px #55562c;
+	border-right: solid 1px #3a3b1b;
 }
 
 section header {
@@ -163,23 +173,22 @@ section article div {
 .blogTitle, .portfolioTitle {
 	float: left;
 	width: 100px;
-	text-decoration: underline;
-	font-size: 5px;
 }
 
 .blogTitle p, .portfolioTitle p {
-	text-decoration: underline;
 	font-size: 12px;
 }
-#blogSlider, #portfolioSlider { width: 730px; height: 77px; top: 4px; }
+
+
+#blogSlider, #portfolioSlider { width: 750px; height: 77px; top: 4px; }
 .sm {
+
 	width: 650px;
 	float: left;
 	list-style:none;  
 	height:100px; 
 	display:block; 
 	overflow:hidden;
-
 	transition: position 0.5s;
 }
 .sm li {
@@ -188,23 +197,24 @@ section article div {
 	display:inline;
 	overflow:hidden;
 	width: 17%;
-
 	border-left: solid 1px #616232;
 	border-right: solid 1px #25260d;
+	font: 14px/14px 'BonvenoCFLight', Arial, sans-serif;
+	color: #fbf8e8;
+	
 		transition: width 0.5s;
 		-moz-transition: width 0.5s; /* Firefox 4 */
 		-webkit-transition: width 0.5s; /* Safari and Chrome */
 		-o-transition: width 0.5s; /* Opera */
 	}
-.sm li:first-child  {
-	border-left: none;
-}
-.sm li:last-child {
-	border-right: none;
-}
+
 
 .blogTitle, .portfolioTitle {float: left; width: 100px; padding: 0px;}
-.blogDescription, .portfolioDescription {margin-left: 140px; width: 140px;}
+.blogDescription p, .portfolioDescription p {
+	font-size: 12px;
+	margin-left: 140px;
+	width: 140px;
+}
 #blogNav, #portfolioNav {
 	display: inline;
 }

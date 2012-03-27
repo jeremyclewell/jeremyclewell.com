@@ -160,7 +160,7 @@ div.anythingSlider .arrow a span {
 }
 /* line 134, ../sass/anythingslider.scss */
 div.anythingSlider .back {
-  left: 0;
+  left: -45px;
 }
 /* line 136, ../sass/anythingslider.scss */
 div.anythingSlider .back a {
@@ -176,7 +176,7 @@ div.anythingSlider .back.disabled {
 }
 /* line 142, ../sass/anythingslider.scss */
 div.anythingSlider .forward {
-  right: 0;
+  right: -45px;
 }
 /* line 144, ../sass/anythingslider.scss */
 div.anythingSlider .forward a {

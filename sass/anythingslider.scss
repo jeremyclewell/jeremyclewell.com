@@ -132,7 +132,7 @@ div.anythingSlider {
         display: block;
         visibility: hidden; } } }
   .back {
-    left: 0;
+    left: -45px;
     a {
       background-position: left top;
       &:hover, &.hover {
@@ -140,7 +140,7 @@ div.anythingSlider {
     &.disabled {
       display: none; } }
   .forward {
-    right: 0;
+    right: -45px;
     a {
       background-position: right top;
       &:hover, &.hover {
