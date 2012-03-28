@@ -878,37 +878,56 @@ section {
 
 /* line 112, ../sass/style.scss */
 #blog {
-  background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_bg.png");
+  background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
   background-repeat: repeat-x;
   background-position: left top, left top, left 74px;
+  text-align: left;
 }
 
-/* line 118, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 #blog .sm li {
-  background-color: #787746;
-  background-image: url("../img/h/nav_texture.png");
+  background-color: #3c3d1c;
+  background-image: url("../img/h/nav_texture.png"), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #787746), color-stop(100%, #646334));
+  background-image: url("../img/h/nav_texture.png"), -webkit-linear-gradient(#787746, #646334);
+  background-image: url("../img/h/nav_texture.png"), -moz-linear-gradient(#787746, #646334);
+  background-image: url("../img/h/nav_texture.png"), -o-linear-gradient(#787746, #646334);
+  background-image: url("../img/h/nav_texture.png"), -ms-linear-gradient(#787746, #646334);
+  background-image: url("../img/h/nav_texture.png"), linear-gradient(#787746, #646334);
   height: 78px;
-  border-left: solid 1px #878654;
-  border-right: solid 1px #656439;
+  border-left: solid 1px #464723;
+  border-bottom: solid 2px #464723;
+  border-right: solid 1px #353619;
+  border-top: solid 1px #353619;
+  text-align: left;
 }
 
-/* line 127, ../sass/style.scss */
-#portfolio {
-  background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_bg.png");
-  background-repeat: repeat-x;
-  background-position: left top, left top, left 74px;
+/* line 129, ../sass/style.scss */
+#blog .sm li p {
+  text-align: left;
 }
 
 /* line 133, ../sass/style.scss */
+#portfolio {
+  background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+  background-repeat: repeat-x;
+  background-position: left top, left top, left 74px;
+}
+
+/* line 139, ../sass/style.scss */
 #portfolio .sm li {
   background-color: #434420;
-  background-image: url("../img/h/nav_texture.png");
+  background-image: url("../img/h/nav_texture.png"), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #494a23), color-stop(100%, #3b3c1b));
+  background-image: url("../img/h/nav_texture.png"), -webkit-linear-gradient(#494a23, #3b3c1b);
+  background-image: url("../img/h/nav_texture.png"), -moz-linear-gradient(#494a23, #3b3c1b);
+  background-image: url("../img/h/nav_texture.png"), -o-linear-gradient(#494a23, #3b3c1b);
+  background-image: url("../img/h/nav_texture.png"), -ms-linear-gradient(#494a23, #3b3c1b);
+  background-image: url("../img/h/nav_texture.png"), linear-gradient(#494a23, #3b3c1b);
   height: 78px;
   border-left: solid 1px #55562c;
   border-right: solid 1px #3a3b1b;
 }
 
-/* line 141, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 section header {
   height: 100%;
   padding: 0px 10px 0px 10px;
@@ -918,7 +937,7 @@ section header {
   /*  	background-position: left center;*/
 }
 
-/* line 151, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 section header h1, section header h2, section header h4 {
   width: 850px;
   padding: 10px 0 0 0;
@@ -927,40 +946,53 @@ section header h1, section header h2, section header h4 {
   margin-right: auto;
 }
 
-/* line 159, ../sass/style.scss */
-section article {
+/* line 165, ../sass/style.scss */
+section div.content {
   width: 100%;
   display: none;
   /*	background-color: #fff;*/
   padding-bottom: 20px;
 }
 
-/* line 167, ../sass/style.scss */
-section article div {
+/* line 173, ../sass/style.scss */
+section nav, section article {
   width: 750px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 173, ../sass/style.scss */
-.blogTitle, .portfolioTitle {
+/* line 179, ../sass/style.scss */
+nav + article {
+  margin-top: 25px;
+}
+
+/* line 183, ../sass/style.scss */
+.title {
   float: left;
   width: 100px;
 }
 
-/* line 178, ../sass/style.scss */
-.blogTitle p, .portfolioTitle p {
-  font-size: 12px;
+/* line 189, ../sass/style.scss */
+.title p {
+  font-size: 13px;
+  text-align: left;
 }
 
-/* line 183, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
+.title p.date {
+  font-size: 10px;
+  line-height: 12px;
+  margin-bottom: 5px;
+}
+
+/* line 201, ../sass/style.scss */
 #blogSlider, #portfolioSlider {
   width: 750px;
   height: 77px;
   top: 4px;
 }
 
-/* line 184, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 .sm {
   width: 650px;
   float: left;
@@ -971,7 +1003,7 @@ section article div {
   transition: position 0.5s;
 }
 
-/* line 194, ../sass/style.scss */
+/* line 212, ../sass/style.scss */
 .sm li {
   padding: 5px 10px 5px 10px;
   float: left;
@@ -991,31 +1023,34 @@ section article div {
   /* Opera */
 }
 
-/* line 212, ../sass/style.scss */
-.blogTitle, .portfolioTitle {
+/* line 230, ../sass/style.scss */
+.title {
   float: left;
   width: 100px;
   padding: 0px;
 }
 
-/* line 213, ../sass/style.scss */
-.blogDescription p, .portfolioDescription p {
+/* line 234, ../sass/style.scss */
+.description p {
   font-size: 12px;
-  margin-left: 140px;
-  width: 140px;
+  margin-left: 120px;
+  width: 120px;
+  text-align: left;
+  transition: opacity 0.5s;
+  opacity: 0;
 }
 
-/* line 218, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 #blogNav, #portfolioNav {
   display: inline;
 }
 
-/* line 221, ../sass/style.scss */
+/* line 245, ../sass/style.scss */
 #blogNavForward, #portfolioNavForward {
   float: right;
 }
 
-/* line 224, ../sass/style.scss */
+/* line 248, ../sass/style.scss */
 #blogNavBack, #portfolioNavBack {
   float: left;
 }

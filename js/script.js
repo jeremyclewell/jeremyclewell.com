@@ -21,7 +21,7 @@ $(document).ready(function(){
 	
 	$("section header").click(function()
     {
-		$(this).next("article").slideToggle(300).parent("section").siblings("section").children("article").slideUp(300);
+		$(this).next(".content").slideToggle(300).parent("section").siblings("section").children(".content").slideUp(300);
 //       	$(this).siblings().css({backgroundImage:"url(lezzzft.png)"});
 	});
 	
@@ -34,9 +34,15 @@ $(document).ready(function(){
 		
 	}
 	
-	$(".blogTitle").hoverIntent(subnavOver, subnavOff);
+	//$(".blogTitle").hoverIntent(subnavOver, subnavOff);
 	
-	
+	$(".title").mouseover(function(evt) {
+		$($(this).parent().parent()).css({"width": "32%"});
+		$($(this).parent().parent()).siblings().css({"width": "13%"});
+		console.log($(this).next());
+		$($(this).next().find("p")).css({"opacity": 1})
+	});
+
 	$("#blogSlider").mouseout(function(evt) {
 		// console.log(evt.target + this);
 		// if(evt.target == this){
