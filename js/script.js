@@ -23,6 +23,22 @@ $(document).ready(function(){
     {
 		$(this).next(".content").slideToggle(300).parent("section").siblings("section").children(".content").slideUp(300);
 //       	$(this).siblings().css({backgroundImage:"url(lezzzft.png)"});
+		if ($(this).parent().attr("id") == "blog") {
+			$.getJSON('page1.json?return', function(data) {
+			  var items = [];
+
+			  $.each(data.posts, function(key, val) {
+			    items.push('<li id="' + key + '">' + val + '</li>');
+			  });
+
+			  console.log(data);
+
+			  // $('<ul/>', {
+			  //   'class': 'my-new-list',
+			  //   html: items.join('')
+			  // }).appendTo('body');
+			});
+		}
 	});
 	
 	function subnavOver() {
@@ -39,7 +55,6 @@ $(document).ready(function(){
 	$(".title").mouseover(function(evt) {
 		$($(this).parent().parent()).css({"width": "32%"});
 		$($(this).parent().parent()).siblings().css({"width": "13%"});
-		console.log($(this).next());
 		$($(this).next().find("p")).css({"opacity": 1})
 	});
 

@@ -236,7 +236,10 @@ nav+article {
 	margin-left: 120px;
 	width: 120px;
 	text-align: left;
-	transition: opacity 0.5s;
+	transition: opacity .5s;
+	-moz-transition: opacity 0.5s; /* Firefox 4 */
+	-webkit-transition: opacity 0.5s; /* Safari and Chrome */
+	-o-transition: opacity 0.5s; /* Opera */
 	opacity: 0;
 }
 #blogNav, #portfolioNav {
