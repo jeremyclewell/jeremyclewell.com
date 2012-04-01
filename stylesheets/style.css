@@ -779,9 +779,10 @@ h1.fontface {
   color: #fbf8e8;
   font-variant: small-caps;
   text-shadow: #111 3px 3px 3px;
+  margin-bottom: 0px;
 }
 
-/* line 22, ../sass/style.scss */
+/* line 23, ../sass/style.scss */
 h2.fontface {
   font: 40px/48px "BonvenoCFLight", Arial, sans-serif;
   letter-spacing: 0;
@@ -790,7 +791,7 @@ h2.fontface {
   text-shadow: #111 2px 2px 3px;
 }
 
-/* line 29, ../sass/style.scss */
+/* line 30, ../sass/style.scss */
 h3.fontface {
   font: 30px/38px "BonvenoCFLight", Arial, sans-serif;
   letter-spacing: 0;
@@ -799,33 +800,33 @@ h3.fontface {
   text-shadow: #111 1px 1px 2px;
 }
 
-/* line 37, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
 h4.fontface {
   font: 15px/20px "BonvenoCFLight", Arial, sans-serif;
   letter-spacing: 0;
   color: #fbf8e8;
 }
 
-/* line 43, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 h5.fontface {
   font: 10px/18px "BonvenoCFLight", Arial, sans-serif;
   letter-spacing: 0;
   color: #fbf8e8;
 }
 
-/* line 50, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 p.style1 {
   font: 18px/27px "BonvenoCFLight", Arial, sans-serif;
   color: #fbf8e8;
 }
 
-/* line 55, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 p.style2 {
   font: 18px/27px "BonvenoCFLight", Arial, sans-serif;
   color: #212121;
 }
 
-/* line 60, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 #content {
   width: 100%;
   position: absolute;
@@ -836,36 +837,36 @@ p.style2 {
 }
 
 /*#content:nth-child(0) {*/
-/* line 70, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 #header {
   background-color: #c03000;
 }
 
 /*#content:nth-child(1) {*/
-/* line 76, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 #about {
   background-color: #32331d;
 }
 
 /*#content:nth-child(2) {*/
-/* line 82, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 #blog {
   background-color: #40411e;
 }
 
 /*#content:nth-child(3) {*/
-/* line 88, ../sass/style.scss */
+/* line 89, ../sass/style.scss */
 #portfolio {
   background-color: #787746;
 }
 
 /*#content:nth-child(4) {*/
-/* line 94, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 #contact {
   background-color: #b4af91;
 }
 
-/* line 101, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 section {
   width: 100%;
   -moz-box-shadow: 0px 10px 30px #111;
@@ -876,7 +877,7 @@ section {
   background-position: left top, left top;
 }
 
-/* line 112, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 #blog {
   background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
   background-repeat: repeat-x;
@@ -884,7 +885,7 @@ section {
   text-align: left;
 }
 
-/* line 119, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 #blog .sm li {
   background-color: #3c3d1c;
   background-image: url("../img/h/nav_texture.png"), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #787746), color-stop(100%, #646334));
@@ -901,19 +902,19 @@ section {
   text-align: left;
 }
 
-/* line 129, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 #blog .sm li p {
   text-align: left;
 }
 
-/* line 133, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 #portfolio {
   background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
   background-repeat: repeat-x;
   background-position: left top, left top, left 74px;
 }
 
-/* line 139, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 #portfolio .sm li {
   background-color: #434420;
   background-image: url("../img/h/nav_texture.png"), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #494a23), color-stop(100%, #3b3c1b));
@@ -927,7 +928,7 @@ section {
   border-right: solid 1px #3a3b1b;
 }
 
-/* line 147, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 section header {
   height: 100%;
   padding: 0px 10px 0px 10px;
@@ -937,7 +938,7 @@ section header {
   /*  	background-position: left center;*/
 }
 
-/* line 157, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
 section header h1, section header h2, section header h4 {
   width: 850px;
   padding: 10px 0 0 0;
@@ -946,7 +947,7 @@ section header h1, section header h2, section header h4 {
   margin-right: auto;
 }
 
-/* line 165, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 section div.content {
   width: 100%;
   display: none;
@@ -954,45 +955,45 @@ section div.content {
   padding-bottom: 20px;
 }
 
-/* line 173, ../sass/style.scss */
+/* line 174, ../sass/style.scss */
 section nav, section article {
   width: 750px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 179, ../sass/style.scss */
+/* line 180, ../sass/style.scss */
 nav + article {
   margin-top: 25px;
 }
 
-/* line 183, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 .title {
   float: left;
   width: 100px;
 }
 
-/* line 189, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 .title p {
   font-size: 13px;
   text-align: left;
 }
 
-/* line 194, ../sass/style.scss */
+/* line 195, ../sass/style.scss */
 .title p.date {
   font-size: 10px;
   line-height: 12px;
   margin-bottom: 5px;
 }
 
-/* line 201, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 #blogSlider, #portfolioSlider {
   width: 750px;
   height: 77px;
   top: 4px;
 }
 
-/* line 202, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 .sm {
   width: 650px;
   float: left;
@@ -1003,7 +1004,7 @@ nav + article {
   transition: position 0.5s;
 }
 
-/* line 212, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 .sm li {
   padding: 5px 10px 5px 10px;
   float: left;
@@ -1023,14 +1024,14 @@ nav + article {
   /* Opera */
 }
 
-/* line 230, ../sass/style.scss */
+/* line 231, ../sass/style.scss */
 .title {
   float: left;
   width: 100px;
   padding: 0px;
 }
 
-/* line 234, ../sass/style.scss */
+/* line 235, ../sass/style.scss */
 .description p {
   font-size: 12px;
   margin-left: 120px;
@@ -1046,17 +1047,17 @@ nav + article {
   opacity: 0;
 }
 
-/* line 245, ../sass/style.scss */
+/* line 246, ../sass/style.scss */
 #blogNav, #portfolioNav {
   display: inline;
 }
 
-/* line 248, ../sass/style.scss */
+/* line 249, ../sass/style.scss */
 #blogNavForward, #portfolioNavForward {
   float: right;
 }
 
-/* line 251, ../sass/style.scss */
+/* line 252, ../sass/style.scss */
 #blogNavBack, #portfolioNavBack {
   float: left;
 }
