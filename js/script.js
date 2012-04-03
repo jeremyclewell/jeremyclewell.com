@@ -80,7 +80,7 @@ $(document).ready(function(){
 			tempStructure += "<li><ul class='sm'><div style='width: 100%'>";
 			for (var j = 0; j < data.count; j++) {
 				if ((j + ((i)*data.count)) < data.count_total) {
-					tempStructure += "<li><div><img src=''/></div></li>";
+					tempStructure += "<li><div><img class='preloader' src='img/h/preloader_blog.gif'/></div></li>";
 				}
 			}
 			tempStructure += "</div></ul></li>";
@@ -118,8 +118,6 @@ $(document).ready(function(){
     		$("#blog .content article").html(blogTemplate(blogPosts[blogPageIndex * 5 + $(thisObj).index()]));
     		$("#blog .content article").animate({opacity: 1}, 200);
   		});
-		
-
 	});
 
 	});
@@ -130,7 +128,7 @@ $(document).ready(function(){
 			tempStructure += "<li><ul class='sm'><div style='width: 100%'>";
 			for (var j = 0; j < data.count; j++) {
 				if ((j + ((i)*data.count)) < data.count_total) {
-					tempStructure += "<li><div><img src=''/></div></li>";
+					tempStructure += "<li><div><img class='preloader' src='img/h/preloader_portfolio.gif'/></div></li>";
 				}
 			}
 			tempStructure += "</div></ul></li>";		
@@ -164,8 +162,11 @@ $(document).ready(function(){
 		});
 
 	$("#portfolioSlider .sm li").live("click",  function(evt) {
-		$("#portfolio .content article").html(portfolioTemplate(portfolioEntries[portfolioIndex * 5 + $(this).index()]));
-
+		var thisObj = this;
+		$("#portfolio .content article").animate({opacity: 0}, 200, function() {
+    		$("#portfolio .content article").html(blogTemplate(portfolioEntries[portfolioIndex * 5 + $(thisObj).index()]));
+    		$("#portfolio .content article").animate({opacity: 1}, 200);
+  		});
 	});
 
 	});

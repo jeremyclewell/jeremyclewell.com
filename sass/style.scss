@@ -48,6 +48,10 @@ h5 {
 
 }
 
+div {
+	font: 14px/18px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
+	color: #fbf8e8;
+}
 
 p {
 	font: 16px/18px 'BonvenoCFLight', Arial, sans-serif;
@@ -69,6 +73,8 @@ article {
 		margin-left: 10px;
 	}
 }
+
+
 
 #content {
 	width: 100%;
@@ -258,7 +264,6 @@ nav+article {
 		-o-transition: width 0.5s; /* Opera */
 	}
 
-
 .title {
 	float: left;
 	width: 100px;
@@ -280,7 +285,7 @@ nav+article {
 	padding-top: 17px;
 	width: 120px;
 	text-align: left;
-	transition: opacity .5s;
+	transition: opacity 0.5s;
 	-moz-transition: opacity 0.5s; /* Firefox 4 */
 	-webkit-transition: opacity 0.5s; /* Safari and Chrome */
 	-o-transition: opacity 0.5s; /* Opera */
@@ -295,3 +300,44 @@ nav+article {
 #blogNavBack, #portfolioNavBack {
 	float: left;
 }
+
+.preloader {
+	margin: 23px 0 0 43px;
+}
+
+article {
+	position: relative;
+	p {
+		text-shadow: 2px 2px 8px #000;
+	}
+	.categories {
+		position: absolute;
+		top: 17px;
+		right: 0;
+	}
+	.tags {
+		position: absolute;
+		top: 38px;
+		right: 0;
+	}
+	.date {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+a {
+	color: #ff4100 !important;
+	text-decoration: none;
+	text-shadow: 2px 2px 2px #000;
+	transition: color 0.5s;
+	-moz-transition: color 0.5s; /* Firefox 4 */
+	-webkit-transition: color 0.5s; /* Safari and Chrome */
+	-o-transition: color 0.5s; /* Opera */
+	&:hover {
+		color: #ff622c !important;
+		text-decoration: underline;
+	}
+}
+
+

@@ -92,7 +92,7 @@ License: http://creativecommons.org/licenses/MIT
 			
 
 
-		<section id="about">`
+		<section id="about">
 			<header>
 				<h2>About</h2>
 			</header>
@@ -173,8 +173,7 @@ License: http://creativecommons.org/licenses/MIT
 					<ul id="blogSlider"></ul>
 				</nav>
 				<article>
-				<p class="style1">Howdy doody!!- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<article>
+				</article>
 			</div>
 
 		</section>
@@ -190,9 +189,7 @@ License: http://creativecommons.org/licenses/MIT
 					<nav>
 					<ul id="portfolioSlider"></ul>
 				</nav>
-				<article>
-				<p class="style1">BonvenoCF Light - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				
+				<article>	
 				</article>
 			</div>
 		
@@ -247,18 +244,22 @@ License: http://creativecommons.org/licenses/MIT
 </script>
 
 <script id="blog-template" type="text/x-handlebars-template">
-	<h3>{{title}}</h3>
-	<h5>{{date}}</h5>
+	<h2>{{title}}</h2>
+	<h4>{{excerpt}}</h4>
+	<h4 class="date">Posted: {{date}}</h4>
 	<div class="categories">
+		Categories:
 		{{#each categories}}
-			{{title}}
+			<a href="" title="{{title}}">{{title}}</a>
 		{{/each}}
 	</div>
 	<div class="tags">
+		Tags:
 		{{#each tags}}
-			{{title}}
+			<a href="" title="{{title}}">{{title}}</a>
 		{{/each}}
 	</div>
+	<hr>
 	{{{content}}}
 </script>
 
@@ -279,18 +280,10 @@ License: http://creativecommons.org/licenses/MIT
 </script>
 
 <script id="portfolio-template" type="text/x-handlebars-template">
-	<h3>{{title}}</h3>
-	<h5>{{date}}</h5>
-	<div class="categories">
-		{{#each categories}}
-			{{title}}
-		{{/each}}
-	</div>
-	<div class="tags">
-		{{#each tags}}
-			{{title}}
-		{{/each}}
-	</div>
+	<h2>{{title}}</h2>
+	<h4>{{excerpt}}</h4>
+	<h4 class="date">Posted: {{date}}</h4>
+	<hr>
 	{{{content}}}
 </script>
 
