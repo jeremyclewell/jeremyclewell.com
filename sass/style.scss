@@ -5,7 +5,8 @@
 
 @import "base";
 
-
+$base-font-size: 16px;
+$base-font-color: #fbf8e8;
 html {
 	background-image: url("../img/h/html_bg_2.png"), url("../img/h/html_bg_1.jpg");
 	background-position: center top, left top;
@@ -49,7 +50,7 @@ h5 {
 }
 
 div {
-	font: 14px/18px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
+	font: 16px/18px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
 	color: #fbf8e8;
 }
 
@@ -60,10 +61,86 @@ p {
 	text-align: left;
 }
 
-p.style2 {
-	font: 18px/27px 'BonvenoCFLight', Arial, sans-serif;
-	color: #212121;
+.light {
+	color: #fbf8e8;
 }
+
+.dark {
+	color: #2c2b27;
+	text-shadow: #111 1px 1px 2px;
+}
+
+a {
+	text-decoration: none;
+	text-shadow: 2px 2px 2px #000;
+	@include transition-property(color);
+	@include transition-duration(0.3s);
+}
+
+#header {
+	background-color: #c03000;
+}
+
+#about {
+	background-color: #32331d;
+}
+
+#blog {
+	background-color: #40411e;
+ 	background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+	background-repeat: repeat-x, repeat;
+	background-position: left top, left top, left 74px;
+	text-align: left;
+	.sm li {
+		background-color: #3c3d1c;
+		@include background-image(url("../img/h/nav_texture.png"), linear-gradient(#787746 #646334)); 
+		height: 78px;
+		border: solid 1px #464723;
+		border-right: solid 1px #353619;
+		border-top: solid 1px #353619;
+		text-align: left;
+		p {
+			text-align: left;	
+		}
+	}
+	a {
+		color: #ff4100 !important;
+		&:hover {
+			color: #ff7b4e !important;
+			text-decoration: underline;
+		}
+	}
+}
+
+#portfolio {	
+	background-color: #787746;
+ 	background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+	background-repeat: repeat-x, repeat;
+	background-position: left top, left top, left 74px;
+	.sm li {
+		background-color: #434420;
+		@include background-image(url("../img/h/nav_texture.png"), linear-gradient(#494a23 #3b3c1b));
+		height: 78px;
+		border-left: solid 1px #55562c;
+		border-right: solid 1px #3a3b1b;
+		text-align: left;
+		p {
+			text-align: left;	
+		}
+	}
+	a {
+		color: #ff5f29 !important;
+		&:hover {
+			color: #ff4100 !important;
+			text-decoration: underline;
+		}
+	}
+}
+
+#contact {
+	background-color: #b4af91;
+}
+
 article {
 	ul, ul li, ul li ul, ul li ul li{
 		font: 14px/20px 'BonvenoCFLight', Arial, sans-serif;
@@ -85,59 +162,6 @@ article {
 	margin: auto;
 }
 
-#header {
-	background-color: #c03000;
-}
-
-#about {
-	background-color: #32331d;
-}
-
-#blog {
-	background-color: #40411e;
- 	background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
-	background-repeat: repeat-x, repeat;
-	background-position: left top, left top, left 74px;
-	text-align: left;
-	.sm li {
-		background-color: #3c3d1c;
-		@include background-image(url("../img/h/nav_texture.png"), linear-gradient(#787746 #646334)); 
-		height: 78px;
-		border-left: solid 1px #464723;
-		border-bottom: solid 2px #464723;
-		border-right: solid 1px #353619;
-		border-top: solid 1px #353619;
-		text-align: left;
-		p {
-			text-align: left;	
-		}
-	}
-}
-
-#portfolio {	
-	background-color: #787746;
- 	background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
-	background-repeat: repeat-x, repeat;
-	background-position: left top, left top, left 74px;
-	.sm li {
-		background-color: #434420;
-		@include background-image(url("../img/h/nav_texture.png"), linear-gradient(#494a23 #3b3c1b));
-		height: 78px;
-		border-left: solid 1px #55562c;
-		border-right: solid 1px #3a3b1b;
-		text-align: left;
-		p {
-			text-align: left;	
-		}
-	}
-}
-
-#contact {
-	background-color: #b4af91;
-}
-
-
-
 
 
 section{
@@ -157,7 +181,7 @@ section{
 		h1, h2, h4 {
 			width: 960px;
 			padding: 10px 0 0 0;
-			margin-bottom: 13px;
+			margin-bottom: 14px;
 			margin-left: auto;
 			margin-right: auto;
 		}
@@ -168,7 +192,7 @@ section{
 		margin-right: auto;
 	}
 	article {
-		width: 960px;
+		width: 830px;
 		margin-top: 20px;
 		margin-left: auto;
 		margin-right: auto;
@@ -246,23 +270,22 @@ nav+article {
 	height:100px; 
 	display:block; 
 	overflow:hidden;
-	transition: position 0.5s;
-}
-.sm li {
-	padding: 5px 10px 5px 10px;
-	float:left; 
-	display:inline;
-	overflow:hidden;
-	width: 17%;
-	border-left: solid 1px #616232;
-	border-right: solid 1px #25260d;
-	font: 14px/14px 'BonvenoCFLight', Arial, sans-serif;
-	color: #fbf8e8;
-		transition: width 0.5s;
-		-moz-transition: width 0.5s; /* Firefox 4 */
-		-webkit-transition: width 0.5s; /* Safari and Chrome */
-		-o-transition: width 0.5s; /* Opera */
+	@include transition-property(position);
+	@include transition-duration(0.5s);
+	li {
+		padding: 5px 10px 5px 10px;
+		float:left; 
+		display:inline;
+		overflow:hidden;
+		width: 17%;
+		border-left: solid 1px #616232;
+		border-right: solid 1px #25260d;
+		font: 14px/14px 'BonvenoCFLight', Arial, sans-serif;
+		color: #fbf8e8;
+		@include transition-property(width);
+		@include transition-duration(0.5s);
 	}
+}
 
 .title {
 	float: left;
@@ -305,39 +328,44 @@ nav+article {
 	margin: 23px 0 0 43px;
 }
 
+.small-text {
+	font-size: ($base-font-size*0.8);
+}
+
 article {
 	position: relative;
 	p {
 		text-shadow: 2px 2px 8px #000;
 	}
-	.categories {
+
+	div.entryMeta {
 		position: absolute;
 		top: 17px;
 		right: 0;
-	}
-	.tags {
-		position: absolute;
-		top: 38px;
-		right: 0;
-	}
-	.date {
-		position: absolute;
-		top: 0;
-		right: 0;
+		width: 300px;
+		text-align: right;
 	}
 }
-a {
-	color: #ff4100 !important;
-	text-decoration: none;
-	text-shadow: 2px 2px 2px #000;
-	transition: color 0.5s;
-	-moz-transition: color 0.5s; /* Firefox 4 */
-	-webkit-transition: color 0.5s; /* Safari and Chrome */
-	-o-transition: color 0.5s; /* Opera */
+
+#skills {
+	@include column-count(2);
+	li, span {
+		color: $base-font-color;
+		@include transition-property(color);
+		@include transition-duration(0.7s);
+	}
 	&:hover {
-		color: #ff622c !important;
-		text-decoration: underline;
+		.veryOften {
+			color: $base-font-color;
+		}
+		.often {
+			color: $base-font-color/1.5;
+		}
+		.rare {
+			color: $base-font-color/3;
+		}
 	}
 }
+
 
 

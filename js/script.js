@@ -171,6 +171,10 @@ $(document).ready(function(){
 
 	});
 
+	$(document).ready(function(evt){
+		$("#header header").next(".content").slideToggle(300).parent("section").siblings("section").children(".content").slideUp(300);
+	});
+
 });
 
 

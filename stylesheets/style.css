@@ -764,7 +764,7 @@ p {
 }
 
 /* 17 TEMPLATE SPECIFICS ============================================================================= */
-/* line 9, ../sass/style.scss */
+/* line 10, ../sass/style.scss */
 html {
   background-image: url("../img/h/html_bg_2.png"), url("../img/h/html_bg_1.jpg");
   background-position: center top, left top;
@@ -774,7 +774,7 @@ html {
   color: #fbf8e8;
 }
 
-/* line 17, ../sass/style.scss */
+/* line 18, ../sass/style.scss */
 h1 {
   font: 60px/68px "BonvenoCFLight", Arial, sans-serif;
   letter-spacing: 0;
@@ -784,7 +784,7 @@ h1 {
   margin-bottom: 0px;
 }
 
-/* line 24, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 h2 {
   font: 40px/48px "BonvenoCFLight", Arial, sans-serif;
   letter-spacing: 0;
@@ -793,7 +793,7 @@ h2 {
   text-shadow: #111 2px 2px 3px;
 }
 
-/* line 31, ../sass/style.scss */
+/* line 32, ../sass/style.scss */
 h3 {
   font: 30px/38px "BonvenoCFLight", Arial, sans-serif;
   letter-spacing: 0;
@@ -802,28 +802,28 @@ h3 {
   text-shadow: #111 1px 1px 2px;
 }
 
-/* line 39, ../sass/style.scss */
+/* line 40, ../sass/style.scss */
 h4 {
   font: 15px/20px "BonvenoCFLight", Arial, sans-serif;
   letter-spacing: 0;
   color: #fbf8e8;
 }
 
-/* line 45, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 h5 {
   font: 10px/18px "BonvenoCFLight", Arial, sans-serif;
   letter-spacing: 0;
   color: #fbf8e8;
 }
 
-/* line 51, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 div {
-  font: 14px/18px "BonvenoCFLight", Arial, sans-serif;
+  font: 16px/18px "BonvenoCFLight", Arial, sans-serif;
   letter-spacing: 0;
   color: #fbf8e8;
 }
 
-/* line 56, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 p {
   font: 16px/18px "BonvenoCFLight", Arial, sans-serif;
   line-height: 24px;
@@ -831,42 +831,42 @@ p {
   text-align: left;
 }
 
-/* line 63, ../sass/style.scss */
-p.style2 {
-  font: 18px/27px "BonvenoCFLight", Arial, sans-serif;
-  color: #212121;
+/* line 64, ../sass/style.scss */
+.light {
+  color: #fbf8e8;
 }
 
 /* line 68, ../sass/style.scss */
-article ul, article ul li, article ul li ul, article ul li ul li {
-  font: 14px/20px "BonvenoCFLight", Arial, sans-serif;
-  color: #fbf8e8;
-  text-align: left;
-  list-style: circle;
-  margin-left: 10px;
+.dark {
+  color: #2c2b27;
+  text-shadow: #111 1px 1px 2px;
 }
 
-/* line 79, ../sass/style.scss */
-#content {
-  width: 100%;
-  position: absolute;
-  height: auto;
-  top: 5%;
-  bottom: 20%;
-  margin: auto;
+/* line 73, ../sass/style.scss */
+a {
+  text-decoration: none;
+  text-shadow: 2px 2px 2px #000;
+  -moz-transition-property: color;
+  -webkit-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
-/* line 88, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 #header {
   background-color: #c03000;
 }
 
-/* line 92, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 #about {
   background-color: #32331d;
 }
 
-/* line 96, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 #blog {
   background-color: #40411e;
   background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
@@ -874,7 +874,7 @@ article ul, article ul li, article ul li ul, article ul li ul li {
   background-position: left top, left top, left 74px;
   text-align: left;
 }
-/* line 102, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 #blog .sm li {
   background-color: #3c3d1c;
   background-image: url("../img/h/nav_texture.png"), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #787746), color-stop(100%, #646334));
@@ -884,25 +884,33 @@ article ul, article ul li, article ul li ul, article ul li ul li {
   background-image: url("../img/h/nav_texture.png"), -ms-linear-gradient(#787746, #646334);
   background-image: url("../img/h/nav_texture.png"), linear-gradient(#787746, #646334);
   height: 78px;
-  border-left: solid 1px #464723;
-  border-bottom: solid 2px #464723;
+  border: solid 1px #464723;
   border-right: solid 1px #353619;
   border-top: solid 1px #353619;
   text-align: left;
 }
-/* line 111, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 #blog .sm li p {
   text-align: left;
 }
+/* line 106, ../sass/style.scss */
+#blog a {
+  color: #ff4100 !important;
+}
+/* line 108, ../sass/style.scss */
+#blog a:hover {
+  color: #ff7b4e !important;
+  text-decoration: underline;
+}
 
-/* line 117, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 #portfolio {
   background-color: #787746;
   background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
   background-repeat: repeat-x, repeat;
   background-position: left top, left top, left 74px;
 }
-/* line 122, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 #portfolio .sm li {
   background-color: #434420;
   background-image: url("../img/h/nav_texture.png"), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #494a23), color-stop(100%, #3b3c1b));
@@ -916,17 +924,45 @@ article ul, article ul li, article ul li ul, article ul li ul li {
   border-right: solid 1px #3a3b1b;
   text-align: left;
 }
-/* line 129, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 #portfolio .sm li p {
   text-align: left;
 }
+/* line 131, ../sass/style.scss */
+#portfolio a {
+  color: #ff5f29 !important;
+}
+/* line 133, ../sass/style.scss */
+#portfolio a:hover {
+  color: #ff4100 !important;
+  text-decoration: underline;
+}
 
-/* line 135, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 #contact {
   background-color: #b4af91;
 }
 
-/* line 143, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
+article ul, article ul li, article ul li ul, article ul li ul li {
+  font: 14px/20px "BonvenoCFLight", Arial, sans-serif;
+  color: #fbf8e8;
+  text-align: left;
+  list-style: circle;
+  margin-left: 10px;
+}
+
+/* line 156, ../sass/style.scss */
+#content {
+  width: 100%;
+  position: absolute;
+  height: auto;
+  top: 5%;
+  bottom: 20%;
+  margin: auto;
+}
+
+/* line 167, ../sass/style.scss */
 section {
   width: 100%;
   -moz-box-shadow: 0px 10px 30px #111;
@@ -936,7 +972,7 @@ section {
   background-repeat: repeat-x, repeat;
   background-position: left top, left top;
 }
-/* line 151, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 section header {
   height: 100%;
   padding: 0px 10px 0px 10px;
@@ -944,23 +980,23 @@ section header {
   cursor: pointer;
   font-weight: bold;
 }
-/* line 157, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 section header h1, section header h2, section header h4 {
   width: 960px;
   padding: 10px 0 0 0;
-  margin-bottom: 13px;
+  margin-bottom: 14px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 165, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 section nav {
   width: 750px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 170, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 section article {
-  width: 960px;
+  width: 830px;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -972,14 +1008,14 @@ section article {
   -o-transition: height 0.5s;
   /* Opera */
 }
-/* line 180, ../sass/style.scss */
+/* line 204, ../sass/style.scss */
 section div.content {
   width: 100%;
   display: none;
   padding-bottom: 20px;
 }
 
-/* line 191, ../sass/style.scss */
+/* line 215, ../sass/style.scss */
 section[id="header"] div.content article p.featureLeft {
   background-image: url("../img/h/home_divide_bg.png");
   width: 60%;
@@ -988,12 +1024,12 @@ section[id="header"] div.content article p.featureLeft {
   background-position: right top;
 }
 
-/* line 199, ../sass/style.scss */
+/* line 223, ../sass/style.scss */
 section[id="header"] div.content article p:first-letter {
   font-size: 28px;
 }
 
-/* line 203, ../sass/style.scss */
+/* line 227, ../sass/style.scss */
 section[id="about"] div.content article p.featureRight {
   background-image: url("../img/h/about_divide_bg.png");
   width: 60%;
@@ -1004,7 +1040,7 @@ section[id="about"] div.content article p.featureRight {
   background-position: left top;
 }
 
-/* line 213, ../sass/style.scss */
+/* line 237, ../sass/style.scss */
 section[id="about"] div.content article p:first-letter {
   font-size: 28px;
 }
@@ -1022,19 +1058,19 @@ section[id="contact"] div.content article p {
 	background-image: url("../img/h/contact_divide_bg.png");
 }
 */
-/* line 229, ../sass/style.scss */
+/* line 253, ../sass/style.scss */
 nav + article {
   margin-top: 25px;
 }
 
-/* line 235, ../sass/style.scss */
+/* line 259, ../sass/style.scss */
 #blogSlider, #portfolioSlider {
   width: 750px;
   height: 77px;
   top: 4px;
 }
 
-/* line 241, ../sass/style.scss */
+/* line 265, ../sass/style.scss */
 .sm {
   width: 650px;
   float: left;
@@ -1042,10 +1078,16 @@ nav + article {
   height: 100px;
   display: block;
   overflow: hidden;
-  transition: position 0.5s;
+  -moz-transition-property: position;
+  -webkit-transition-property: position;
+  -o-transition-property: position;
+  transition-property: position;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
-
-/* line 251, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 .sm li {
   padding: 5px 10px 5px 10px;
   float: left;
@@ -1056,33 +1098,34 @@ nav + article {
   border-right: solid 1px #25260d;
   font: 14px/14px "BonvenoCFLight", Arial, sans-serif;
   color: #fbf8e8;
-  transition: width 0.5s;
-  -moz-transition: width 0.5s;
-  /* Firefox 4 */
-  -webkit-transition: width 0.5s;
-  /* Safari and Chrome */
-  -o-transition: width 0.5s;
-  /* Opera */
+  -moz-transition-property: width;
+  -webkit-transition-property: width;
+  -o-transition-property: width;
+  transition-property: width;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
-/* line 267, ../sass/style.scss */
+/* line 290, ../sass/style.scss */
 .title {
   float: left;
   width: 100px;
 }
-/* line 270, ../sass/style.scss */
+/* line 293, ../sass/style.scss */
 .title p {
   font-size: 12px;
   line-height: 16px;
   margin-bottom: 7px;
 }
-/* line 275, ../sass/style.scss */
+/* line 298, ../sass/style.scss */
 .title .date {
   font-size: 11px;
   line-height: 12px;
 }
 
-/* line 281, ../sass/style.scss */
+/* line 304, ../sass/style.scss */
 .description p {
   font-size: 12px;
   line-height: 16px;
@@ -1100,68 +1143,76 @@ nav + article {
   opacity: 0;
 }
 
-/* line 294, ../sass/style.scss */
+/* line 317, ../sass/style.scss */
 #blogNav, #portfolioNav {
   display: inline;
 }
 
-/* line 297, ../sass/style.scss */
+/* line 320, ../sass/style.scss */
 #blogNavForward, #portfolioNavForward {
   float: right;
 }
 
-/* line 300, ../sass/style.scss */
+/* line 323, ../sass/style.scss */
 #blogNavBack, #portfolioNavBack {
   float: left;
 }
 
-/* line 304, ../sass/style.scss */
+/* line 327, ../sass/style.scss */
 .preloader {
   margin: 23px 0 0 43px;
 }
 
-/* line 308, ../sass/style.scss */
+/* line 331, ../sass/style.scss */
+.small-text {
+  font-size: 12.8px;
+}
+
+/* line 335, ../sass/style.scss */
 article {
   position: relative;
 }
-/* line 310, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 article p {
   text-shadow: 2px 2px 8px #000;
 }
-/* line 313, ../sass/style.scss */
-article .categories {
+/* line 341, ../sass/style.scss */
+article div.entryMeta {
   position: absolute;
   top: 17px;
   right: 0;
-}
-/* line 318, ../sass/style.scss */
-article .tags {
-  position: absolute;
-  top: 38px;
-  right: 0;
-}
-/* line 323, ../sass/style.scss */
-article .date {
-  position: absolute;
-  top: 0;
-  right: 0;
+  width: 300px;
+  text-align: right;
 }
 
-/* line 329, ../sass/style.scss */
-a {
-  color: #ff4100 !important;
-  text-decoration: none;
-  text-shadow: 2px 2px 2px #000;
-  transition: color 0.5s;
-  -moz-transition: color 0.5s;
-  /* Firefox 4 */
-  -webkit-transition: color 0.5s;
-  /* Safari and Chrome */
-  -o-transition: color 0.5s;
-  /* Opera */
+/* line 350, ../sass/style.scss */
+#skills {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  -o-column-count: 2;
+  column-count: 2;
 }
-/* line 337, ../sass/style.scss */
-a:hover {
-  color: #ff622c !important;
-  text-decoration: underline;
+/* line 352, ../sass/style.scss */
+#skills li, #skills span {
+  color: #fbf8e8;
+  -moz-transition-property: color;
+  -webkit-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.7s;
+  -webkit-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+}
+/* line 358, ../sass/style.scss */
+#skills:hover .veryOften {
+  color: #fbf8e8;
+}
+/* line 361, ../sass/style.scss */
+#skills:hover .often {
+  color: #a7a59a;
+}
+/* line 364, ../sass/style.scss */
+#skills:hover .rare {
+  color: #53524d;
 }
