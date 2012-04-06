@@ -28,3 +28,29 @@ _____________________________________________________
 COLOURS 
 
 */
+
+section{
+	header {
+		h1, h2, h4 {
+			width: 960px;
+		}
+	}
+	nav {
+		width: 750px;
+	}
+	article {
+		width: 830px;
+	}
+}
+
+#blogSlider, #portfolioSlider { 
+	width: 750px; 
+}
+
+.sm {
+	width: 650px;
+	li {
+		padding: 5px 10px 5px 10px;
+		width: 17%;
+	}
+}

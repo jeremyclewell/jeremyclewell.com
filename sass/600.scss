@@ -28,3 +28,35 @@ _____________________________________________________
 COLOURS 
 
 */
+
+@import "compass";
+
+section{
+	header {
+		h1, h2, h4 {
+			width: 580px;
+		}
+	}
+	nav {
+		width: 500px;
+	}
+	article {
+		width: 540px;
+	}
+}
+
+#blogSlider, #portfolioSlider { 
+	width: 500px; 
+}
+
+.sm {
+	width: 430px;
+	li {
+		padding: 5px 10px 5px 10px;
+		width: 17%;
+	}
+}
+
+#skills {
+	@include column-count(1);
+}

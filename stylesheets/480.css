@@ -28,3 +28,38 @@ _____________________________________________________
 COLOURS 
 
 */
+/* line 36, ../sass/480.scss */
+section header h1, section header h2, section header h4 {
+  width: 460px;
+}
+/* line 40, ../sass/480.scss */
+section nav {
+  width: 400px;
+}
+/* line 43, ../sass/480.scss */
+section article {
+  width: 420px;
+}
+
+/* line 48, ../sass/480.scss */
+#blogSlider, #portfolioSlider {
+  width: 400px;
+}
+
+/* line 52, ../sass/480.scss */
+.sm {
+  width: 320px;
+}
+/* line 54, ../sass/480.scss */
+.sm li {
+  padding: 5px 10px 5px 10px;
+  width: 17%;
+}
+
+/* line 60, ../sass/480.scss */
+#skills {
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  -o-column-count: 1;
+  column-count: 1;
+}

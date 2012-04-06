@@ -832,41 +832,38 @@ p {
 }
 
 /* line 64, ../sass/style.scss */
-.light {
-  color: #fbf8e8;
-}
-
-/* line 68, ../sass/style.scss */
 .dark {
-  color: #2c2b27;
+  color: #191817;
   text-shadow: #111 1px 1px 2px;
 }
 
-/* line 73, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 a {
   text-decoration: none;
   text-shadow: 2px 2px 2px #000;
-  -moz-transition-property: color;
   -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -ms-transition-property: color;
   -o-transition-property: color;
   transition-property: color;
-  -moz-transition-duration: 0.3s;
   -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
 
-/* line 80, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 #header {
   background-color: #c03000;
 }
 
-/* line 84, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 #about {
   background-color: #32331d;
 }
 
-/* line 88, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 #blog {
   background-color: #40411e;
   background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
@@ -874,7 +871,7 @@ a {
   background-position: left top, left top, left 74px;
   text-align: left;
 }
-/* line 94, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 #blog .sm li {
   background-color: #3c3d1c;
   background-image: url("../img/h/nav_texture.png"), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #787746), color-stop(100%, #646334));
@@ -889,28 +886,28 @@ a {
   border-top: solid 1px #353619;
   text-align: left;
 }
-/* line 102, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 #blog .sm li p {
   text-align: left;
 }
-/* line 106, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 #blog a {
   color: #ff4100 !important;
 }
-/* line 108, ../sass/style.scss */
+/* line 104, ../sass/style.scss */
 #blog a:hover {
   color: #ff7b4e !important;
   text-decoration: underline;
 }
 
-/* line 115, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 #portfolio {
   background-color: #787746;
   background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
   background-repeat: repeat-x, repeat;
   background-position: left top, left top, left 74px;
 }
-/* line 120, ../sass/style.scss */
+/* line 116, ../sass/style.scss */
 #portfolio .sm li {
   background-color: #434420;
   background-image: url("../img/h/nav_texture.png"), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #494a23), color-stop(100%, #3b3c1b));
@@ -924,26 +921,33 @@ a {
   border-right: solid 1px #3a3b1b;
   text-align: left;
 }
-/* line 127, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 #portfolio .sm li p {
   text-align: left;
 }
-/* line 131, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 #portfolio a {
   color: #ff5f29 !important;
 }
-/* line 133, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 #portfolio a:hover {
   color: #ff4100 !important;
   text-decoration: underline;
 }
 
-/* line 140, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 #contact {
   background-color: #b4af91;
 }
 
-/* line 145, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
+.map {
+  width: 600px;
+  height: 320px;
+  margin: 0 0 1em 0;
+}
+
+/* line 146, ../sass/style.scss */
 article ul, article ul li, article ul li ul, article ul li ul li {
   font: 14px/20px "BonvenoCFLight", Arial, sans-serif;
   color: #fbf8e8;
@@ -952,7 +956,7 @@ article ul, article ul li, article ul li ul, article ul li ul li {
   margin-left: 10px;
 }
 
-/* line 156, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 #content {
   width: 100%;
   position: absolute;
@@ -962,7 +966,7 @@ article ul, article ul li, article ul li ul, article ul li ul li {
   margin: auto;
 }
 
-/* line 167, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 section {
   width: 100%;
   -moz-box-shadow: 0px 10px 30px #111;
@@ -972,7 +976,7 @@ section {
   background-repeat: repeat-x, repeat;
   background-position: left top, left top;
 }
-/* line 175, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 section header {
   height: 100%;
   padding: 0px 10px 0px 10px;
@@ -980,23 +984,23 @@ section header {
   cursor: pointer;
   font-weight: bold;
 }
-/* line 181, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 section header h1, section header h2, section header h4 {
-  width: 960px;
+  width: 310px;
   padding: 10px 0 0 0;
   margin-bottom: 14px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 189, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 section nav {
-  width: 750px;
+  width: 280px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 194, ../sass/style.scss */
+/* line 195, ../sass/style.scss */
 section article {
-  width: 830px;
+  width: 300px;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -1008,14 +1012,14 @@ section article {
   -o-transition: height 0.5s;
   /* Opera */
 }
-/* line 204, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 section div.content {
   width: 100%;
   display: none;
   padding-bottom: 20px;
 }
 
-/* line 215, ../sass/style.scss */
+/* line 216, ../sass/style.scss */
 section[id="header"] div.content article p.featureLeft {
   background-image: url("../img/h/home_divide_bg.png");
   width: 60%;
@@ -1024,12 +1028,12 @@ section[id="header"] div.content article p.featureLeft {
   background-position: right top;
 }
 
-/* line 223, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 section[id="header"] div.content article p:first-letter {
   font-size: 28px;
 }
 
-/* line 227, ../sass/style.scss */
+/* line 228, ../sass/style.scss */
 section[id="about"] div.content article p.featureRight {
   background-image: url("../img/h/about_divide_bg.png");
   width: 60%;
@@ -1040,7 +1044,7 @@ section[id="about"] div.content article p.featureRight {
   background-position: left top;
 }
 
-/* line 237, ../sass/style.scss */
+/* line 238, ../sass/style.scss */
 section[id="about"] div.content article p:first-letter {
   font-size: 28px;
 }
@@ -1058,36 +1062,38 @@ section[id="contact"] div.content article p {
 	background-image: url("../img/h/contact_divide_bg.png");
 }
 */
-/* line 253, ../sass/style.scss */
+/* line 254, ../sass/style.scss */
 nav + article {
   margin-top: 25px;
 }
 
-/* line 259, ../sass/style.scss */
+/* line 260, ../sass/style.scss */
 #blogSlider, #portfolioSlider {
-  width: 750px;
+  width: 280px;
   height: 77px;
   top: 4px;
 }
 
-/* line 265, ../sass/style.scss */
+/* line 266, ../sass/style.scss */
 .sm {
-  width: 650px;
+  width: 250px;
   float: left;
   list-style: none;
   height: 100px;
   display: block;
   overflow: hidden;
-  -moz-transition-property: position;
   -webkit-transition-property: position;
+  -moz-transition-property: position;
+  -ms-transition-property: position;
   -o-transition-property: position;
   transition-property: position;
-  -moz-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 275, ../sass/style.scss */
+/* line 276, ../sass/style.scss */
 .sm li {
   padding: 5px 10px 5px 10px;
   float: left;
@@ -1098,34 +1104,36 @@ nav + article {
   border-right: solid 1px #25260d;
   font: 14px/14px "BonvenoCFLight", Arial, sans-serif;
   color: #fbf8e8;
-  -moz-transition-property: width;
   -webkit-transition-property: width;
+  -moz-transition-property: width;
+  -ms-transition-property: width;
   -o-transition-property: width;
   transition-property: width;
-  -moz-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
 
-/* line 290, ../sass/style.scss */
+/* line 291, ../sass/style.scss */
 .title {
   float: left;
   width: 100px;
 }
-/* line 293, ../sass/style.scss */
+/* line 294, ../sass/style.scss */
 .title p {
   font-size: 12px;
   line-height: 16px;
   margin-bottom: 7px;
 }
-/* line 298, ../sass/style.scss */
+/* line 299, ../sass/style.scss */
 .title .date {
   font-size: 11px;
   line-height: 12px;
 }
 
-/* line 304, ../sass/style.scss */
+/* line 305, ../sass/style.scss */
 .description p {
   font-size: 12px;
   line-height: 16px;
@@ -1143,40 +1151,40 @@ nav + article {
   opacity: 0;
 }
 
-/* line 317, ../sass/style.scss */
+/* line 318, ../sass/style.scss */
 #blogNav, #portfolioNav {
   display: inline;
 }
 
-/* line 320, ../sass/style.scss */
+/* line 321, ../sass/style.scss */
 #blogNavForward, #portfolioNavForward {
   float: right;
 }
 
-/* line 323, ../sass/style.scss */
+/* line 324, ../sass/style.scss */
 #blogNavBack, #portfolioNavBack {
   float: left;
 }
 
-/* line 327, ../sass/style.scss */
+/* line 328, ../sass/style.scss */
 .preloader {
   margin: 23px 0 0 43px;
 }
 
-/* line 331, ../sass/style.scss */
+/* line 332, ../sass/style.scss */
 .small-text {
   font-size: 12.8px;
 }
 
-/* line 335, ../sass/style.scss */
+/* line 336, ../sass/style.scss */
 article {
   position: relative;
 }
-/* line 337, ../sass/style.scss */
+/* line 338, ../sass/style.scss */
 article p {
   text-shadow: 2px 2px 8px #000;
 }
-/* line 341, ../sass/style.scss */
+/* line 342, ../sass/style.scss */
 article div.entryMeta {
   position: absolute;
   top: 17px;
@@ -1185,34 +1193,36 @@ article div.entryMeta {
   text-align: right;
 }
 
-/* line 350, ../sass/style.scss */
+/* line 351, ../sass/style.scss */
 #skills {
-  -moz-column-count: 2;
-  -webkit-column-count: 2;
-  -o-column-count: 2;
-  column-count: 2;
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  -o-column-count: 1;
+  column-count: 1;
 }
-/* line 352, ../sass/style.scss */
+/* line 353, ../sass/style.scss */
 #skills li, #skills span {
   color: #fbf8e8;
-  -moz-transition-property: color;
   -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -ms-transition-property: color;
   -o-transition-property: color;
   transition-property: color;
-  -moz-transition-duration: 0.7s;
   -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  -ms-transition-duration: 0.7s;
   -o-transition-duration: 0.7s;
   transition-duration: 0.7s;
 }
-/* line 358, ../sass/style.scss */
+/* line 359, ../sass/style.scss */
 #skills:hover .veryOften {
   color: #fbf8e8;
 }
-/* line 361, ../sass/style.scss */
+/* line 362, ../sass/style.scss */
 #skills:hover .often {
   color: #a7a59a;
 }
-/* line 364, ../sass/style.scss */
+/* line 365, ../sass/style.scss */
 #skills:hover .rare {
   color: #53524d;
 }

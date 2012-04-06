@@ -28,3 +28,30 @@ _____________________________________________________
 COLOURS 
 
 */
+/* line 34, ../sass/992.scss */
+section header h1, section header h2, section header h4 {
+  width: 960px;
+}
+/* line 38, ../sass/992.scss */
+section nav {
+  width: 750px;
+}
+/* line 41, ../sass/992.scss */
+section article {
+  width: 830px;
+}
+
+/* line 46, ../sass/992.scss */
+#blogSlider, #portfolioSlider {
+  width: 750px;
+}
+
+/* line 50, ../sass/992.scss */
+.sm {
+  width: 650px;
+}
+/* line 52, ../sass/992.scss */
+.sm li {
+  padding: 5px 10px 5px 10px;
+  width: 17%;
+}

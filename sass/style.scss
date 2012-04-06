@@ -12,26 +12,26 @@ html {
 	background-position: center top, left top;
 	background-repeat: repeat-y,  ;
 	font: 14px/18px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
-	color: #fbf8e8;
+	color: $base-font-color;
 }
 
 h1 {
 	font: 60px/68px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
-	color: #fbf8e8;
+	color: $base-font-color;
 	font-variant: small-caps;
 	text-shadow: #111 3px 3px 3px;
 	margin-bottom: 0px;
 }
 h2 {
 	font: 40px/48px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
-	color: #fbf8e8;
+	color: $base-font-color;
 	font-variant: small-caps;
 	text-shadow: #111 2px 2px 3px;
 }
 
 h3 {
 	font: 30px/38px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
-	color: #fbf8e8;
+	color: $base-font-color;
 	font-variant: small-caps;
 	text-shadow: #111 1px 1px 2px;
 }
@@ -39,34 +39,30 @@ h3 {
 
 h4 {
 	font: 15px/20px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
-	color: #fbf8e8;
+	color: $base-font-color;
 }
 
 
 h5 {
 	font: 10px/18px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
-	color: #fbf8e8;
+	color: $base-font-color;
 
 }
 
 div {
 	font: 16px/18px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
-	color: #fbf8e8;
+	color: $base-font-color;
 }
 
 p {
 	font: 16px/18px 'BonvenoCFLight', Arial, sans-serif;
 	line-height: 24px;
-	color: #fbf8e8;
+	color: $base-font-color;
 	text-align: left;
 }
 
-.light {
-	color: #fbf8e8;
-}
-
 .dark {
-	color: #2c2b27;
+	color: $base-font-color*0.1;
 	text-shadow: #111 1px 1px 2px;
 }
 
@@ -139,8 +135,13 @@ a {
 
 #contact {
 	background-color: #b4af91;
-}
 
+}
+	.map {
+        width: 600px;
+        height: 320px;
+        margin: 0 0 1em 0;
+    }
 article {
 	ul, ul li, ul li ul, ul li ul li{
 		font: 14px/20px 'BonvenoCFLight', Arial, sans-serif;
@@ -179,7 +180,7 @@ section{
 		cursor: pointer;
 	  	font-weight:bold;
 		h1, h2, h4 {
-			width: 960px;
+			width: 310px;
 			padding: 10px 0 0 0;
 			margin-bottom: 14px;
 			margin-left: auto;
@@ -187,12 +188,12 @@ section{
 		}
 	}
 	nav {
-		width: 750px;
+		width: 280px;
 		margin-left: auto;
 		margin-right: auto;
 	}
 	article {
-		width: 830px;
+		width: 300px;
 		margin-top: 20px;
 		margin-left: auto;
 		margin-right: auto;
@@ -257,14 +258,14 @@ nav+article {
 
 
 #blogSlider, #portfolioSlider { 
-	width: 750px; 
+	width: 280px; 
 	height: 77px; 
 	top: 4px; 
 
 }
 .sm {
 
-	width: 650px;
+	width: 250px;
 	float: left;
 	list-style:none;  
 	height:100px; 
@@ -348,7 +349,7 @@ article {
 }
 
 #skills {
-	@include column-count(2);
+	@include column-count(1);
 	li, span {
 		color: $base-font-color;
 		@include transition-property(color);
@@ -366,6 +367,7 @@ article {
 		}
 	}
 }
+
 
 
 

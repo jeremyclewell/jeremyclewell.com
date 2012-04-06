@@ -112,13 +112,15 @@ $(document).ready(function(){
 			  } 
 		});
 
-	$("#blogSlider .sm li").live("click",  function(evt) {
-		var thisObj = this;
-		$("#blog .content article").animate({opacity: 0}, 200, function() {
-    		$("#blog .content article").html(blogTemplate(blogPosts[blogPageIndex * 5 + $(thisObj).index()]));
-    		$("#blog .content article").animate({opacity: 1}, 200);
-  		});
-	});
+		$("#blogSlider .sm li").live("click",  function(evt) {
+			var thisObj = this;
+			$("#blog .content article").animate({opacity: 0}, 200, function() {
+	    		$("#blog .content article").html(blogTemplate(blogPosts[blogPageIndex * 5 + $(thisObj).index()]));
+	    		$("#blog .content article").animate({opacity: 1}, 200);
+	  		});
+		});
+
+		$("#blog .content article").html(blogTemplate(blogPosts[0]));
 
 	});
 
@@ -161,24 +163,24 @@ $(document).ready(function(){
 			  } 
 		});
 
-	$("#portfolioSlider .sm li").live("click",  function(evt) {
-		var thisObj = this;
-		$("#portfolio .content article").animate({opacity: 0}, 200, function() {
-    		$("#portfolio .content article").html(blogTemplate(portfolioEntries[portfolioIndex * 5 + $(thisObj).index()]));
-    		$("#portfolio .content article").animate({opacity: 1}, 200);
-  		});
-	});
+		$("#portfolioSlider .sm li").live("click",  function(evt) {
+			var thisObj = this;
+			$("#portfolio .content article").animate({opacity: 0}, 200, function() {
+	    		$("#portfolio .content article").html(portfolioTemplate(portfolioEntries[portfolioIndex * 5 + $(thisObj).index()]));
+	    		$("#portfolio .content article").animate({opacity: 1}, 200);
+	  		});
+		});
+
+		$("#portfolio .content article").html(portfolioTemplate(portfolioEntries[0]));
 
 	});
 
-	$(document).ready(function(evt){
+	//$(document).ready(function(evt){
 		$("#header header").next(".content").slideToggle(300).parent("section").siblings("section").children(".content").slideUp(300);
-	});
+	//});
+    
 
 });
-
-
-
 
 
 

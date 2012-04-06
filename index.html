@@ -85,7 +85,7 @@ License: http://creativecommons.org/licenses/MIT
 			</header>
 			<div class="content">
 				<article>
-					<p class="featureLeft">I'm an Interactive Developer living in the suberbs of Philadelphia, PA. I love generative art, dynamic visualization and emergent behavior.</p>
+					<p class="featureLeft">I'm an Interactive Developer living in the suburbs of Philadelphia, PA. I love generative art, dynamic visualization and emergent behavior.</p>
 				</article>
 			</div>	
 		</section>
@@ -98,7 +98,7 @@ License: http://creativecommons.org/licenses/MIT
 			</header>
 			<div class="content">
 				<article>
-					<p class="featureRight">Hah!! I'm deploying!! BonvenoCF Light - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.></p>
+					<p class="featureRight">My father was an artist and I spent my childhood watching him create in his studio. Since that point I myself have had an unending drive to create as well; I feel as though I'm suffocating if I am not generating something new and original. I've spent time working as a screen printer, a book binder, an iron worker, a freelance journalist, a textile designer, a web designer and a web/mobile/game developer.</p>
 					
 					<h3>Skills:</h3>
 					<p class="small-text">I believe that a skillset is something that should remain in constant flux. In recent years I have absorbed, utilized and phased out more technologies than I care to remember.<br />Rollover the list to highlight those more frequently used.</p>
@@ -134,22 +134,28 @@ License: http://creativecommons.org/licenses/MIT
 						<ul>
 							<li>Server-side
 								<ul>
-									<li class="veryOften">Python</li>
+									<li class="veryOften">Python
+										<ul>
+											<li class="veryOften">Python CGI</li>
+											<li class="rare">Django</li>
+											<li class="often">Webpy</li>
+										</ul>
+									</li>
 									<li class="rare">PHP</li>
-									<li class="rare">Node.js</li>
+									<li class="often">Node.js</li>
 									<li><span class="often">MySQL</span>, <span class="veryOften">SQlite</span>, <span class="rare">MongoDB</span></li>
 								</ul>
 							</li>
 							<li>Desktop/Mobile
 								<ul>
 									<li class="veryOften">Objective-C 2.0</li>
-									<li class="rare">C++ - only with Openframeworks</li>
-									<li class="rare">C# - in the context of Unity Scripting</li>
-									<li class="often">Python</li>
+									<li class="often">C++ (Openframeworks)</li>
+									<li class="rare">C# (Unity 3D)</li>
 								</ul>
 							</li>
 							<li>General Scripting/Experimentation
 								<ul>
+									<li class="veryOften">Python</li>
 									<li class="rare">Bash</li>
 									<li class="rare">Scheme</li>
 									<li class="rare">Lua</li>
@@ -242,12 +248,13 @@ License: http://creativecommons.org/licenses/MIT
 					<form action="/node/contact" method="post">
 						<input type="email" placeholder="joe@smith.com" />
 					</form> 
+
 				</article>
 			</div>
 		</section>	
 
 </div>
-
+<div id="watercolor" class="map"></div>
 <!-- <div role="complementary">
 </div>
 
@@ -257,10 +264,12 @@ License: http://creativecommons.org/licenses/MIT
 <!-- Scripts -->
 <script src="js/libs/jquery-1.6.2.min.js"></script>
 <script src="js/plugins.js"></script>
-<script src="js/script.js"></script>
+
 <script src="js/mylibs/helper.js"></script>
 <script src="js/mylibs/handlebars.js"></script>
 <script src="js/mylibs/slidemenu.js"></script>
+<script src="js/script.js"></script>
+        
 
 <!--[if (lt IE 9) & (!IEMobile)]>
 <script src="js/libs/imgsizer.js"></script>
