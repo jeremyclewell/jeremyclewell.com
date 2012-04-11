@@ -81,7 +81,7 @@ License: http://creativecommons.org/licenses/MIT
 		<section id="header">
 			<header>
 				<h1>Jeremy Austin Clewell</h1>
-				<h4>...too many ideas, not enough time!</h4>
+				<h4>I build things that react.</h4>
 			</header>
 			<div class="content">
 				<article>
@@ -89,8 +89,6 @@ License: http://creativecommons.org/licenses/MIT
 				</article>
 			</div>	
 		</section>
-			
-
 
 		<section id="about">
 			<header>
@@ -98,7 +96,7 @@ License: http://creativecommons.org/licenses/MIT
 			</header>
 			<div class="content">
 				<article>
-					<p class="featureRight">My father was an artist and I spent my childhood watching him create in his studio. Since that point I myself have had an unending drive to create as well; I feel as though I'm suffocating if I am not generating something new and original. I've spent time working as a screen printer, a book binder, an iron worker, a freelance journalist, a textile designer, a web designer and a web/mobile/game developer.</p>
+					<p class="featureRight">My father was an artist and I spent my childhood watching him create in his studio. Since that point I myself have had an unending drive to create. I feel as though I'm suffocating if I am not generating something new and original. I've spent time working as a screen printer, a book binder, an iron worker, a freelance journalist, a textile designer, a web designer and a web/mobile/game developer.</p>
 					
 					<h3>Skills:</h3>
 					<p class="small-text">I believe that a skillset is something that should remain in constant flux. In recent years I have absorbed, utilized and phased out more technologies than I care to remember.<br />Rollover the list to highlight those more frequently used.</p>
@@ -234,7 +232,6 @@ License: http://creativecommons.org/licenses/MIT
 				<article>	
 				</article>
 			</div>
-		
 		</section>
 	
 		<section id="contact">
@@ -244,11 +241,22 @@ License: http://creativecommons.org/licenses/MIT
 			</header>
 			<div class="content">
 				<article>
-					<p class="dark">BonvenoCF Light - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p class="featureLeft dark">I'm currently not available for hire on a freelance basis, but am willing to make time for interesting projects. If you have an exciting idea and you'd like to contract me as a developer, please by all means drop me a line and I'll check it out. You can either fill out this form or hit me up at <a href="mailto://jeremy@jeremyclewell.com" title="jeremy@jeremyclewell.com">jeremy@jeremyclewell.com</a>.</p>
 					<form action="/node/contact" method="post">
-						<input type="email" placeholder="joe@smith.com" />
+						<label for="firstName">First Name:</label>
+						<input type="text" name="firstName" />
+						<br class="clearfix" />
+						<label for="lastName">Last Name:</label>
+						<input type="text" />
+						<br />
+						<label for="email">Email:</label>
+						<input type="email"  />
+						<br />
+						<label for="comment">Comment:</label>
+						<textarea type="text" ></textarea>
+						<br />
+						<button type="submit">Submit</button>
 					</form> 
-
 				</article>
 			</div>
 		</section>	
@@ -295,8 +303,7 @@ License: http://creativecommons.org/licenses/MIT
 	<h2 style="width: 600px;">{{title}}</h2>
 	<h4 class="clearfix">{{excerpt}}</h4>
 	<div class="entryMeta">
-	Posted: {{date}}
-	<div >
+		Posted: {{date}}	
 		Categories:
 		{{#each categories}}
 			<a href="" title="{{title}}">{{title}}</a>

@@ -31,18 +31,61 @@ COLOURS
 
 @import "compass";
 
+h1 {
+	font: 60px/68px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
+}
+
 section{
 	header {
 		h1, h2, h4 {
-			width: 960px;
+			width: 760px;
 		}
 	}
 	nav {
-		width: 750px;
+		width: 650px;
 	}
 	article {
-		width: 830px;
+		width: 730px;
 	}
+}
+
+section[id="header"] div.content article p.featureLeft {
+	background-image: url("../img/h/home_divide_bg.png");
+	width: 60%;
+	padding: 0 25px 0 0;
+	background-repeat: repeat-y;
+	background-position: right -8px;
+}
+
+section[id="about"] div.content article p.featureRight {
+	background-image: url("../img/h/about_divide_bg.png");
+	width: 60%;
+	float: right;
+	padding: 5px 0 5px 45px;
+	margin-left: 40%;
+	background-repeat: repeat-y;
+	background-position: left -8px;
+}
+
+section[id="contact"] div.content article {
+	//@include column-count(2);
+}
+
+section[id="contact"] div.content article p.featureLeft {
+	background-image: url("../img/h/contact_divide_bg.png");
+	width: 40%;
+	padding: 0 10% 70px 0;
+	background-repeat: repeat-y;
+	background-position: right -8px;
+}
+
+section[id="contact"] div.content article form {
+	width: 45%;
+	position: absolute;
+	top: 0;
+	padding-top: 10px;
+	margin-left: 50%;
+	float: right;
 }
 
 #blogSlider, #portfolioSlider { 

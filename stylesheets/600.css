@@ -28,35 +28,46 @@ _____________________________________________________
 COLOURS 
 
 */
-/* line 36, ../sass/600.scss */
+/* line 34, ../sass/600.scss */
+h1 {
+  font: 42px/48px "BonvenoCFLight", Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+/* line 40, ../sass/600.scss */
 section header h1, section header h2, section header h4 {
   width: 580px;
 }
-/* line 40, ../sass/600.scss */
+/* line 44, ../sass/600.scss */
 section nav {
   width: 500px;
 }
-/* line 43, ../sass/600.scss */
+/* line 47, ../sass/600.scss */
 section article {
   width: 540px;
 }
 
-/* line 48, ../sass/600.scss */
+/* line 53, ../sass/600.scss */
+section[id="contact"] div.content article form textarea {
+  width: 55%;
+}
+
+/* line 58, ../sass/600.scss */
 #blogSlider, #portfolioSlider {
   width: 500px;
 }
 
-/* line 52, ../sass/600.scss */
+/* line 62, ../sass/600.scss */
 .sm {
   width: 430px;
 }
-/* line 54, ../sass/600.scss */
+/* line 64, ../sass/600.scss */
 .sm li {
   padding: 5px 10px 5px 10px;
   width: 17%;
 }
 
-/* line 60, ../sass/600.scss */
+/* line 70, ../sass/600.scss */
 #skills {
   -webkit-column-count: 1;
   -moz-column-count: 1;

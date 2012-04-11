@@ -28,35 +28,80 @@ _____________________________________________________
 COLOURS 
 
 */
-/* line 36, ../sass/768.scss */
-section header h1, section header h2, section header h4 {
-  width: 960px;
-}
-/* line 40, ../sass/768.scss */
-section nav {
-  width: 750px;
-}
-/* line 43, ../sass/768.scss */
-section article {
-  width: 830px;
+/* line 34, ../sass/768.scss */
+h1 {
+  font: 60px/68px "BonvenoCFLight", Arial, sans-serif;
+  letter-spacing: 0;
 }
 
-/* line 48, ../sass/768.scss */
+/* line 40, ../sass/768.scss */
+section header h1, section header h2, section header h4 {
+  width: 760px;
+}
+/* line 44, ../sass/768.scss */
+section nav {
+  width: 650px;
+}
+/* line 47, ../sass/768.scss */
+section article {
+  width: 730px;
+}
+
+/* line 52, ../sass/768.scss */
+section[id="header"] div.content article p.featureLeft {
+  background-image: url("../img/h/home_divide_bg.png");
+  width: 60%;
+  padding: 0 25px 0 0;
+  background-repeat: repeat-y;
+  background-position: right -8px;
+}
+
+/* line 60, ../sass/768.scss */
+section[id="about"] div.content article p.featureRight {
+  background-image: url("../img/h/about_divide_bg.png");
+  width: 60%;
+  float: right;
+  padding: 5px 0 5px 45px;
+  margin-left: 40%;
+  background-repeat: repeat-y;
+  background-position: left -8px;
+}
+
+/* line 74, ../sass/768.scss */
+section[id="contact"] div.content article p.featureLeft {
+  background-image: url("../img/h/contact_divide_bg.png");
+  width: 40%;
+  padding: 0 10% 70px 0;
+  background-repeat: repeat-y;
+  background-position: right -8px;
+}
+
+/* line 82, ../sass/768.scss */
+section[id="contact"] div.content article form {
+  width: 45%;
+  position: absolute;
+  top: 0;
+  padding-top: 10px;
+  margin-left: 50%;
+  float: right;
+}
+
+/* line 91, ../sass/768.scss */
 #blogSlider, #portfolioSlider {
   width: 750px;
 }
 
-/* line 52, ../sass/768.scss */
+/* line 95, ../sass/768.scss */
 .sm {
   width: 650px;
 }
-/* line 54, ../sass/768.scss */
+/* line 97, ../sass/768.scss */
 .sm li {
   padding: 5px 10px 5px 10px;
   width: 17%;
 }
 
-/* line 60, ../sass/768.scss */
+/* line 103, ../sass/768.scss */
 #skills {
   -webkit-column-count: 2;
   -moz-column-count: 2;

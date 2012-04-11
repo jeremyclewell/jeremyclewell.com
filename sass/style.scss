@@ -16,11 +16,14 @@ html {
 }
 
 h1 {
-	font: 60px/68px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
+	font: 28px/36px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
 	color: $base-font-color;
 	font-variant: small-caps;
 	text-shadow: #111 3px 3px 3px;
 	margin-bottom: 0px;
+	&:nth-character(8) {
+		letter-spacing: 500;
+	}
 }
 h2 {
 	font: 40px/48px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
@@ -55,10 +58,12 @@ div {
 }
 
 p {
-	font: 16px/18px 'BonvenoCFLight', Arial, sans-serif;
-	line-height: 24px;
+	font: 14px/18px 'BonvenoCFLight', Arial, sans-serif;
+	line-height: 22px;
 	color: $base-font-color;
 	text-align: left;
+	//@include column-count(2);
+	//@include column-rule(1px dotted $base-font-color)
 }
 
 .dark {
@@ -73,8 +78,82 @@ a {
 	@include transition-duration(0.3s);
 }
 
+input {
+	cursor: pointer;
+	padding: 3px 5px;
+	font: 15px/20px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
+	color: $base-font-color;
+	margin: 0;
+	background: #F4F4F4;
+	@include background-image(linear-gradient(top, $color-palette-5/1.6 10%, $color-palette-5/1.5 20%, $color-palette-5/1.2 90%));
+	border: 1px solid $color-palette-5/1.3;
+	border-bottom: 1px solid $color-palette-5*1.1;
+	border-top: 1px solid $color-palette-5/2;
+	@include border-radius(5px);
+	width: 55%;
+	margin-bottom: 10px;
+}
+
+label {
+	width: 37%;
+	padding: 6px 10px 0 0;
+	text-align: right;
+	float: left;
+}
+
+textarea {
+	cursor: pointer;
+	padding: 3px 5px;
+	font: 12px/15px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
+	color: $base-font-color;
+	margin: 0;
+
+	background: #F4F4F4;
+	@include background-image(linear-gradient(top, $color-palette-5/1.6 10%, $color-palette-5/1.5 20%, $color-palette-5/1.2 90%));
+
+	border: 1px solid $color-palette-5/1.3;
+	border-bottom: 1px solid $color-palette-5*1.1;
+	border-top: 1px solid $color-palette-5/2;
+
+	@include border-radius(5px);
+
+	width: 55%;
+	height: 100px;
+	margin-top: 10px;
+}
+
+button {
+	cursor: pointer;
+	padding: 3px 5px;
+	font: 15px/20px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
+	color: #333;
+	margin: 0;
+	position: absolute;
+	right: 25px;
+
+	background: #F4F4F4;
+	@include background-image(linear-gradient(top, #BBB, #999));
+ 
+	border: 1px solid $color-palette-5/1.3;
+	border-bottom: 1px solid $color-palette-5/2;
+	border-top: 1px solid $color-palette-5*1.1;
+
+	@include border-radius(7px);
+
+	width: 55%;
+	height: 40px;
+
+	text-align: center;
+	margin: 10px auto;
+
+	&:hover {
+		@include background-image(linear-gradient(top, #999, #BBB));
+	}
+}
+
 #header {
 	background-color: #c03000;
+	//@include background-image(linear-gradient(left, #8c2300 3%, #a62900 20%, #c03000 50%, #a62900 80%, #8c2300 97%));
 }
 
 #about {
@@ -137,11 +216,7 @@ a {
 	background-color: #b4af91;
 
 }
-	.map {
-        width: 600px;
-        height: 320px;
-        margin: 0 0 1em 0;
-    }
+
 article {
 	ul, ul li, ul li ul, ul li ul li{
 		font: 14px/20px 'BonvenoCFLight', Arial, sans-serif;
@@ -149,6 +224,14 @@ article {
 		text-align: left;
 		list-style: circle;
 		margin-left: 10px;
+	}
+		a {
+		text-shadow: 1px 1px 1px #000;
+		color: #ff5f29 !important;
+		&:hover {
+			color: #ff4100 !important;
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -186,6 +269,9 @@ section{
 			margin-left: auto;
 			margin-right: auto;
 		}
+		h1+h4 {
+			padding: 0;
+		}
 	}
 	nav {
 		width: 280px;
@@ -197,6 +283,7 @@ section{
 		margin-top: 20px;
 		margin-left: auto;
 		margin-right: auto;
+		padding: 10px;
 			transition: height 0.5s;
 	-moz-transition: height 0.5s; /* Firefox 4 */
 	-webkit-transition: height 0.5s; /* Safari and Chrome */
@@ -214,11 +301,11 @@ section{
 }
 	
 section[id="header"] div.content article p.featureLeft {
-	background-image: url("../img/h/home_divide_bg.png");
-	width: 60%;
-	padding-right: 25px;
-	background-repeat: repeat-y;
-	background-position: right top;
+	background-image: url("../img/h/home_divide_bg.png"), url("../img/h/home_divide_bg.png");
+	width: 100%;
+	padding: 35px 0 45px 0;
+	background-repeat: repeat-x, repeat-x;
+	background-position: -8px bottom, -8px top;
 }
 
 section[id="header"] div.content article p:first-letter {
@@ -226,18 +313,44 @@ section[id="header"] div.content article p:first-letter {
 }
 
 section[id="about"] div.content article p.featureRight {
-	background-image: url("../img/h/about_divide_bg.png");
-	width: 60%;
-	float: right;
-	padding-left: 35px;
-	margin-left: 40%;
-	background-repeat: repeat-y;
-	background-position: left top;
+	background-image: url("../img/h/about_divide_bg.png"), url("../img/h/about_divide_bg.png");
+	width: 100%;
+	padding: 35px 0 45px 0;
+	background-repeat: repeat-x, repeat-x;
+	background-position: -8px bottom, -8px top;
 }
 
 section[id="about"] div.content article p:first-letter {
 	font-size: 28px;
 }
+
+section[id="contact"] div.content article {
+	height: auto;
+}
+
+section[id="contact"] div.content article p {
+	background-image: url("../img/h/contact_divide_bg.png"), url("../img/h/contact_divide_bg.png");
+	width: 100%;
+	padding: 35px 0 45px 0;
+	background-repeat: repeat-x, repeat-x;
+	background-position: -8px bottom, -8px top;
+}
+
+section[id="contact"] div.content article p:first-letter {
+	font-size: 28px;
+}
+
+section[id="contact"] div.content article form {
+	width: 100%;
+}
+
+section[id="contact"] div.content article form {
+	width: 100%;
+	padding-top: 10px;
+	text-align: center;
+		margin: 10px auto;
+}
+
 /*/////////////////////////////////////////
 section[id="blog"] div.content article p {
 	background-image: url("../img/h/blog_divide_bg.png");
@@ -247,9 +360,7 @@ section[id="portfolio"] div.content article p {
 	background-image: url("../img/h/portfolio_divide_bg.png");
 }
 
-section[id="contact"] div.content article p {
-	background-image: url("../img/h/contact_divide_bg.png");
-}
+
 *///////////////////////////////////////
 nav+article {
 	margin-top: 25px;
@@ -341,6 +452,7 @@ article {
 
 	div.entryMeta {
 		position: absolute;
+		font-size: 12px;
 		top: 17px;
 		right: 0;
 		width: 300px;

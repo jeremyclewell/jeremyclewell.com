@@ -31,6 +31,10 @@ COLOURS
 
 @import "compass";
 
+h1 {
+	font: 42px/48px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
+}
+
 section{
 	header {
 		h1, h2, h4 {
@@ -42,6 +46,12 @@ section{
 	}
 	article {
 		width: 540px;
+	}
+}
+
+section[id="contact"] div.content article form {
+	textarea {
+		width: 55%;
 	}
 }
 
