@@ -8,7 +8,8 @@
 $base-font-size: 16px;
 
 html {
-	background-image: url("../img/h/html_bg_2.png"), url("../img/h/html_bg_1.jpg");
+	//background-image: url("../img/h/html_bg_2.png"), url("../img/h/html_bg_1.jpg");
+	@include background-image( linear-gradient(left, rgba(0, 0, 0, .25) 3%, rgba(0, 0, 0, .1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .1) 80%, rgba(0, 0, 0, .25) 97%), url("../img/h/html_bg_2.png"), url("../img/h/html_bg_1.jpg"));
 	background-position: center top, left top;
 	background-repeat: repeat-y,  ;
 	font: $base-font-size/($base-font-size+6) 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
@@ -159,7 +160,7 @@ footer {
 
 #header {
 	background-color: $color-palette-1;
-	//@include background-image(linear-gradient(left, #8c2300 3%, #a62900 20%, #c03000 50%, #a62900 80%, #8c2300 97%));
+	
 }
 
 #about {
@@ -168,9 +169,9 @@ footer {
 
 #blog {
 	background-color: $color-palette-3;
- 	background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
-	background-repeat: repeat-x, repeat;
-	background-position: left top, left top, left 74px;
+ 	@include background-image( linear-gradient(left, rgba(0, 0, 0, 0.23) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.23) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg"));
+	background-repeat: no-repeat, repeat-x, repeat;
+	background-position: left top, left top, left top, left 74px;
 	text-align: left;
 	.sm li {
 		background-color: #3c3d1c;
@@ -195,9 +196,9 @@ footer {
 
 #portfolio {	
 	background-color: $color-palette-4;
- 	background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
-	background-repeat: repeat-x, repeat;
-	background-position: left top, left top, left 74px;
+ 	@include background-image( linear-gradient(left, rgba(0, 0, 0, 0.23) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.23) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg"));
+	background-repeat: no-repeat, repeat-x, repeat;
+	background-position: left top, left top, left top, left 74px;
 	.sm li {
 		background-color: #434420;
 		@include background-image(url("../img/h/nav_texture.png"), linear-gradient(#494a23 #3b3c1b));
@@ -259,9 +260,10 @@ section{
     -moz-box-shadow: 0px 10px 30px #111;
     -webkit-box-shadow: 0px 10px 30px #111;
     box-shadow: 0px 10px 30px #111;
- 	background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png");
-	background-repeat: repeat-x, repeat;
-	background-position: left top, left top; 
+ 	//background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png");
+ 	@include background-image(linear-gradient(left, rgba(0, 0, 0, 0.23) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.23) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"));
+	background-repeat: repeat, repeat-x, repeat;
+	background-position: left top, left top, left top; 
 	header {
 		height: 100%;
 		padding: 0px 10px 0px 10px;
