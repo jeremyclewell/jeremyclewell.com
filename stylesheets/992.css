@@ -28,30 +28,44 @@ _____________________________________________________
 COLOURS 
 
 */
-/* line 34, ../sass/992.scss */
+/* line 36, ../sass/992.scss */
 section header h1, section header h2, section header h4 {
   width: 960px;
 }
-/* line 38, ../sass/992.scss */
+/* line 40, ../sass/992.scss */
 section nav {
   width: 750px;
 }
-/* line 41, ../sass/992.scss */
+/* line 43, ../sass/992.scss */
 section article {
   width: 830px;
 }
 
-/* line 46, ../sass/992.scss */
+/* line 48, ../sass/992.scss */
 #blogSlider, #portfolioSlider {
   width: 750px;
 }
 
-/* line 50, ../sass/992.scss */
+/* line 52, ../sass/992.scss */
 .sm {
   width: 650px;
 }
-/* line 52, ../sass/992.scss */
+/* line 54, ../sass/992.scss */
 .sm li {
   padding: 5px 10px 5px 10px;
   width: 17%;
+}
+
+/* line 60, ../sass/992.scss */
+#imgTest {
+  width: 100%;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  -o-column-count: 3;
+  column-count: 3;
+}
+/* line 63, ../sass/992.scss */
+#imgTest img {
+  width: 100%;
+  top: 0px;
 }

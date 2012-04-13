@@ -29,6 +29,8 @@ COLOURS
 
 */
 
+@import "compass";
+
 section{
 	header {
 		h1, h2, h4 {
@@ -52,5 +54,14 @@ section{
 	li {
 		padding: 5px 10px 5px 10px;
 		width: 17%;
+	}
+}
+
+#imgTest {
+	width: 100%;
+	@include column-count(3);
+	img {
+		width: 100%;
+		top: 0px;
 	}
 }

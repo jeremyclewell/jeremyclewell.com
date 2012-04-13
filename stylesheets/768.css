@@ -57,6 +57,13 @@ section[id="header"] div.content article p.featureLeft {
 }
 
 /* line 60, ../sass/768.scss */
+#tree {
+  position: absolute;
+  right: 50px;
+  top: 0;
+}
+
+/* line 66, ../sass/768.scss */
 section[id="about"] div.content article p.featureRight {
   background-image: url("../img/h/about_divide_bg.png");
   width: 60%;
@@ -67,7 +74,7 @@ section[id="about"] div.content article p.featureRight {
   background-position: left -8px;
 }
 
-/* line 74, ../sass/768.scss */
+/* line 80, ../sass/768.scss */
 section[id="contact"] div.content article p.featureLeft {
   background-image: url("../img/h/contact_divide_bg.png");
   width: 40%;
@@ -76,7 +83,7 @@ section[id="contact"] div.content article p.featureLeft {
   background-position: right -8px;
 }
 
-/* line 82, ../sass/768.scss */
+/* line 88, ../sass/768.scss */
 section[id="contact"] div.content article form {
   width: 45%;
   position: absolute;
@@ -86,25 +93,39 @@ section[id="contact"] div.content article form {
   float: right;
 }
 
-/* line 91, ../sass/768.scss */
+/* line 97, ../sass/768.scss */
 #blogSlider, #portfolioSlider {
   width: 750px;
 }
 
-/* line 95, ../sass/768.scss */
+/* line 101, ../sass/768.scss */
 .sm {
   width: 650px;
 }
-/* line 97, ../sass/768.scss */
+/* line 103, ../sass/768.scss */
 .sm li {
   padding: 5px 10px 5px 10px;
   width: 17%;
 }
 
-/* line 103, ../sass/768.scss */
+/* line 109, ../sass/768.scss */
 #skills {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   -o-column-count: 2;
   column-count: 2;
+}
+
+/* line 113, ../sass/768.scss */
+#imgTest {
+  width: 100%;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  -o-column-count: 3;
+  column-count: 3;
+}
+/* line 116, ../sass/768.scss */
+#imgTest img {
+  width: 100%;
+  top: 0px;
 }

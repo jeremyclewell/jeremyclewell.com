@@ -6,12 +6,12 @@
 @import "base";
 
 $base-font-size: 16px;
-$base-font-color: #fbf8e8;
+
 html {
 	background-image: url("../img/h/html_bg_2.png"), url("../img/h/html_bg_1.jpg");
 	background-position: center top, left top;
 	background-repeat: repeat-y,  ;
-	font: 14px/18px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
+	font: $base-font-size/($base-font-size+6) 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
 	color: $base-font-color;
 }
 
@@ -22,7 +22,7 @@ h1 {
 	text-shadow: #111 3px 3px 3px;
 	margin-bottom: 0px;
 	&:nth-character(8) {
-		letter-spacing: 500;
+		letter-spacing: 50;
 	}
 }
 h2 {
@@ -58,7 +58,7 @@ div {
 }
 
 p {
-	font: 14px/18px 'BonvenoCFLight', Arial, sans-serif;
+	font: $base-font-size/($base-font-size+6)'BonvenoCFLight', Arial, sans-serif;
 	line-height: 22px;
 	color: $base-font-color;
 	text-align: left;
@@ -85,7 +85,7 @@ input {
 	color: $base-font-color;
 	margin: 0;
 	background: #F4F4F4;
-	@include background-image(linear-gradient(top, $color-palette-5/1.6 10%, $color-palette-5/1.5 20%, $color-palette-5/1.2 90%));
+	@include background-image(linear-gradient(top, $color-palette-5/1.4 10%, $color-palette-5/1.35 20%, $color-palette-5/1.2 90%));
 	border: 1px solid $color-palette-5/1.3;
 	border-bottom: 1px solid $color-palette-5*1.1;
 	border-top: 1px solid $color-palette-5/2;
@@ -109,7 +109,7 @@ textarea {
 	margin: 0;
 
 	background: #F4F4F4;
-	@include background-image(linear-gradient(top, $color-palette-5/1.6 10%, $color-palette-5/1.5 20%, $color-palette-5/1.2 90%));
+	@include background-image(linear-gradient(top, $color-palette-5/1.4 10%, $color-palette-5/1.35 20%, $color-palette-5/1.2 90%));
 
 	border: 1px solid $color-palette-5/1.3;
 	border-bottom: 1px solid $color-palette-5*1.1;
@@ -126,42 +126,48 @@ button {
 	cursor: pointer;
 	padding: 3px 5px;
 	font: 15px/20px 'BonvenoCFLight', Arial, sans-serif;letter-spacing: 0;
-	color: #333;
-	margin: 0;
-	position: absolute;
-	right: 25px;
+	color: $base-font-color;
+	margin: 20px 0 0 38%;
 
-	background: #F4F4F4;
-	@include background-image(linear-gradient(top, #BBB, #999));
+	background: $color-palette-4;
+	@include background-image(linear-gradient(top, $color-palette-4, $color-palette-4*0.8));
  
 	border: 1px solid $color-palette-5/1.3;
 	border-bottom: 1px solid $color-palette-5/2;
 	border-top: 1px solid $color-palette-5*1.1;
 
 	@include border-radius(7px);
-
-	width: 55%;
+	width: 58%;
 	height: 40px;
 
-	text-align: center;
-	margin: 10px auto;
-
 	&:hover {
-		@include background-image(linear-gradient(top, #999, #BBB));
+		@include background-image(linear-gradient(top, $color-palette-4*0.95, $color-palette-4));
+	}
+}
+
+footer {
+	position: absolute;
+	bottom: 0px;
+	left: 5px;
+	p {
+		margin: 0;
+		padding: 0;
+		color: $base-font-color*0.5;
+		font-size: $base-font-size*0.7;
 	}
 }
 
 #header {
-	background-color: #c03000;
+	background-color: $color-palette-1;
 	//@include background-image(linear-gradient(left, #8c2300 3%, #a62900 20%, #c03000 50%, #a62900 80%, #8c2300 97%));
 }
 
 #about {
-	background-color: #32331d;
+	background-color: $color-palette-2;
 }
 
 #blog {
-	background-color: #40411e;
+	background-color: $color-palette-3;
  	background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
 	background-repeat: repeat-x, repeat;
 	background-position: left top, left top, left 74px;
@@ -188,7 +194,7 @@ button {
 }
 
 #portfolio {	
-	background-color: #787746;
+	background-color: $color-palette-4;
  	background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
 	background-repeat: repeat-x, repeat;
 	background-position: left top, left top, left 74px;
@@ -213,7 +219,7 @@ button {
 }
 
 #contact {
-	background-color: #b4af91;
+	background-color: $color-palette-5;
 
 }
 
@@ -277,6 +283,9 @@ section{
 		width: 280px;
 		margin-left: auto;
 		margin-right: auto;
+		ul {
+			width: 280px;
+		}
 	}
 	article {
 		width: 300px;
@@ -284,16 +293,18 @@ section{
 		margin-left: auto;
 		margin-right: auto;
 		padding: 10px;
-			transition: height 0.5s;
-	-moz-transition: height 0.5s; /* Firefox 4 */
-	-webkit-transition: height 0.5s; /* Safari and Chrome */
-	-o-transition: height 0.5s; /* Opera */
+		@include transition-property(height);
+		@include transition-duration(0.5s);
 	}
 	div.content {	
 		width: 100%;
 		display:none;
 		padding-bottom: 20px;
-		article p {
+		article {
+			p, a {
+				font-size: $base-font-size/1.2;
+				line-height: $base-font-size*1.2;
+			}
 			
 		}
 	}
@@ -310,6 +321,11 @@ section[id="header"] div.content article p.featureLeft {
 
 section[id="header"] div.content article p:first-letter {
 	font-size: 28px;
+}
+
+#tree {
+	margin: 0 auto;
+	text-align: center;
 }
 
 section[id="about"] div.content article p.featureRight {
@@ -369,14 +385,15 @@ nav+article {
 
 
 #blogSlider, #portfolioSlider { 
-	width: 280px; 
+	//width: 290px; 
+	width: 750px; 
 	height: 77px; 
 	top: 4px; 
-
 }
+
 .sm {
 
-	width: 250px;
+	width: 650px;
 	float: left;
 	list-style:none;  
 	height:100px; 
@@ -477,6 +494,15 @@ article {
 		.rare {
 			color: $base-font-color/3;
 		}
+	}
+}
+
+#imgTest {
+	width: 100%;
+	@include column-count(1);
+	img {
+		width: 100%;
+		top: 0px;
 	}
 }
 

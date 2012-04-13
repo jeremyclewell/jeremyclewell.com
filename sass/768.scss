@@ -57,6 +57,12 @@ section[id="header"] div.content article p.featureLeft {
 	background-position: right -8px;
 }
 
+#tree {
+	position: absolute;
+	right: 50px;
+	top: 0;
+}
+
 section[id="about"] div.content article p.featureRight {
 	background-image: url("../img/h/about_divide_bg.png");
 	width: 60%;
@@ -102,4 +108,13 @@ section[id="contact"] div.content article form {
 
 #skills {
 	@include column-count(2);
+}
+
+#imgTest {
+	width: 100%;
+	@include column-count(3);
+	img {
+		width: 100%;
+		top: 0px;
+	}
 }

@@ -55,12 +55,11 @@ section[id="contact"] div.content article form {
 	}
 }
 
-#blogSlider, #portfolioSlider { 
-	width: 500px; 
-}
+
+
 
 .sm {
-	width: 430px;
+	//width: 430px;
 	li {
 		padding: 5px 10px 5px 10px;
 		width: 17%;
@@ -69,4 +68,16 @@ section[id="contact"] div.content article form {
 
 #skills {
 	@include column-count(1);
+}
+
+#imgTest {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	
+	img {
+		width: 80%;
+
+		top: 0px;
+	}
 }

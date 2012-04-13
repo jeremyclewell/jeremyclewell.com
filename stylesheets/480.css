@@ -47,25 +47,30 @@ section article {
   width: 420px;
 }
 
-/* line 52, ../sass/480.scss */
-#blogSlider, #portfolioSlider {
-  width: 400px;
-}
-
 /* line 56, ../sass/480.scss */
-.sm {
-  width: 320px;
-}
-/* line 58, ../sass/480.scss */
 .sm li {
   padding: 5px 10px 5px 10px;
   width: 17%;
 }
 
-/* line 64, ../sass/480.scss */
+/* line 62, ../sass/480.scss */
 #skills {
   -webkit-column-count: 1;
   -moz-column-count: 1;
   -o-column-count: 1;
   column-count: 1;
+}
+
+/* line 66, ../sass/480.scss */
+#imgTest {
+  width: 100%;
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  -o-column-count: 1;
+  column-count: 1;
+}
+/* line 69, ../sass/480.scss */
+#imgTest img {
+  width: 100%;
+  top: 0px;
 }

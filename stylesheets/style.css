@@ -773,7 +773,7 @@ html {
   background-image: url("../img/h/html_bg_2.png"), url("../img/h/html_bg_1.jpg");
   background-position: center top, left top;
   background-repeat: repeat-y,;
-  font: 14px/18px "BonvenoCFLight", Arial, sans-serif;
+  font: 0.727 "BonvenoCFLight", Arial, sans-serif;
   letter-spacing: 0;
   color: #fbf8e8;
 }
@@ -789,7 +789,7 @@ h1 {
 }
 /* line 24, ../sass/style.scss */
 h1:nth-character(8) {
-  letter-spacing: 500;
+  letter-spacing: 50;
 }
 
 /* line 28, ../sass/style.scss */
@@ -833,7 +833,7 @@ div {
 
 /* line 60, ../sass/style.scss */
 p {
-  font: 14px/18px "BonvenoCFLight", Arial, sans-serif;
+  font: 0.727 "BonvenoCFLight", Arial, sans-serif;
   line-height: 22px;
   color: #fbf8e8;
   text-align: left;
@@ -870,12 +870,12 @@ input {
   color: #fbf8e8;
   margin: 0;
   background: #F4F4F4;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(10%, #706d5a), color-stop(20%, #787460), color-stop(90%, #969178));
-  background-image: -webkit-linear-gradient(top, #706d5a 10%, #787460 20%, #969178 90%);
-  background-image: -moz-linear-gradient(top, #706d5a 10%, #787460 20%, #969178 90%);
-  background-image: -o-linear-gradient(top, #706d5a 10%, #787460 20%, #969178 90%);
-  background-image: -ms-linear-gradient(top, #706d5a 10%, #787460 20%, #969178 90%);
-  background-image: linear-gradient(top, #706d5a 10%, #787460 20%, #969178 90%);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(10%, #807d67), color-stop(20%, #85816b), color-stop(90%, #969178));
+  background-image: -webkit-linear-gradient(top, #807d67 10%, #85816b 20%, #969178 90%);
+  background-image: -moz-linear-gradient(top, #807d67 10%, #85816b 20%, #969178 90%);
+  background-image: -o-linear-gradient(top, #807d67 10%, #85816b 20%, #969178 90%);
+  background-image: -ms-linear-gradient(top, #807d67 10%, #85816b 20%, #969178 90%);
+  background-image: linear-gradient(top, #807d67 10%, #85816b 20%, #969178 90%);
   border: 1px solid #8a866f;
   border-bottom: 1px solid #c6c09f;
   border-top: 1px solid #5a5748;
@@ -905,12 +905,12 @@ textarea {
   color: #fbf8e8;
   margin: 0;
   background: #F4F4F4;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(10%, #706d5a), color-stop(20%, #787460), color-stop(90%, #969178));
-  background-image: -webkit-linear-gradient(top, #706d5a 10%, #787460 20%, #969178 90%);
-  background-image: -moz-linear-gradient(top, #706d5a 10%, #787460 20%, #969178 90%);
-  background-image: -o-linear-gradient(top, #706d5a 10%, #787460 20%, #969178 90%);
-  background-image: -ms-linear-gradient(top, #706d5a 10%, #787460 20%, #969178 90%);
-  background-image: linear-gradient(top, #706d5a 10%, #787460 20%, #969178 90%);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(10%, #807d67), color-stop(20%, #85816b), color-stop(90%, #969178));
+  background-image: -webkit-linear-gradient(top, #807d67 10%, #85816b 20%, #969178 90%);
+  background-image: -moz-linear-gradient(top, #807d67 10%, #85816b 20%, #969178 90%);
+  background-image: -o-linear-gradient(top, #807d67 10%, #85816b 20%, #969178 90%);
+  background-image: -ms-linear-gradient(top, #807d67 10%, #85816b 20%, #969178 90%);
+  background-image: linear-gradient(top, #807d67 10%, #85816b 20%, #969178 90%);
   border: 1px solid #8a866f;
   border-bottom: 1px solid #c6c09f;
   border-top: 1px solid #5a5748;
@@ -930,17 +930,15 @@ button {
   padding: 3px 5px;
   font: 15px/20px "BonvenoCFLight", Arial, sans-serif;
   letter-spacing: 0;
-  color: #333;
-  margin: 0;
-  position: absolute;
-  right: 25px;
-  background: #F4F4F4;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bbbbbb), color-stop(100%, #999999));
-  background-image: -webkit-linear-gradient(top, #bbbbbb, #999999);
-  background-image: -moz-linear-gradient(top, #bbbbbb, #999999);
-  background-image: -o-linear-gradient(top, #bbbbbb, #999999);
-  background-image: -ms-linear-gradient(top, #bbbbbb, #999999);
-  background-image: linear-gradient(top, #bbbbbb, #999999);
+  color: #fbf8e8;
+  margin: 20px 0 0 38%;
+  background: #787746;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #787746), color-stop(100%, #605f38));
+  background-image: -webkit-linear-gradient(top, #787746, #605f38);
+  background-image: -moz-linear-gradient(top, #787746, #605f38);
+  background-image: -o-linear-gradient(top, #787746, #605f38);
+  background-image: -ms-linear-gradient(top, #787746, #605f38);
+  background-image: linear-gradient(top, #787746, #605f38);
   border: 1px solid #8a866f;
   border-bottom: 1px solid #5a5748;
   border-top: 1px solid #c6c09f;
@@ -949,32 +947,44 @@ button {
   -ms-border-radius: 7px;
   -o-border-radius: 7px;
   border-radius: 7px;
-  width: 55%;
+  width: 58%;
   height: 40px;
-  text-align: center;
-  margin: 10px auto;
 }
-/* line 149, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 button:hover {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #999999), color-stop(100%, #bbbbbb));
-  background-image: -webkit-linear-gradient(top, #999999, #bbbbbb);
-  background-image: -moz-linear-gradient(top, #999999, #bbbbbb);
-  background-image: -o-linear-gradient(top, #999999, #bbbbbb);
-  background-image: -ms-linear-gradient(top, #999999, #bbbbbb);
-  background-image: linear-gradient(top, #999999, #bbbbbb);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #727142), color-stop(100%, #787746));
+  background-image: -webkit-linear-gradient(top, #727142, #787746);
+  background-image: -moz-linear-gradient(top, #727142, #787746);
+  background-image: -o-linear-gradient(top, #727142, #787746);
+  background-image: -ms-linear-gradient(top, #727142, #787746);
+  background-image: linear-gradient(top, #727142, #787746);
 }
 
-/* line 154, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
+footer {
+  position: absolute;
+  bottom: 0px;
+  left: 5px;
+}
+/* line 152, ../sass/style.scss */
+footer p {
+  margin: 0;
+  padding: 0;
+  color: #7d7c74;
+  font-size: 11.2px;
+}
+
+/* line 160, ../sass/style.scss */
 #header {
   background-color: #c03000;
 }
 
-/* line 159, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 #about {
   background-color: #32331d;
 }
 
-/* line 163, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 #blog {
   background-color: #40411e;
   background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
@@ -982,7 +992,7 @@ button:hover {
   background-position: left top, left top, left 74px;
   text-align: left;
 }
-/* line 169, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 #blog .sm li {
   background-color: #3c3d1c;
   background-image: url("../img/h/nav_texture.png"), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #787746), color-stop(100%, #646334));
@@ -997,28 +1007,28 @@ button:hover {
   border-top: solid 1px #353619;
   text-align: left;
 }
-/* line 177, ../sass/style.scss */
+/* line 183, ../sass/style.scss */
 #blog .sm li p {
   text-align: left;
 }
-/* line 181, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 #blog a {
   color: #ff4100 !important;
 }
-/* line 183, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 #blog a:hover {
   color: #ff7b4e !important;
   text-decoration: underline;
 }
 
-/* line 190, ../sass/style.scss */
+/* line 196, ../sass/style.scss */
 #portfolio {
   background-color: #787746;
   background-image: url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
   background-repeat: repeat-x, repeat;
   background-position: left top, left top, left 74px;
 }
-/* line 195, ../sass/style.scss */
+/* line 201, ../sass/style.scss */
 #portfolio .sm li {
   background-color: #434420;
   background-image: url("../img/h/nav_texture.png"), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #494a23), color-stop(100%, #3b3c1b));
@@ -1032,26 +1042,26 @@ button:hover {
   border-right: solid 1px #3a3b1b;
   text-align: left;
 }
-/* line 202, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 #portfolio .sm li p {
   text-align: left;
 }
-/* line 206, ../sass/style.scss */
+/* line 212, ../sass/style.scss */
 #portfolio a {
   color: #ff5f29 !important;
 }
-/* line 208, ../sass/style.scss */
+/* line 214, ../sass/style.scss */
 #portfolio a:hover {
   color: #ff4100 !important;
   text-decoration: underline;
 }
 
-/* line 215, ../sass/style.scss */
+/* line 221, ../sass/style.scss */
 #contact {
   background-color: #b4af91;
 }
 
-/* line 221, ../sass/style.scss */
+/* line 227, ../sass/style.scss */
 article ul, article ul li, article ul li ul, article ul li ul li {
   font: 14px/20px "BonvenoCFLight", Arial, sans-serif;
   color: #fbf8e8;
@@ -1059,18 +1069,18 @@ article ul, article ul li, article ul li ul, article ul li ul li {
   list-style: circle;
   margin-left: 10px;
 }
-/* line 228, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 article a {
   text-shadow: 1px 1px 1px #000;
   color: #ff5f29 !important;
 }
-/* line 231, ../sass/style.scss */
+/* line 237, ../sass/style.scss */
 article a:hover {
   color: #ff4100 !important;
   text-decoration: underline;
 }
 
-/* line 240, ../sass/style.scss */
+/* line 246, ../sass/style.scss */
 #content {
   width: 100%;
   position: absolute;
@@ -1080,7 +1090,7 @@ article a:hover {
   margin: auto;
 }
 
-/* line 251, ../sass/style.scss */
+/* line 257, ../sass/style.scss */
 section {
   width: 100%;
   -moz-box-shadow: 0px 10px 30px #111;
@@ -1090,7 +1100,7 @@ section {
   background-repeat: repeat-x, repeat;
   background-position: left top, left top;
 }
-/* line 259, ../sass/style.scss */
+/* line 265, ../sass/style.scss */
 section header {
   height: 100%;
   padding: 0px 10px 0px 10px;
@@ -1098,7 +1108,7 @@ section header {
   cursor: pointer;
   font-weight: bold;
 }
-/* line 265, ../sass/style.scss */
+/* line 271, ../sass/style.scss */
 section header h1, section header h2, section header h4 {
   width: 310px;
   padding: 10px 0 0 0;
@@ -1106,39 +1116,51 @@ section header h1, section header h2, section header h4 {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 272, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 section header h1 + h4 {
   padding: 0;
 }
-/* line 276, ../sass/style.scss */
+/* line 282, ../sass/style.scss */
 section nav {
   width: 280px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 281, ../sass/style.scss */
+/* line 286, ../sass/style.scss */
+section nav ul {
+  width: 280px;
+}
+/* line 290, ../sass/style.scss */
 section article {
   width: 300px;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
-  transition: height 0.5s;
-  -moz-transition: height 0.5s;
-  /* Firefox 4 */
-  -webkit-transition: height 0.5s;
-  /* Safari and Chrome */
-  -o-transition: height 0.5s;
-  /* Opera */
+  -webkit-transition-property: height;
+  -moz-transition-property: height;
+  -ms-transition-property: height;
+  -o-transition-property: height;
+  transition-property: height;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
-/* line 292, ../sass/style.scss */
+/* line 299, ../sass/style.scss */
 section div.content {
   width: 100%;
   display: none;
   padding-bottom: 20px;
 }
+/* line 304, ../sass/style.scss */
+section div.content article p, section div.content article a {
+  font-size: 13.333px;
+  line-height: 19.2px;
+}
 
-/* line 303, ../sass/style.scss */
+/* line 314, ../sass/style.scss */
 section[id="header"] div.content article p.featureLeft {
   background-image: url("../img/h/home_divide_bg.png"), url("../img/h/home_divide_bg.png");
   width: 100%;
@@ -1147,12 +1169,18 @@ section[id="header"] div.content article p.featureLeft {
   background-position: -8px bottom, -8px top;
 }
 
-/* line 311, ../sass/style.scss */
+/* line 322, ../sass/style.scss */
 section[id="header"] div.content article p:first-letter {
   font-size: 28px;
 }
 
-/* line 315, ../sass/style.scss */
+/* line 326, ../sass/style.scss */
+#tree {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 331, ../sass/style.scss */
 section[id="about"] div.content article p.featureRight {
   background-image: url("../img/h/about_divide_bg.png"), url("../img/h/about_divide_bg.png");
   width: 100%;
@@ -1161,17 +1189,17 @@ section[id="about"] div.content article p.featureRight {
   background-position: -8px bottom, -8px top;
 }
 
-/* line 323, ../sass/style.scss */
+/* line 339, ../sass/style.scss */
 section[id="about"] div.content article p:first-letter {
   font-size: 28px;
 }
 
-/* line 327, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 section[id="contact"] div.content article {
   height: auto;
 }
 
-/* line 331, ../sass/style.scss */
+/* line 347, ../sass/style.scss */
 section[id="contact"] div.content article p {
   background-image: url("../img/h/contact_divide_bg.png"), url("../img/h/contact_divide_bg.png");
   width: 100%;
@@ -1180,17 +1208,17 @@ section[id="contact"] div.content article p {
   background-position: -8px bottom, -8px top;
 }
 
-/* line 339, ../sass/style.scss */
+/* line 355, ../sass/style.scss */
 section[id="contact"] div.content article p:first-letter {
   font-size: 28px;
 }
 
-/* line 343, ../sass/style.scss */
+/* line 359, ../sass/style.scss */
 section[id="contact"] div.content article form {
   width: 100%;
 }
 
-/* line 347, ../sass/style.scss */
+/* line 363, ../sass/style.scss */
 section[id="contact"] div.content article form {
   width: 100%;
   padding-top: 10px;
@@ -1209,21 +1237,21 @@ section[id="portfolio"] div.content article p {
 
 
 */
-/* line 365, ../sass/style.scss */
+/* line 381, ../sass/style.scss */
 nav + article {
   margin-top: 25px;
 }
 
-/* line 371, ../sass/style.scss */
+/* line 387, ../sass/style.scss */
 #blogSlider, #portfolioSlider {
-  width: 280px;
+  width: 750px;
   height: 77px;
   top: 4px;
 }
 
-/* line 377, ../sass/style.scss */
+/* line 394, ../sass/style.scss */
 .sm {
-  width: 250px;
+  width: 650px;
   float: left;
   list-style: none;
   height: 100px;
@@ -1240,7 +1268,7 @@ nav + article {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 387, ../sass/style.scss */
+/* line 404, ../sass/style.scss */
 .sm li {
   padding: 5px 10px 5px 10px;
   float: left;
@@ -1263,24 +1291,24 @@ nav + article {
   transition-duration: 0.5s;
 }
 
-/* line 402, ../sass/style.scss */
+/* line 419, ../sass/style.scss */
 .title {
   float: left;
   width: 100px;
 }
-/* line 405, ../sass/style.scss */
+/* line 422, ../sass/style.scss */
 .title p {
   font-size: 12px;
   line-height: 16px;
   margin-bottom: 7px;
 }
-/* line 410, ../sass/style.scss */
+/* line 427, ../sass/style.scss */
 .title .date {
   font-size: 11px;
   line-height: 12px;
 }
 
-/* line 416, ../sass/style.scss */
+/* line 433, ../sass/style.scss */
 .description p {
   font-size: 12px;
   line-height: 16px;
@@ -1298,40 +1326,40 @@ nav + article {
   opacity: 0;
 }
 
-/* line 429, ../sass/style.scss */
+/* line 446, ../sass/style.scss */
 #blogNav, #portfolioNav {
   display: inline;
 }
 
-/* line 432, ../sass/style.scss */
+/* line 449, ../sass/style.scss */
 #blogNavForward, #portfolioNavForward {
   float: right;
 }
 
-/* line 435, ../sass/style.scss */
+/* line 452, ../sass/style.scss */
 #blogNavBack, #portfolioNavBack {
   float: left;
 }
 
-/* line 439, ../sass/style.scss */
+/* line 456, ../sass/style.scss */
 .preloader {
   margin: 23px 0 0 43px;
 }
 
-/* line 443, ../sass/style.scss */
+/* line 460, ../sass/style.scss */
 .small-text {
   font-size: 12.8px;
 }
 
-/* line 447, ../sass/style.scss */
+/* line 464, ../sass/style.scss */
 article {
   position: relative;
 }
-/* line 449, ../sass/style.scss */
+/* line 466, ../sass/style.scss */
 article p {
   text-shadow: 2px 2px 8px #000;
 }
-/* line 453, ../sass/style.scss */
+/* line 470, ../sass/style.scss */
 article div.entryMeta {
   position: absolute;
   font-size: 12px;
@@ -1341,14 +1369,14 @@ article div.entryMeta {
   text-align: right;
 }
 
-/* line 463, ../sass/style.scss */
+/* line 480, ../sass/style.scss */
 #skills {
   -webkit-column-count: 1;
   -moz-column-count: 1;
   -o-column-count: 1;
   column-count: 1;
 }
-/* line 465, ../sass/style.scss */
+/* line 482, ../sass/style.scss */
 #skills li, #skills span {
   color: #fbf8e8;
   -webkit-transition-property: color;
@@ -1362,15 +1390,29 @@ article div.entryMeta {
   -o-transition-duration: 0.7s;
   transition-duration: 0.7s;
 }
-/* line 471, ../sass/style.scss */
+/* line 488, ../sass/style.scss */
 #skills:hover .veryOften {
   color: #fbf8e8;
 }
-/* line 474, ../sass/style.scss */
+/* line 491, ../sass/style.scss */
 #skills:hover .often {
   color: #a7a59a;
 }
-/* line 477, ../sass/style.scss */
+/* line 494, ../sass/style.scss */
 #skills:hover .rare {
   color: #53524d;
+}
+
+/* line 500, ../sass/style.scss */
+#imgTest {
+  width: 100%;
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  -o-column-count: 1;
+  column-count: 1;
+}
+/* line 503, ../sass/style.scss */
+#imgTest img {
+  width: 100%;
+  top: 0px;
 }

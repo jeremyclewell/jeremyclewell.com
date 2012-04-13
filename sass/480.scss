@@ -49,12 +49,10 @@ section{
 	}
 }
 
-#blogSlider, #portfolioSlider { 
-	width: 400px; 
-}
+
 
 .sm {
-	width: 320px;
+	//width: 320px;
 	li {
 		padding: 5px 10px 5px 10px;
 		width: 17%;
@@ -63,4 +61,13 @@ section{
 
 #skills {
 	@include column-count(1);
+}
+
+#imgTest {
+	width: 100%;
+	@include column-count(1);
+	img {
+		width: 100%;
+		top: 0px;
+	}
 }

@@ -85,8 +85,18 @@ License: http://creativecommons.org/licenses/MIT
 			</header>
 			<div class="content">
 				<article>
-					<p class="featureLeft">I'm an Interactive Developer living in the suburbs of Philadelphia, PA. I love generative art, dynamic visualization and emergent behavior.</p>
-				</article>
+					<p class="featureLeft">I'm an Interactive Developer. I live in the woods next to a river. I have a wife and a daughter; they are the inspiration for everything I do. I love generative art; I love dynamic visualization; I love emergent behavior. I believe there is pattern and form within all things and that it is beautiful.</p>
+					<div id="tree">
+ 						<img src="img/h/tree.png" />
+ 					</div>
+ 
+ 	<!-- <div id="imgTest">
+ 				<img src="img/BSR2010-1.png" /><br />
+ 				<img src="img/BSR2009-1.png" /><br />
+ 				<img src="img/G2BM-1.png" />
+ 			</div>		 -->
+ 		</article>
+ 			
 			</div>	
 		</section>
 
@@ -241,7 +251,7 @@ License: http://creativecommons.org/licenses/MIT
 			</header>
 			<div class="content">
 				<article>
-					<p class="featureLeft dark">I'm currently not available for hire on a freelance basis, but am willing to make time for interesting projects. If you have an exciting idea and you'd like to contract me as a developer, please by all means drop me a line and I'll check it out. You can either fill out this form or hit me up at <a href="mailto://jeremy@jeremyclewell.com" title="jeremy@jeremyclewell.com">jeremy@jeremyclewell.com</a>.</p>
+					<p class="featureLeft">I'm currently not available for hire on a freelance basis, but am willing to make time for interesting projects. If you have an exciting idea and you'd like to contract me as a developer, please by all means drop me a line and I'll check it out. You can either fill out this form or hit me up at <a href="mailto://jeremy@jeremyclewell.com" title="jeremy@jeremyclewell.com">jeremy@jeremyclewell.com</a>.</p>
 					<form action="/node/contact" method="post">
 						<label for="firstName">First Name:</label>
 						<input type="text" name="firstName" />
@@ -255,7 +265,7 @@ License: http://creativecommons.org/licenses/MIT
 						<label for="comment">Comment:</label>
 						<textarea type="text" ></textarea>
 						<br />
-						<button type="submit">Submit</button>
+						<button type="submit" class="clearfix" >Submit</button>
 					</form> 
 				</article>
 			</div>
@@ -265,9 +275,10 @@ License: http://creativecommons.org/licenses/MIT
 <div id="watercolor" class="map"></div>
 <!-- <div role="complementary">
 </div>
-
+-->
 <footer role="contentinfo" class="clearfix">
-</footer> -->
+	<!-- <p>© 2012 Jeremy Clewell</p> -->
+</footer> 
 
 <!-- Scripts -->
 <script src="js/libs/jquery-1.6.2.min.js"></script>
@@ -300,22 +311,25 @@ License: http://creativecommons.org/licenses/MIT
 </script>
 
 <script id="blog-template" type="text/x-handlebars-template">
-	<h2 style="width: 600px;">{{title}}</h2>
-	<h4 class="clearfix">{{excerpt}}</h4>
-	<div class="entryMeta">
-		Posted: {{date}}	
-		Categories:
-		{{#each categories}}
-			<a href="" title="{{title}}">{{title}}</a>
-		{{/each}}
-	</div>
-	<div >
-		Tags:
-		{{#each tags}}
-			<a href="" title="{{title}}">{{title}}</a>
-		{{/each}}
-	</div>
-	</div>
+	<header>
+		<h2>{{title}}</h2>
+		<p class="clearfix">{{excerpt}}</p>
+		<div class="entryMeta">
+		<div>
+			Posted: {{date}}	
+			Categories:
+			{{#each categories}}
+				<a href="" title="{{title}}">{{title}}</a>
+			{{/each}}
+		</div>
+		<div >
+			Tags:
+			{{#each tags}}
+				<a href="" title="{{title}}">{{title}}</a>
+			{{/each}}
+		</div>
+		</div>
+	</header>
 	<hr>
 	{{{content}}}
 </script>
