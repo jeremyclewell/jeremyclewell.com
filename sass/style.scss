@@ -244,11 +244,11 @@ article {
 
 body {
 
-	-webkit-perspective: 1200;
-	-webkit-perspective-origin: 50% 200px;
+//	-webkit-perspective: 1200;
+//	-webkit-perspective-origin: 50% 200px;
 
-	-moz-perspective: 1200;
-	-moz-perspective-origin: 50% 200px;
+//	-moz-perspective: 1200;
+//	-moz-perspective-origin: 50% 200px;
 
 
 
@@ -259,26 +259,26 @@ body {
 	#content {
 		position: relative;
 		margin: 50px auto 0;
-		-webkit-transition: -webkit-transform 2s linear;
-		-webkit-transform-style: preserve-3d;
+//		-webkit-transition: -webkit-transform 2s linear;
+//		-webkit-transform-style: preserve-3d;
 		section {
-			-webkit-transition: -webkit-transform 2s linear;
-			//-webkit-transform: translateZ(300px);
+//			-webkit-transition: -webkit-transform 2s linear;
+//			-webkit-transform: translateZ(300px);
 			//@include translateZ(300px);
 			//@include rotateY(0deg);
 			
 		}
 		
 		&.rotate section{
-				-webkit-transform: rotateY(-90deg);
+//				-webkit-transform: rotateY(90deg);
 				//@include rotateY(-90deg);
 			}	
 		#heroImg {
-			-webkit-transform: rotateY(-90deg) translateZ(300px);
+//			-webkit-transform: rotateY(-90deg) translateZ(300px);
 		//	@include translateZ(300px);
 		//	@include rotateY(90deg);
 			&.rotate {
-				-webkit-transform: rotateY(90deg);
+//				-webkit-transform: rotateY(90deg);
 //				@include rotateY(-90deg);
 			}
 		
@@ -406,7 +406,7 @@ section{
 }
 	
 section[id="header"] div.content article p.featureLeft {
-	background-image: url("../img/h/home_divide_bg.svg"), url("../img/h/home_divide_bg.svg");
+	background-image: url("../img/h/home_divide_bg.png"), url("../img/h/home_divide_bg.png");
 	width: 100%;
 	padding: 35px 0 45px 0;
 	background-repeat: repeat-x, repeat-x;
@@ -422,7 +422,7 @@ section[id="header"] div.content article p:first-letter {
 	text-align: center;
 	//width: 300px; 
 	//height: 300px;
-	background-image: url(../img/h/tree.svg);
+	//background-image: url(../img/h/tree.svg);
 }
 
 #cv {
@@ -433,7 +433,7 @@ section[id="header"] div.content article p:first-letter {
 }
 
 section[id="about"] div.content article p.featureRight {
-	background-image: url("../img/h/about_divide_bg.svg"), url("../img/h/about_divide_bg.svg");
+	background-image: url("../img/h/about_divide_bg.png"), url("../img/h/about_divide_bg.png");
 	width: 100%;
 	padding: 35px 0 45px 0;
 	background-repeat: repeat-x, repeat-x;

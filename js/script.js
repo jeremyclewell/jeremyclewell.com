@@ -29,13 +29,13 @@ $(document).ready(function(){
 	}
 
 	$(".imgWithHero").live("click", function(evt) {
-		$("#content").toggleClass("rotate");
+	//	$("#content").toggleClass("rotate");
 	//	$("#heroImg").attr("src", $(evt.currentTarget).attr("data-src"));
 	});
 
 	$("#heroImg").live("click", function(evt) {
 		console.log("fbdhsjfbds");
-		$("#content").toggleClass("rotate");
+	//	$("#content").toggleClass("rotate");
 	});
 	
 	$("section header").click(function()
