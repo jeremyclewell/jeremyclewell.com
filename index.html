@@ -75,7 +75,7 @@ License: http://creativecommons.org/licenses/MIT
 </head>
 
 <body class="clearfix">
-
+<img id="heroImg"  />
 <div id="content" role="main">
 
 		<section id="header">
@@ -90,14 +90,15 @@ License: http://creativecommons.org/licenses/MIT
  						<img src="img/h/tree.png" />
  					</div>
  
- 	<!-- <div id="imgTest">
- 				<img src="img/BSR2010-1.png" /><br />
- 				<img src="img/BSR2009-1.png" /><br />
- 				<img src="img/G2BM-1.png" />
- 			</div>		 -->
+ 	 <div id="imgTest">
+ 				<img class="imgWithHero" data-src="img/BSR2010-1.png" src="img/BSR2010-1.png" /><br />
+ 				<img class="imgWithHero" data-src="img/BSR2009-1.png" src="img/BSR2009-1.png" /><br />
+ 				<img class="imgWithHero" data-src="img/G2BM-1.png" src="img/G2BM-1.png" />
+ 			</div>		 
  		</article>
  			
 			</div>	
+			<div class="extension"><br /><br /></div>
 		</section>
 
 		<section id="about">
@@ -106,7 +107,12 @@ License: http://creativecommons.org/licenses/MIT
 			</header>
 			<div class="content">
 				<article>
-					<p class="featureRight">My father was an artist and I spent my childhood watching him create in his studio. Since that point I myself have had an unending drive to create. I feel as though I'm suffocating if I am not generating something new and original. I've spent time working as a screen printer, a book binder, an iron worker, a freelance journalist, a textile designer, a web designer and a web/mobile/game developer.</p>
+					
+					<div id="cv">
+						<img src="img/h/cv.png" />
+					</div>
+
+					<p class="featureRight clearfix">My father was an artist and I spent my childhood watching him create in his studio. Since that point I myself have had an unending drive to create. I feel as though I'm suffocating if I am not generating something new and original. I've spent time working as a screen printer, a book binder, an iron worker, a freelance journalist, a textile designer, a web designer and a web/mobile/game developer.</p>
 					
 					<h3>Skills:</h3>
 					<p class="small-text">I believe that a skillset is something that should remain in constant flux. In recent years I have absorbed, utilized and phased out more technologies than I care to remember.<br />Rollover the list to highlight those more frequently used.</p>
@@ -271,8 +277,10 @@ License: http://creativecommons.org/licenses/MIT
 			</div>
 		</section>	
 
+	
+
 </div>
-<div id="watercolor" class="map"></div>
+
 <!-- <div role="complementary">
 </div>
 -->

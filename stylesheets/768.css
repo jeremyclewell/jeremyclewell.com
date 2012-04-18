@@ -49,7 +49,7 @@ section article {
 
 /* line 52, ../sass/768.scss */
 section[id="header"] div.content article p.featureLeft {
-  background-image: url("../img/h/home_divide_bg.png");
+  background-image: url("../img/h/home_divide_bg.svg");
   width: 60%;
   padding: 0 25px 0 0;
   background-repeat: repeat-y;
@@ -64,17 +64,24 @@ section[id="header"] div.content article p.featureLeft {
 }
 
 /* line 66, ../sass/768.scss */
+#cv {
+  float: left;
+  margin-left: 60px;
+}
+
+/* line 71, ../sass/768.scss */
 section[id="about"] div.content article p.featureRight {
-  background-image: url("../img/h/about_divide_bg.png");
+  background-image: url("../img/h/about_divide_bg.svg");
   width: 60%;
-  float: right;
   padding: 5px 0 5px 45px;
   margin-left: 40%;
   background-repeat: repeat-y;
   background-position: left -8px;
+  position: relative;
+  top: 0px;
 }
 
-/* line 80, ../sass/768.scss */
+/* line 88, ../sass/768.scss */
 section[id="contact"] div.content article p.featureLeft {
   background-image: url("../img/h/contact_divide_bg.png");
   width: 40%;
@@ -83,7 +90,7 @@ section[id="contact"] div.content article p.featureLeft {
   background-position: right -8px;
 }
 
-/* line 88, ../sass/768.scss */
+/* line 96, ../sass/768.scss */
 section[id="contact"] div.content article form {
   width: 45%;
   position: absolute;
@@ -93,22 +100,22 @@ section[id="contact"] div.content article form {
   float: right;
 }
 
-/* line 97, ../sass/768.scss */
+/* line 105, ../sass/768.scss */
 #blogSlider, #portfolioSlider {
   width: 750px;
 }
 
-/* line 101, ../sass/768.scss */
+/* line 109, ../sass/768.scss */
 .sm {
   width: 650px;
 }
-/* line 103, ../sass/768.scss */
+/* line 111, ../sass/768.scss */
 .sm li {
   padding: 5px 10px 5px 10px;
   width: 17%;
 }
 
-/* line 109, ../sass/768.scss */
+/* line 117, ../sass/768.scss */
 #skills {
   -webkit-column-count: 2;
   -moz-column-count: 2;
@@ -116,7 +123,7 @@ section[id="contact"] div.content article form {
   column-count: 2;
 }
 
-/* line 113, ../sass/768.scss */
+/* line 121, ../sass/768.scss */
 #imgTest {
   width: 100%;
   -webkit-column-count: 3;
@@ -124,7 +131,7 @@ section[id="contact"] div.content article form {
   -o-column-count: 3;
   column-count: 3;
 }
-/* line 116, ../sass/768.scss */
+/* line 124, ../sass/768.scss */
 #imgTest img {
   width: 100%;
   top: 0px;

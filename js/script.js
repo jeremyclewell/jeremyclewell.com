@@ -25,8 +25,18 @@ $(document).ready(function(){
 
 	// Run Mathias Bynens jQuery placeholder plugin (see plugins.js)
 	if ($.fn.placeholder) {
-		$('input, textarea').placeholder();		
+		$('input, textarea').placeholder();			
 	}
+
+	$(".imgWithHero").live("click", function(evt) {
+		$("#content").toggleClass("rotate");
+	//	$("#heroImg").attr("src", $(evt.currentTarget).attr("data-src"));
+	});
+
+	$("#heroImg").live("click", function(evt) {
+		console.log("fbdhsjfbds");
+		$("#content").toggleClass("rotate");
+	});
 	
 	$("section header").click(function()
     {
@@ -174,6 +184,8 @@ $(document).ready(function(){
 
 		$("#portfolio .content article").html(portfolioTemplate(portfolioEntries[0]));
 
+
+
 	});
 
 	//$(document).ready(function(evt){
@@ -182,7 +194,3 @@ $(document).ready(function(){
     
 
 });
-
-
-
-

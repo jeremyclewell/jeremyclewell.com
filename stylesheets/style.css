@@ -992,13 +992,13 @@ footer p {
 /* line 170, ../sass/style.scss */
 #blog {
   background-color: #40411e;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(3%, rgba(0, 0, 0, 0.23)), color-stop(20%, rgba(0, 0, 0, 0.1)), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.1)), color-stop(97%, rgba(0, 0, 0, 0.23))), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.23) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.23) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.23) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.23) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.23) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.23) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
-  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0.23) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.23) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
-  background-image: linear-gradient(left, rgba(0, 0, 0, 0.23) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.23) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
-  background-repeat: no-repeat, repeat-x, repeat;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(3%, rgba(0, 0, 0, 0.2)), color-stop(20%, rgba(0, 0, 0, 0.1)), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.1)), color-stop(97%, rgba(0, 0, 0, 0.2))), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+  background-repeat: repeat-x, repeat-x, repeat;
   background-position: left top, left top, left top, left 74px;
   text-align: left;
 }
@@ -1034,13 +1034,13 @@ footer p {
 /* line 197, ../sass/style.scss */
 #portfolio {
   background-color: #787746;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(3%, rgba(0, 0, 0, 0.23)), color-stop(20%, rgba(0, 0, 0, 0.1)), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.1)), color-stop(97%, rgba(0, 0, 0, 0.23))), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.23) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.23) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.23) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.23) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.23) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.23) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
-  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0.23) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.23) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
-  background-image: linear-gradient(left, rgba(0, 0, 0, 0.23) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.23) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
-  background-repeat: no-repeat, repeat-x, repeat;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(3%, rgba(0, 0, 0, 0.2)), color-stop(20%, rgba(0, 0, 0, 0.1)), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.1)), color-stop(97%, rgba(0, 0, 0, 0.2))), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+  background-repeat: repeat-x, repeat-x, repeat;
   background-position: left top, left top, left top, left 74px;
 }
 /* line 202, ../sass/style.scss */
@@ -1095,32 +1095,53 @@ article a:hover {
   text-decoration: underline;
 }
 
-/* line 247, ../sass/style.scss */
-#content {
-  width: 100%;
-  position: absolute;
-  height: auto;
-  top: 5%;
-  bottom: 20%;
-  margin: auto;
+/* line 245, ../sass/style.scss */
+body {
+  -webkit-perspective: 1200;
+  -webkit-perspective-origin: 50% 200px;
+  -moz-perspective: 1200;
+  -moz-perspective-origin: 50% 200px;
+}
+/* line 259, ../sass/style.scss */
+body #content {
+  position: relative;
+  margin: 50px auto 0;
+  -webkit-transition: -webkit-transform 2s linear;
+  -webkit-transform-style: preserve-3d;
+}
+/* line 264, ../sass/style.scss */
+body #content section {
+  -webkit-transition: -webkit-transform 2s linear;
+}
+/* line 272, ../sass/style.scss */
+body #content.rotate section {
+  -webkit-transform: rotateY(-90deg);
+}
+/* line 276, ../sass/style.scss */
+body #content #heroImg {
+  -webkit-transform: rotateY(-90deg) translateZ(300px);
+}
+/* line 280, ../sass/style.scss */
+body #content #heroImg.rotate {
+  -webkit-transform: rotateY(90deg);
 }
 
-/* line 258, ../sass/style.scss */
+/* line 350, ../sass/style.scss */
 section {
   width: 100%;
   -moz-box-shadow: 0px 10px 30px #111;
   -webkit-box-shadow: 0px 10px 30px #111;
   box-shadow: 0px 10px 30px #111;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(3%, rgba(0, 0, 0, 0.23)), color-stop(20%, rgba(0, 0, 0, 0.1)), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.1)), color-stop(97%, rgba(0, 0, 0, 0.23))), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png");
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.23) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.23) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png");
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.23) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.23) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png");
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.23) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.23) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png");
-  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0.23) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.23) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png");
-  background-image: linear-gradient(left, rgba(0, 0, 0, 0.23) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.23) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png");
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(3%, rgba(0, 0, 0, 0.2)), color-stop(20%, rgba(0, 0, 0, 0.1)), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.1)), color-stop(97%, rgba(0, 0, 0, 0.2))), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png");
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png");
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png");
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png");
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png");
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png");
   background-repeat: repeat, repeat-x, repeat;
   background-position: left top, left top, left top;
 }
-/* line 267, ../sass/style.scss */
+/* line 359, ../sass/style.scss */
 section header {
   height: 100%;
   padding: 0px 10px 0px 10px;
@@ -1128,7 +1149,7 @@ section header {
   cursor: pointer;
   font-weight: bold;
 }
-/* line 273, ../sass/style.scss */
+/* line 365, ../sass/style.scss */
 section header h1, section header h2, section header h4 {
   width: 310px;
   padding: 10px 0 0 0;
@@ -1136,21 +1157,21 @@ section header h1, section header h2, section header h4 {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 280, ../sass/style.scss */
+/* line 372, ../sass/style.scss */
 section header h1 + h4 {
   padding: 0;
 }
-/* line 284, ../sass/style.scss */
+/* line 376, ../sass/style.scss */
 section nav {
   width: 280px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 288, ../sass/style.scss */
+/* line 380, ../sass/style.scss */
 section nav ul {
   width: 280px;
 }
-/* line 292, ../sass/style.scss */
+/* line 384, ../sass/style.scss */
 section article {
   width: 300px;
   margin-top: 20px;
@@ -1168,58 +1189,67 @@ section article {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 301, ../sass/style.scss */
+/* line 393, ../sass/style.scss */
 section div.content {
   width: 100%;
   display: none;
   padding-bottom: 20px;
 }
-/* line 306, ../sass/style.scss */
+/* line 398, ../sass/style.scss */
 section div.content article p, section div.content article a {
   font-size: 13.333px;
   line-height: 19.2px;
 }
 
-/* line 316, ../sass/style.scss */
+/* line 408, ../sass/style.scss */
 section[id="header"] div.content article p.featureLeft {
-  background-image: url("../img/h/home_divide_bg.png"), url("../img/h/home_divide_bg.png");
+  background-image: url("../img/h/home_divide_bg.svg"), url("../img/h/home_divide_bg.svg");
   width: 100%;
   padding: 35px 0 45px 0;
   background-repeat: repeat-x, repeat-x;
   background-position: -8px bottom, -8px top;
 }
 
-/* line 324, ../sass/style.scss */
+/* line 416, ../sass/style.scss */
 section[id="header"] div.content article p:first-letter {
   font-size: 28px;
 }
 
-/* line 328, ../sass/style.scss */
+/* line 420, ../sass/style.scss */
 #tree {
   margin: 0 auto;
   text-align: center;
+  background-image: url(../img/h/tree.svg);
 }
 
-/* line 333, ../sass/style.scss */
+/* line 428, ../sass/style.scss */
+#cv {
+  position: relative;
+  left: 0px;
+}
+
+/* line 435, ../sass/style.scss */
 section[id="about"] div.content article p.featureRight {
-  background-image: url("../img/h/about_divide_bg.png"), url("../img/h/about_divide_bg.png");
+  background-image: url("../img/h/about_divide_bg.svg"), url("../img/h/about_divide_bg.svg");
   width: 100%;
   padding: 35px 0 45px 0;
   background-repeat: repeat-x, repeat-x;
   background-position: -8px bottom, -8px top;
+  position: relative;
+  top: 0;
 }
 
-/* line 341, ../sass/style.scss */
+/* line 445, ../sass/style.scss */
 section[id="about"] div.content article p:first-letter {
   font-size: 28px;
 }
 
-/* line 345, ../sass/style.scss */
+/* line 449, ../sass/style.scss */
 section[id="contact"] div.content article {
   height: auto;
 }
 
-/* line 349, ../sass/style.scss */
+/* line 453, ../sass/style.scss */
 section[id="contact"] div.content article p {
   background-image: url("../img/h/contact_divide_bg.png"), url("../img/h/contact_divide_bg.png");
   width: 100%;
@@ -1228,17 +1258,17 @@ section[id="contact"] div.content article p {
   background-position: -8px bottom, -8px top;
 }
 
-/* line 357, ../sass/style.scss */
+/* line 461, ../sass/style.scss */
 section[id="contact"] div.content article p:first-letter {
   font-size: 28px;
 }
 
-/* line 361, ../sass/style.scss */
+/* line 465, ../sass/style.scss */
 section[id="contact"] div.content article form {
   width: 100%;
 }
 
-/* line 365, ../sass/style.scss */
+/* line 469, ../sass/style.scss */
 section[id="contact"] div.content article form {
   width: 100%;
   padding-top: 10px;
@@ -1257,19 +1287,19 @@ section[id="portfolio"] div.content article p {
 
 
 */
-/* line 383, ../sass/style.scss */
+/* line 487, ../sass/style.scss */
 nav + article {
   margin-top: 25px;
 }
 
-/* line 389, ../sass/style.scss */
+/* line 493, ../sass/style.scss */
 #blogSlider, #portfolioSlider {
   width: 750px;
   height: 77px;
   top: 4px;
 }
 
-/* line 396, ../sass/style.scss */
+/* line 500, ../sass/style.scss */
 .sm {
   width: 650px;
   float: left;
@@ -1288,7 +1318,7 @@ nav + article {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 406, ../sass/style.scss */
+/* line 510, ../sass/style.scss */
 .sm li {
   padding: 5px 10px 5px 10px;
   float: left;
@@ -1311,24 +1341,24 @@ nav + article {
   transition-duration: 0.5s;
 }
 
-/* line 421, ../sass/style.scss */
+/* line 525, ../sass/style.scss */
 .title {
   float: left;
   width: 100px;
 }
-/* line 424, ../sass/style.scss */
+/* line 528, ../sass/style.scss */
 .title p {
   font-size: 12px;
   line-height: 16px;
   margin-bottom: 7px;
 }
-/* line 429, ../sass/style.scss */
+/* line 533, ../sass/style.scss */
 .title .date {
   font-size: 11px;
   line-height: 12px;
 }
 
-/* line 435, ../sass/style.scss */
+/* line 539, ../sass/style.scss */
 .description p {
   font-size: 12px;
   line-height: 16px;
@@ -1346,40 +1376,40 @@ nav + article {
   opacity: 0;
 }
 
-/* line 448, ../sass/style.scss */
+/* line 552, ../sass/style.scss */
 #blogNav, #portfolioNav {
   display: inline;
 }
 
-/* line 451, ../sass/style.scss */
+/* line 555, ../sass/style.scss */
 #blogNavForward, #portfolioNavForward {
   float: right;
 }
 
-/* line 454, ../sass/style.scss */
+/* line 558, ../sass/style.scss */
 #blogNavBack, #portfolioNavBack {
   float: left;
 }
 
-/* line 458, ../sass/style.scss */
+/* line 562, ../sass/style.scss */
 .preloader {
   margin: 23px 0 0 43px;
 }
 
-/* line 462, ../sass/style.scss */
+/* line 566, ../sass/style.scss */
 .small-text {
   font-size: 12.8px;
 }
 
-/* line 466, ../sass/style.scss */
+/* line 570, ../sass/style.scss */
 article {
   position: relative;
 }
-/* line 468, ../sass/style.scss */
+/* line 572, ../sass/style.scss */
 article p {
   text-shadow: 2px 2px 8px #000;
 }
-/* line 472, ../sass/style.scss */
+/* line 576, ../sass/style.scss */
 article div.entryMeta {
   position: absolute;
   font-size: 12px;
@@ -1389,14 +1419,14 @@ article div.entryMeta {
   text-align: right;
 }
 
-/* line 482, ../sass/style.scss */
+/* line 586, ../sass/style.scss */
 #skills {
   -webkit-column-count: 1;
   -moz-column-count: 1;
   -o-column-count: 1;
   column-count: 1;
 }
-/* line 484, ../sass/style.scss */
+/* line 588, ../sass/style.scss */
 #skills li, #skills span {
   color: #fbf8e8;
   -webkit-transition-property: color;
@@ -1410,20 +1440,20 @@ article div.entryMeta {
   -o-transition-duration: 0.7s;
   transition-duration: 0.7s;
 }
-/* line 490, ../sass/style.scss */
+/* line 594, ../sass/style.scss */
 #skills:hover .veryOften {
   color: #fbf8e8;
 }
-/* line 493, ../sass/style.scss */
+/* line 597, ../sass/style.scss */
 #skills:hover .often {
   color: #a7a59a;
 }
-/* line 496, ../sass/style.scss */
+/* line 600, ../sass/style.scss */
 #skills:hover .rare {
   color: #53524d;
 }
 
-/* line 502, ../sass/style.scss */
+/* line 606, ../sass/style.scss */
 #imgTest {
   width: 100%;
   -webkit-column-count: 1;
@@ -1431,7 +1461,7 @@ article div.entryMeta {
   -o-column-count: 1;
   column-count: 1;
 }
-/* line 505, ../sass/style.scss */
+/* line 609, ../sass/style.scss */
 #imgTest img {
   width: 100%;
   top: 0px;
