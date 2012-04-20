@@ -420,15 +420,32 @@ section[id="header"] div.content article p:first-letter {
 #tree {
 	margin: 0 auto;
 	text-align: center;
-	//width: 300px; 
-	//height: 300px;
 }
 
 #cv {
 	position: relative;
 	left: 0px;
-	//margin: 0 auto;
-	//text-align: center;
+	margin: 0 auto;
+	text-align: center;
+	a {
+		&:hover {
+			text-decoration: none;
+			img {
+				@include opacity(0.7);	
+			}
+		}
+	}
+	img {
+		height: 75px; 
+		width: auto;
+		@include transition-property(opacity);
+		@include transition-duration(0.5s);
+		@include opacity(0.2);
+		 -moz-box-shadow: 0px 5px 15px #111;
+	    -webkit-box-shadow: 0px 5px 15px #111;
+	    box-shadow: 0px 5px 15px #111;
+	
+	}
 }
 
 section[id="about"] div.content article p.featureRight {
@@ -602,15 +619,18 @@ article {
 	}
 }
 
-#imgTest {
-	width: 100%;
-	@include column-count(1);
+.imgGroup {
+	width: 270px;
+	height: auto;
+	padding: 20px;
+	margin: 20px auto;
+	text-align: center;
+	@include background-image( linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%) );
 	img {
-		width: 100%;
-		top: 0px;
+		width: 80%;
+		padding: 10px;
 	}
 }
-
 
 
 

@@ -118,11 +118,19 @@ section[id="contact"] div.content article form {
 	@include column-count(2);
 }
 
-#imgTest {
-	width: 100%;
-	@include column-count(3);
+.imgGroup {
+	width: 690px;
+	height: auto;
+	padding: 20px;
+	margin: 20px 0 20px 0;
+	@include background-image( linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%) );
+	&.col2 {
+		@include column-count(2);	
+	}
+	&.col3 {
+		@include column-count(3);
+	}
 	img {
-		width: 100%;
-		top: 0px;
+		width: 90%;
 	}
 }

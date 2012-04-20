@@ -66,18 +66,15 @@ section[id="contact"] div.content article form {
 	}
 }
 
-#skills {
-	@include column-count(1);
-}
-
-#imgTest {
-	width: 100%;
-	margin: 0 auto;
+.imgGroup {
+	width: 510px;
+	height: auto;
+	padding: 20px;
+	margin: 20px auto;
 	text-align: center;
-	
+	@include background-image( linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%) );
 	img {
-		width: 80%;
-
-		top: 0px;
+		width: 90%;
+		padding: 10px;
 	}
 }
