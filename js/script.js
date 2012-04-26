@@ -85,7 +85,7 @@ $(document).ready(function(){
 	var portfolioNavTemplate = Handlebars.compile($("#portfolio-nav-template").html());
 	var portfolioTemplate = Handlebars.compile($("#portfolio-template").html());
 
-	$.getJSON('page1.json', function(data) {//http://blog.jeremyclewell.com/?json=get_recent_posts&date_format=m/d/y&post_type=blog_post&count=5&page=1&callback=?
+	$.getJSON('http://blog.jeremyclewell.com/?json=get_recent_posts&date_format=m/d/y&post_type=blog_post&count=5&page=1&callback=?', function(data) {//http://blog.jeremyclewell.com/?json=get_recent_posts&date_format=m/d/y&post_type=blog_post&count=5&page=1&callback=?
 		var tempStructure = "";
 		for (var i = 0; i < data.pages; i++) {
 			tempStructure += "<li><ul class='sm'><div style='width: 100%'>";
