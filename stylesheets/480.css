@@ -46,28 +46,29 @@ section nav {
 section article {
   width: 420px;
 }
-/* line 49, ../sass/480.scss */
-section article #video {
+
+/* line 52, ../sass/480.scss */
+#video {
   width: 325px;
 }
-/* line 51, ../sass/480.scss */
-section article #video iframe {
+/* line 54, ../sass/480.scss */
+#video iframe {
   width: 325px;
   height: 216px;
 }
 
-/* line 63, ../sass/480.scss */
+/* line 62, ../sass/480.scss */
 .sm li {
   padding: 5px 10px 5px 10px;
   width: 17%;
 }
 
-/* line 71, ../sass/480.scss */
+/* line 70, ../sass/480.scss */
 #cv a h3 {
   font-size: 26px;
 }
 
-/* line 77, ../sass/480.scss */
+/* line 76, ../sass/480.scss */
 #skills {
   -webkit-column-count: 1;
   -moz-column-count: 1;
@@ -75,7 +76,7 @@ section article #video iframe {
   column-count: 1;
 }
 
-/* line 81, ../sass/480.scss */
+/* line 80, ../sass/480.scss */
 .imgGroup {
   width: 370px;
   height: auto;
@@ -89,21 +90,21 @@ section article #video iframe {
   background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%);
   background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%);
 }
-/* line 88, ../sass/480.scss */
+/* line 87, ../sass/480.scss */
 .imgGroup .col2 {
   -webkit-column-count: 1;
   -moz-column-count: 1;
   -o-column-count: 1;
   column-count: 1;
 }
-/* line 91, ../sass/480.scss */
+/* line 90, ../sass/480.scss */
 .imgGroup .col3 {
   -webkit-column-count: 1;
   -moz-column-count: 1;
   -o-column-count: 1;
   column-count: 1;
 }
-/* line 94, ../sass/480.scss */
+/* line 93, ../sass/480.scss */
 .imgGroup img {
   width: 90%;
   padding: 10px;

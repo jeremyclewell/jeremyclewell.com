@@ -42,16 +42,18 @@ section{
 	}
 	article {
 		width: 830px;
-		#video {
-			width: 700px;
-			iframe {
-				width: 700px;
-				height: 466px;
-			}
-		}
+		
 	}
 }
-x
+
+#video {
+	width: 700px;
+	iframe {
+		width: 700px;
+		height: 466px;
+	}
+}
+
 #blogSlider, #portfolioSlider { 
 	width: 750px; 
 }

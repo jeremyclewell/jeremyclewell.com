@@ -46,17 +46,16 @@ section{
 	}
 	article {
 		width: 420px;
-		#video {
-			width: 325px;
-			iframe {
-				width: 325px;
-				height: 216px;
-			}
-		}
 	}
 }
 
-
+#video {
+	width: 325px;
+	iframe {
+		width: 325px;
+		height: 216px;
+	}
+}
 
 .sm {
 	//width: 320px;

@@ -46,17 +46,18 @@ section nav {
 section article {
   width: 730px;
 }
-/* line 49, ../sass/768.scss */
-section article #video {
+
+/* line 52, ../sass/768.scss */
+#video {
   width: 700px;
 }
-/* line 51, ../sass/768.scss */
-section article #video iframe {
+/* line 54, ../sass/768.scss */
+#video iframe {
   width: 700px;
   height: 466px;
 }
 
-/* line 59, ../sass/768.scss */
+/* line 60, ../sass/768.scss */
 section[id="header"] div.content article p.featureLeft {
   background-image: url("../img/h/home_divide_bg.png");
   width: 60%;
@@ -65,20 +66,20 @@ section[id="header"] div.content article p.featureLeft {
   background-position: right -8px;
 }
 
-/* line 67, ../sass/768.scss */
+/* line 68, ../sass/768.scss */
 #tree {
   position: absolute;
   right: 50px;
   top: 0;
 }
 
-/* line 73, ../sass/768.scss */
+/* line 74, ../sass/768.scss */
 #cv {
   float: left;
   margin-left: 60px;
 }
 
-/* line 78, ../sass/768.scss */
+/* line 79, ../sass/768.scss */
 section[id="about"] div.content article p.featureRight {
   background-image: url("../img/h/about_divide_bg.png");
   width: 60%;
@@ -90,7 +91,7 @@ section[id="about"] div.content article p.featureRight {
   top: 0px;
 }
 
-/* line 95, ../sass/768.scss */
+/* line 96, ../sass/768.scss */
 section[id="contact"] div.content article p.featureLeft {
   background-image: url("../img/h/contact_divide_bg.png");
   width: 40%;
@@ -99,7 +100,7 @@ section[id="contact"] div.content article p.featureLeft {
   background-position: right -8px;
 }
 
-/* line 103, ../sass/768.scss */
+/* line 104, ../sass/768.scss */
 section[id="contact"] div.content article form {
   width: 45%;
   position: absolute;
@@ -109,22 +110,22 @@ section[id="contact"] div.content article form {
   float: right;
 }
 
-/* line 112, ../sass/768.scss */
+/* line 113, ../sass/768.scss */
 #blogSlider, #portfolioSlider {
   width: 750px;
 }
 
-/* line 116, ../sass/768.scss */
+/* line 117, ../sass/768.scss */
 .sm {
   width: 650px;
 }
-/* line 118, ../sass/768.scss */
+/* line 119, ../sass/768.scss */
 .sm li {
   padding: 5px 10px 5px 10px;
   width: 17%;
 }
 
-/* line 124, ../sass/768.scss */
+/* line 125, ../sass/768.scss */
 #skills {
   -webkit-column-count: 2;
   -moz-column-count: 2;
@@ -132,7 +133,7 @@ section[id="contact"] div.content article form {
   column-count: 2;
 }
 
-/* line 128, ../sass/768.scss */
+/* line 129, ../sass/768.scss */
 .imgGroup {
   width: 690px;
   height: auto;
@@ -145,21 +146,21 @@ section[id="contact"] div.content article form {
   background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%);
   background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%);
 }
-/* line 134, ../sass/768.scss */
+/* line 135, ../sass/768.scss */
 .imgGroup.col2 {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   -o-column-count: 2;
   column-count: 2;
 }
-/* line 137, ../sass/768.scss */
+/* line 138, ../sass/768.scss */
 .imgGroup.col3 {
   -webkit-column-count: 3;
   -moz-column-count: 3;
   -o-column-count: 3;
   column-count: 3;
 }
-/* line 140, ../sass/768.scss */
+/* line 141, ../sass/768.scss */
 .imgGroup img {
   width: 90%;
 }
