@@ -356,6 +356,7 @@ section{
  	@include background-image(linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"));
 	background-repeat: repeat, repeat-x, repeat;
 	background-position: left top, left top, left top; 
+	padding: 1px;
 	header {
 		height: 100%;
 		padding: 0px 10px 0px 10px;
@@ -399,7 +400,18 @@ section{
 				font-size: $base-font-size/1.2;
 				line-height: $base-font-size*1.2;
 			}
-			
+			#video {
+				text-align: center;
+				margin: 0 auto;
+				background-color: rgba(0,0,0, 0.2);
+				padding: 20px;
+				width: 250px;
+				@include border-radius(10px);
+				iframe {
+					width: 250px;
+					height: 166px;
+				}
+			}
 		}
 	}
 
@@ -433,6 +445,9 @@ section[id="header"] div.content article p:first-letter {
 			img {
 				@include opacity(0.7);	
 			}
+		}
+		h3 {
+			font-size: 24px;
 		}
 	}
 	img {
@@ -509,8 +524,8 @@ nav+article {
 #blogSlider, #portfolioSlider { 
 	//width: 290px; 
 	width: 750px; 
-	height: 77px; 
-	top: 4px; 
+	height: 75px; 
+	top: 2px; 
 }
 
 .sm {

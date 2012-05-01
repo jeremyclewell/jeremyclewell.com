@@ -42,11 +42,26 @@ section{
 	}
 	article {
 		width: 830px;
+		#video {
+			width: 700px;
+			iframe {
+				width: 700px;
+				height: 466px;
+			}
+		}
 	}
 }
 x
 #blogSlider, #portfolioSlider { 
 	width: 750px; 
+}
+
+#cv {
+	a {
+		h3 {
+			font-size: 30px;
+		}
+	}
 }
 
 .sm {

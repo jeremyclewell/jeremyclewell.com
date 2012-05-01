@@ -46,6 +46,13 @@ section{
 	}
 	article {
 		width: 540px;
+		#video {
+			width: 450px;
+			iframe {
+				width: 450px;
+				height: 300px;
+			}
+		}
 	}
 }
 

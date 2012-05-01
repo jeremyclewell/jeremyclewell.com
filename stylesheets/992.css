@@ -40,24 +40,38 @@ section nav {
 section article {
   width: 830px;
 }
+/* line 45, ../sass/992.scss */
+section article #video {
+  width: 700px;
+}
+/* line 47, ../sass/992.scss */
+section article #video iframe {
+  width: 700px;
+  height: 466px;
+}
 
-/* line 48, ../sass/992.scss */
+/* line 55, ../sass/992.scss */
 x
 #blogSlider, #portfolioSlider {
   width: 750px;
 }
 
-/* line 52, ../sass/992.scss */
+/* line 61, ../sass/992.scss */
+#cv a h3 {
+  font-size: 30px;
+}
+
+/* line 67, ../sass/992.scss */
 .sm {
   width: 650px;
 }
-/* line 54, ../sass/992.scss */
+/* line 69, ../sass/992.scss */
 .sm li {
   padding: 5px 10px 5px 10px;
   width: 17%;
 }
 
-/* line 60, ../sass/992.scss */
+/* line 75, ../sass/992.scss */
 .imgGroup {
   width: 790px;
   height: auto;
@@ -70,21 +84,21 @@ x
   background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%);
   background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%);
 }
-/* line 66, ../sass/992.scss */
+/* line 81, ../sass/992.scss */
 .imgGroup.col2 {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   -o-column-count: 2;
   column-count: 2;
 }
-/* line 69, ../sass/992.scss */
+/* line 84, ../sass/992.scss */
 .imgGroup.col3 {
   -webkit-column-count: 3;
   -moz-column-count: 3;
   -o-column-count: 3;
   column-count: 3;
 }
-/* line 72, ../sass/992.scss */
+/* line 87, ../sass/992.scss */
 .imgGroup img {
   width: 90%;
 }

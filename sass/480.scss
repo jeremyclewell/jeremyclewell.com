@@ -46,6 +46,13 @@ section{
 	}
 	article {
 		width: 420px;
+		#video {
+			width: 325px;
+			iframe {
+				width: 325px;
+				height: 216px;
+			}
+		}
 	}
 }
 
@@ -56,6 +63,14 @@ section{
 	li {
 		padding: 5px 10px 5px 10px;
 		width: 17%;
+	}
+}
+
+#cv {
+	a {
+		h3 {
+			font-size: 26px;
+		}
 	}
 }
 

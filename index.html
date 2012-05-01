@@ -81,7 +81,6 @@ License: http://creativecommons.org/licenses/MIT
 		<section id="header">
 			<header>
 				<h1>Jeremy Austin Clewell</h1>
-				<h4>I build things that react.</h4>
 			</header>
 			<div class="content">
 				<article>
@@ -327,10 +326,10 @@ License: http://creativecommons.org/licenses/MIT
 	<li>
 		<div>
 			<div class="title">
-				<p class="date">{{date}}</p>
 				<p>{{title}}</p>
 			</div>
 			<div class="description">
+				<p class="date">{{date}}</p>
 				<p>{{excerpt}}</p>
 			</div>	
 		</div>
@@ -343,19 +342,17 @@ License: http://creativecommons.org/licenses/MIT
 		<h2>{{title}}</h2>
 		<p class="clearfix">{{excerpt}}</p>
 		<div class="entryMeta">
-		<div>
-			Posted: {{date}}	
+		Posted: <span class="date">{{date}}</span>	
+		
 			Categories:
 			{{#each categories}}
 				<a href="" title="{{title}}">{{title}}</a>
 			{{/each}}
-		</div>
-		<div >
 			Tags:
 			{{#each tags}}
 				<a href="" title="{{title}}">{{title}}</a>
 			{{/each}}
-		</div>
+		
 		</div>
 	</header>
 	<hr>
@@ -367,10 +364,10 @@ License: http://creativecommons.org/licenses/MIT
 	<li>
 		<div>
 			<div class="title">
-				<p class="date">{{date}}</p>
 				<p>{{title}}</p>
 			</div>
 			<div class="description">
+				<p class="date">{{date}}</p>
 				<p>{{excerpt}}</p>
 			</div>	
 		</div>
@@ -381,7 +378,7 @@ License: http://creativecommons.org/licenses/MIT
 <script id="portfolio-template" type="text/x-handlebars-template">
 	<h2 style="width: 600px;">{{title}}</h2>
 	<h4>{{excerpt}}</h4>
-	<h4 class="date">Posted: {{date}}</h4>
+	<h4 class="date">Posted: <span class="date">{{date}}</span></h4>
 	<hr>
 	{{{content}}}
 </script>

@@ -46,19 +46,28 @@ section nav {
 section article {
   width: 540px;
 }
+/* line 49, ../sass/600.scss */
+section article #video {
+  width: 450px;
+}
+/* line 51, ../sass/600.scss */
+section article #video iframe {
+  width: 450px;
+  height: 300px;
+}
 
-/* line 53, ../sass/600.scss */
+/* line 60, ../sass/600.scss */
 section[id="contact"] div.content article form textarea {
   width: 55%;
 }
 
-/* line 63, ../sass/600.scss */
+/* line 70, ../sass/600.scss */
 .sm li {
   padding: 5px 10px 5px 10px;
   width: 17%;
 }
 
-/* line 69, ../sass/600.scss */
+/* line 76, ../sass/600.scss */
 .imgGroup {
   width: 510px;
   height: auto;
@@ -72,7 +81,7 @@ section[id="contact"] div.content article form textarea {
   background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%);
   background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%);
 }
-/* line 76, ../sass/600.scss */
+/* line 83, ../sass/600.scss */
 .imgGroup img {
   width: 90%;
   padding: 10px;

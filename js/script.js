@@ -11,6 +11,18 @@ var portfolioIndex = 0;
 var portfolioCount = 5;
 var portfolioTotal = 15;
 
+function getURLParameter(name) {
+    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
+}
+
+var History = window.History;
+
+// Bind to StateChange Event
+History.Adapter.bind(window,'statechange',function(){ // Note: We are using statechange instead of popstate
+    var State = History.getState(); // Note: We are using History.getState() instead of event.state
+    History.log(State.data, State.title, State.url);
+});
+
 $(document).ready(function(){
 
 	
@@ -128,11 +140,20 @@ $(document).ready(function(){
 			$("#blog .content article").animate({opacity: 0}, 200, function() {
 	    		$("#blog .content article").html(blogTemplate(blogPosts[blogPageIndex * 5 + $(thisObj).index()]));
 	    		$("#blog .content article").animate({opacity: 1}, 200);
+	    		History.pushState(null, blogPosts[blogPageIndex * 5 + $(thisObj).index()].slug, "?blog=" + blogPosts[blogPageIndex * 5 + $(thisObj).index()].id);
+	    		//window.location.search = "blog=" + blogPosts[blogPageIndex * 5 + $(thisObj).index()].id;
 	  		});
 		});
-
-		$("#blog .content article").html(blogTemplate(blogPosts[0]));
-
+		var blogID = getURLParameter("blog");
+		if (blogID) {
+	$("#blog header").next(".content").slideToggle(300).parent("section").siblings("section").children(".content").slideUp(300);
+			$.getJSON("http://blog.jeremyclewell.com/?json=get_post&post_type=blog_post&post_id=" + blogID, function(data) {
+				$("#blog .content article").html(blogTemplate(data["post"]));	
+				$("#portfolio header").next(".content").slideToggle(300).parent("section").siblings("section").children(".content").slideUp(300);
+			});
+		} else {
+			$("#blog .content article").html(blogTemplate(blogPosts[0]));	
+		}
 	});
 
 	$.getJSON('http://blog.jeremyclewell.com/?json=get_recent_posts&date_format=m/d/y&post_type=portfolio_entry&count=5&page=1&callback=?', function(data) {
@@ -179,12 +200,22 @@ $(document).ready(function(){
 			$("#portfolio .content article").animate({opacity: 0}, 200, function() {
 	    		$("#portfolio .content article").html(portfolioTemplate(portfolioEntries[portfolioIndex * 5 + $(thisObj).index()]));
 	    		$("#portfolio .content article").animate({opacity: 1}, 200);
+	    		//window.location.search = "portfolio=" + portfolioEntries[portfolioIndex * 5 + $(thisObj).index()].id;
 	  		});
 		});
 
-		$("#portfolio .content article").html(portfolioTemplate(portfolioEntries[0]));
+		var portfolioID = getURLParameter("portfolio");
+		if (portfolioID) {
+			$.getJSON("http://blog.jeremyclewell.com/?json=get_post&post_type=portfolio_entry&post_id=" + blogID, function(data) {
+				$("#portfolio .content article").html(portfolioTemplate(data["post"]));	
+				$("#portfolio header").next(".content").slideToggle(300).parent("section").siblings("section").children(".content").slideUp(300);
+			});
+		} else {
+			$("#portfolio .content article").html(portfolioTemplate(portfolioEntries[0]));
+		}
+		
 
-
+	//	$(".date").easydate();
 
 	});
 
