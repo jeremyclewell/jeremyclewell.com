@@ -173,7 +173,7 @@ footer {
 	background-repeat: repeat-x, repeat-x, repeat;
 	background-position: left top, left top, left top, left 74px;
 	text-align: left;
-	.sm li {
+	.sm li,  #blogMobileNav li.button {
 		background-color: #3c3d1c;
 		@include background-image(url("../img/h/nav_texture.png"), linear-gradient(#787746 #646334)); 
 		height: 78px;
@@ -199,7 +199,7 @@ footer {
  	@include background-image( linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg"));
 	background-repeat: repeat-x, repeat-x, repeat;
 	background-position: left top, left top, left top, left 74px;
-	.sm li {
+	.sm li, #portfolioMobileNav li.button {
 		background-color: #434420;
 		@include background-image(url("../img/h/nav_texture.png"), linear-gradient(#494a23 #3b3c1b));
 		height: 78px;
@@ -376,6 +376,8 @@ section{
 	}
 	nav {
 		width: 280px;
+		position: relative;
+		text-align: center;
 		margin-left: auto;
 		margin-right: auto;
 		ul {
@@ -403,15 +405,20 @@ section{
 			#video {
 				text-align: center;
 				margin: 0 auto;
-				background-color: rgba(0,0,0, 0.2);
-				padding: 20px;
 				width: 250px;
+				padding: 20px;
+				border-right: solid 1px rgba(255, 255, 255, 0.1);
+				border-left: solid 1px rgba(0, 0, 0, 0.1);
+				border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+				border-top: solid 1px rgba(0, 0, 0, 0.1);
 				@include border-radius(10px);
+				@include background-image( linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.16) 20%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.06) 80%, rgba(0, 0, 0, 0.04) 100%) );
 				iframe {
 					width: 250px;
 					height: 166px;
 				}
 			}
+			
 		}
 	}
 
@@ -431,7 +438,12 @@ section[id="header"] div.content article p:first-letter {
 
 #tree {
 	margin: 0 auto;
+
 	text-align: center;
+	width: 170px;
+	img {
+		width: 100%;	
+	}
 }
 
 #cv {
@@ -526,7 +538,27 @@ nav+article {
 	width: 750px; 
 	height: 75px; 
 	top: 2px; 
+	display: none;
+}	
+#blogMobileNav, #portfolioMobileNav {
+	display: block;
+	position: absolute;
+	height: 75px; 
+	top: 30px; 
+	list-style:none;  
+	li {
+		padding: 27px 40px 26px 40px;
+		display:inline;
+		overflow:hidden;
+		&.button {
+			border-left: solid 1px #616232;
+			border-right: solid 1px #25260d;
+			font: 14px/14px 'BonvenoCFLight', Arial, sans-serif;
+			color: #fbf8e8;
+		}
+	}
 }
+
 
 .sm {
 
@@ -554,31 +586,37 @@ nav+article {
 }
 
 .title {
-	float: left;
+	
 	width: 100px;
+	text-align: center;
+	margin: 0 auto;	
 	p {
+		text-align: center !important;
+	margin: 0 auto;	
 		font-size: 12px;
 		line-height: 16px;
 		margin-bottom: 7px;
 	}
-	.date {
+}
+.date {
 			font-size: 11px;
 			line-height: 12px;
 		}
-}
-
-.description p {
-	font-size: 12px;
-	line-height: 16px;
-	margin-left: 120px;
-	padding-top: 17px;
-	width: 120px;
-	text-align: left;
-	transition: opacity 0.5s;
-	-moz-transition: opacity 0.5s; /* Firefox 4 */
-	-webkit-transition: opacity 0.5s; /* Safari and Chrome */
-	-o-transition: opacity 0.5s; /* Opera */
-	opacity: 0;
+.description {
+	
+	p {
+		font-size: 12px;
+		line-height: 16px;
+		margin-top: 0px;
+		margin-left: 120px;
+		width: 120px;
+		text-align: left;
+		transition: opacity 0.5s;
+		-moz-transition: opacity 0.5s; /* Firefox 4 */
+		-webkit-transition: opacity 0.5s; /* Safari and Chrome */
+		-o-transition: opacity 0.5s; /* Opera */
+		opacity: 0;
+	}
 }
 #blogNav, #portfolioNav {
 	display: inline;
@@ -605,12 +643,12 @@ article {
 	}
 
 	div.entryMeta {
-		position: absolute;
-		font-size: 12px;
-		top: 17px;
-		right: 0;
+		p, a {
+			font-size: 11px !important;
+			margin: 0px;
+		}
 		width: 300px;
-		text-align: right;
+		text-align: left;
 	}
 }
 
@@ -636,11 +674,15 @@ article {
 
 .imgGroup {
 	width: 270px;
-	height: auto;
-	padding: 20px;
-	margin: 20px auto;
 	text-align: center;
-	@include background-image( linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%) );
+	margin: 0 auto;
+	padding: 20px;
+	border-right: solid 1px rgba(255, 255, 255, 0.1);
+	border-left: solid 1px rgba(0, 0, 0, 0.1);
+	border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+	border-top: solid 1px rgba(0, 0, 0, 0.1);
+	@include border-radius(10px);
+	@include background-image( linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.16) 20%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.06) 80%, rgba(0, 0, 0, 0.04) 100%) );
 	img {
 		width: 80%;
 		padding: 10px;

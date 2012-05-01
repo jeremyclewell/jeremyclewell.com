@@ -88,10 +88,8 @@ License: http://creativecommons.org/licenses/MIT
 					<div id="tree">
  						<img src="img/h/tree.png" />
  					</div>	 
- 		</article>
- 			
+ 				</article>
 			</div>	
-			<div class="extension"><br /><br /></div>
 		</section>
 
 		<section id="about">
@@ -246,6 +244,11 @@ License: http://creativecommons.org/licenses/MIT
 			<div class="content">
 				<nav>
 					<ul id="blogSlider"></ul>
+					<ul id="blogMobileNav">
+						<li class="button prev">< Prev</li>
+
+						<li class="button next">Next ></li>
+					</ul>
 				</nav>
 				<article>
 				</article>
@@ -263,6 +266,11 @@ License: http://creativecommons.org/licenses/MIT
 				<div class="content">
 					<nav>
 					<ul id="portfolioSlider"></ul>
+					<ul id="portfolioMobileNav">
+						<li class="button prev">< Prev</li>
+
+						<li class="button next">Next ></li>
+					</ul>
 				</nav>
 				<article>	
 				</article>
@@ -328,10 +336,6 @@ License: http://creativecommons.org/licenses/MIT
 			<div class="title">
 				<p>{{title}}</p>
 			</div>
-			<div class="description">
-				<p class="date">{{date}}</p>
-				<p>{{excerpt}}</p>
-			</div>	
 		</div>
 	</li>
 	{{/each}}
@@ -339,20 +343,26 @@ License: http://creativecommons.org/licenses/MIT
 
 <script id="blog-template" type="text/x-handlebars-template">
 	<header>
+		<p>Posted: <span class="date">{{date}}</span></p>
 		<h2>{{title}}</h2>
 		<p class="clearfix">{{excerpt}}</p>
 		<div class="entryMeta">
-		Posted: <span class="date">{{date}}</span>	
-		
+			{{#if categories}}
+			<p>
 			Categories:
 			{{#each categories}}
 				<a href="" title="{{title}}">{{title}}</a>
 			{{/each}}
+			</p>
+			{{/if}}
+			{{#if tags}}
+			<p>
 			Tags:
 			{{#each tags}}
 				<a href="" title="{{title}}">{{title}}</a>
 			{{/each}}
-		
+			</p>
+			{{/if}}
 		</div>
 	</header>
 	<hr>
@@ -365,10 +375,6 @@ License: http://creativecommons.org/licenses/MIT
 		<div>
 			<div class="title">
 				<p>{{title}}</p>
-			</div>
-			<div class="description">
-				<p class="date">{{date}}</p>
-				<p>{{excerpt}}</p>
 			</div>	
 		</div>
 	</li>

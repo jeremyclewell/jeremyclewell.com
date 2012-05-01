@@ -46,6 +46,20 @@ section{
 	}
 	article {
 		width: 730px;
+		div.content {
+			
+		}
+		div.entryMeta {
+			position: absolute;
+			top: 17px;
+			right: 0;
+			width: 250px;
+			text-align: right;
+			p, a {
+				font-size: 11px !important;
+				margin: 0px;
+			}
+		}
 	}
 }
 
@@ -60,9 +74,17 @@ section{
 section[id="header"] div.content article p.featureLeft {
 	background-image: url("../img/h/home_divide_bg.png");
 	width: 60%;
-	padding: 0 25px 0 0;
+	padding: 0 55px 0 0;
 	background-repeat: repeat-y;
 	background-position: right -8px;
+}
+
+#blogSlider, #portfolioSlider {
+	display: block;
+}
+
+#blogMobileNav, #portfolioMobileNav {
+	display: none;	
 }
 
 #tree {
@@ -127,18 +149,17 @@ section[id="contact"] div.content article form {
 }
 
 .imgGroup {
-	width: 690px;
-	height: auto;
-	padding: 20px;
-	margin: 20px 0 20px 0;
-	@include background-image( linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%) );
-	&.col2 {
-		@include column-count(2);	
-	}
-	&.col3 {
-		@include column-count(3);
-	}
-	img {
-		width: 90%;
-	}
-}
+				width: 690px;
+				height: auto;
+				padding: 20px;
+				margin: 20px 0 20px 0;
+				&.col2 {
+					@include column-count(2);	
+				}
+				&.col3 {
+					@include column-count(3);
+				}
+				img {
+					width: 90%;
+				}
+			}

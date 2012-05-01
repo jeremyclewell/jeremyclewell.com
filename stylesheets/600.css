@@ -42,47 +42,50 @@ section header h1, section header h2, section header h4 {
 section nav {
   width: 500px;
 }
-/* line 47, ../sass/600.scss */
+/* line 46, ../sass/600.scss */
+section nav ul {
+  width: 500px;
+}
+/* line 50, ../sass/600.scss */
 section article {
   width: 540px;
 }
 
-/* line 52, ../sass/600.scss */
+/* line 58, ../sass/600.scss */
 #video {
   width: 450px;
 }
-/* line 54, ../sass/600.scss */
+/* line 60, ../sass/600.scss */
 #video iframe {
   width: 450px;
   height: 300px;
 }
 
-/* line 61, ../sass/600.scss */
+/* line 67, ../sass/600.scss */
 section[id="contact"] div.content article form textarea {
   width: 55%;
 }
 
-/* line 71, ../sass/600.scss */
+/* line 72, ../sass/600.scss */
+#blogMobileNav li, #portfolioMobileNav li {
+  padding: 27px 80px 26px 80px;
+}
+
+/* line 80, ../sass/600.scss */
 .sm li {
   padding: 5px 10px 5px 10px;
   width: 17%;
 }
 
-/* line 77, ../sass/600.scss */
+/* line 85, ../sass/600.scss */
 .imgGroup {
   width: 510px;
   height: auto;
   padding: 20px;
   margin: 20px auto;
   text-align: center;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(20%, rgba(0, 0, 0, 0.1)), color-stop(50%, rgba(0, 0, 0, 0.3)), color-stop(80%, rgba(0, 0, 0, 0.1)), color-stop(100%, rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%);
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%);
-  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%);
-  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0) 100%);
 }
-/* line 84, ../sass/600.scss */
+/* line 91, ../sass/600.scss */
 .imgGroup img {
   width: 90%;
   padding: 10px;
