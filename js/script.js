@@ -214,7 +214,7 @@ $(document).ready(function(){
 
 		var portfolioID = getURLParameter("portfolio", location.search);
 		if (portfolioID) {
-			$.getJSON("http://blog.jeremyclewell.com/?json=get_post&post_type=portfolio_entry&post_id=" + blogID, function(data) {
+			$.getJSON("http://blog.jeremyclewell.com/?json=get_post&post_type=portfolio_entry&post_id=" + portfolioID, function(data) {
 				$("#portfolio .content article").html(portfolioTemplate(data["post"]));	
 				$("#portfolio header").next(".content").slideToggle(300).parent("section").siblings("section").children(".content").slideUp(300);
 			});
