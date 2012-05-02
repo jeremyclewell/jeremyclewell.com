@@ -32,6 +32,30 @@ COLOURS
 */
 /* line 34, ../sass/2x.scss */
 section[id="header"] div.content article p.featureLeft {
-  background-image: url("../img/h/home_divide_bg_2x.png"), url("../img/h/home_divide_bg_2x.png");
+  background-image: url("../img/h/home_divide_bg@2x.png"), url("../img/h/home_divide_bg@2x.png");
+  background-size: 30px 30px;
+}
+
+/* line 39, ../sass/2x.scss */
+section[id="about"] div.content article p.featureRight {
+  background-image: url("../img/h/about_divide_bg@2x.png"), url("../img/h/about_divide_bg@2x.png");
+  background-size: 30px 30px;
+}
+
+/* line 44, ../sass/2x.scss */
+section[id="contact"] div.content article p {
+  background-image: url("../img/h/contact_divide_bg@2x.png"), url("../img/h/contact_divide_bg@2x.png");
+  background-size: 30px 30px;
+}
+
+/* line 49, ../sass/2x.scss */
+section[id="blog"] div.content article p {
+  background-image: url("../img/h/blog_divide_bg@2x.png");
+  background-size: 30px 30px;
+}
+
+/* line 54, ../sass/2x.scss */
+section[id="portfolio"] div.content article p {
+  background-image: url("../img/h/portfolio_divide_bg@2x.png");
   background-size: 30px 30px;
 }
