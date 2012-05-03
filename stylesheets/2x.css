@@ -50,12 +50,10 @@ section[id="contact"] div.content article p {
 
 /* line 49, ../sass/2x.scss */
 section[id="blog"] div.content article p {
-  background-image: url("../img/h/blog_divide_bg@2x.png");
   background-size: 30px 30px;
 }
 
 /* line 54, ../sass/2x.scss */
 section[id="portfolio"] div.content article p {
-  background-image: url("../img/h/portfolio_divide_bg@2x.png");
   background-size: 30px 30px;
 }
