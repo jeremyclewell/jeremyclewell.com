@@ -1179,7 +1179,7 @@ section div.content article p, section div.content article a {
   line-height: 19.2px;
 }
 /* line 405, ../sass/style.scss */
-section div.content article #video {
+section div.content article .video {
   text-align: center;
   margin: 0 auto;
   width: 250px;
@@ -1201,7 +1201,7 @@ section div.content article #video {
   background-image: linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.16) 20%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.06) 80%, rgba(0, 0, 0, 0.04) 100%);
 }
 /* line 416, ../sass/style.scss */
-section div.content article #video iframe {
+section div.content article .video iframe {
   width: 250px;
   height: 166px;
 }

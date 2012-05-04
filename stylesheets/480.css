@@ -62,11 +62,11 @@ section article div.entryMeta p, section article div.entryMeta a {
 }
 
 /* line 66, ../sass/480.scss */
-#video {
+.video {
   width: 325px;
 }
 /* line 68, ../sass/480.scss */
-#video iframe {
+.video iframe {
   width: 325px;
   height: 216px;
 }

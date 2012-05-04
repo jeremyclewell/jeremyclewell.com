@@ -47,11 +47,11 @@ section[id="header"] div.content article p.featureLeft {
 }
 
 /* line 55, ../sass/992.scss */
-#video {
+.video {
   width: 700px;
 }
 /* line 57, ../sass/992.scss */
-#video iframe {
+.video iframe {
   width: 700px;
   height: 466px;
 }
