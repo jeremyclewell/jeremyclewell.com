@@ -63,13 +63,7 @@ section{
 	}
 }
 
-.video {
-	width: 325px;
-	iframe {
-		width: 325px;
-		height: 216px;
-	}
-}
+
 
 #blogMobileNav li, #portfolioMobileNav li {
 	padding: 27px 60px 26px 60px;
@@ -94,20 +88,25 @@ section{
 #skills {
 	@include column-count(1);
 }
-.imgGroup {
-				width: 370px;
-				height: auto;
-				padding: 20px;
-				margin: 20px auto;
-				text-align: center;
-				.col2 {
-					@include column-count(1);	
-				}
-				.col3 {
-					@include column-count(1);
-				}
-				img {
-					width: 90%;
-					padding: 10px;
-				}
-			}
+figure {
+	width: 370px;
+	height: auto;
+	padding: 20px;
+	margin: 20px auto;
+	text-align: center;
+	.col2 {
+		@include column-count(1);	
+	}
+	.col3 {
+		@include column-count(1);
+	}
+	img {
+		width: 90%;
+		padding: 10px;
+	}
+	iframe {
+		width: 325px;
+		height: 216px;
+	}
+}
+

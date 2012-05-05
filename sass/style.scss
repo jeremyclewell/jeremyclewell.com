@@ -402,27 +402,14 @@ section{
 				font-size: $base-font-size/1.2;
 				line-height: $base-font-size*1.2;
 			}
-			.video {
-				text-align: center;
-				margin: 0 auto;
-				width: 250px;
-				padding: 20px;
-				border-right: solid 1px rgba(255, 255, 255, 0.1);
-				border-left: solid 1px rgba(0, 0, 0, 0.1);
-				border-bottom: solid 1px rgba(255, 255, 255, 0.1);
-				border-top: solid 1px rgba(0, 0, 0, 0.1);
-				@include border-radius(10px);
-				@include background-image( linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.16) 20%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.06) 80%, rgba(0, 0, 0, 0.04) 100%) );
-				iframe {
-					width: 250px;
-					height: 166px;
-				}
-			}
+			
 			
 		}
 	}
 
 }
+
+
 	
 section[id="header"] div.content article p.featureLeft {
 	background-image: url("../img/h/home_divide_bg.png"), url("../img/h/home_divide_bg.png");
@@ -672,10 +659,10 @@ article {
 	}
 }
 
-.imgGroup {
-	width: 270px;
+figure {
 	text-align: center;
-	margin: 0 auto;
+	margin: 0 auto 20px auto;
+	width: 270px;
 	padding: 20px;
 	border-right: solid 1px rgba(255, 255, 255, 0.1);
 	border-left: solid 1px rgba(0, 0, 0, 0.1);
@@ -683,11 +670,14 @@ article {
 	border-top: solid 1px rgba(0, 0, 0, 0.1);
 	@include border-radius(10px);
 	@include background-image( linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.16) 20%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.06) 80%, rgba(0, 0, 0, 0.04) 100%) );
+	iframe {
+		width: 250px;
+		height: 166px;
+	}
 	img {
 		width: 80%;
 		padding: 10px;
 	}
 }
-
 
 

@@ -55,13 +55,6 @@ section{
 	}
 }
 
-.video {
-	width: 450px;
-	iframe {
-		width: 450px;
-		height: 300px;
-	}
-}
 
 section[id="contact"] div.content article form {
 	textarea {
@@ -82,14 +75,18 @@ section[id="contact"] div.content article form {
 		width: 17%;
 	}
 }
-.imgGroup {
-				width: 510px;
-				height: auto;
-				padding: 20px;
-				margin: 20px auto;
-				text-align: center;
-				img {
-					width: 90%;
-					padding: 10px;
-				}
-			}
+figure {
+	width: 510px;
+	height: auto;
+	padding: 20px;
+	margin: 20px auto;
+	text-align: center;
+	img {
+		width: 90%;
+		padding: 10px;
+	}
+	iframe {
+		width: 450px;
+		height: 300px;
+	}
+}

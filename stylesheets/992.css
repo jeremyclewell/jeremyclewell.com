@@ -46,58 +46,53 @@ section[id="header"] div.content article p.featureLeft {
   padding: 0 55px 0 0;
 }
 
-/* line 55, ../sass/992.scss */
-.video {
-  width: 700px;
-}
-/* line 57, ../sass/992.scss */
-.video iframe {
-  width: 700px;
-  height: 466px;
-}
-
-/* line 63, ../sass/992.scss */
+/* line 56, ../sass/992.scss */
 #blogSlider, #portfolioSlider {
   width: 750px;
 }
 
-/* line 69, ../sass/992.scss */
+/* line 62, ../sass/992.scss */
 #cv a h3 {
   font-size: 30px;
 }
 
-/* line 75, ../sass/992.scss */
+/* line 68, ../sass/992.scss */
 .sm {
   width: 650px;
 }
-/* line 77, ../sass/992.scss */
+/* line 70, ../sass/992.scss */
 .sm li {
   padding: 5px 10px 5px 10px;
   width: 17%;
 }
 
-/* line 82, ../sass/992.scss */
-.imgGroup {
+/* line 75, ../sass/992.scss */
+figure {
   width: 790px;
   height: auto;
   padding: 20px;
   margin: 20px 0 20px 0;
 }
-/* line 87, ../sass/992.scss */
-.imgGroup.col2 {
+/* line 80, ../sass/992.scss */
+figure.col2 {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   -o-column-count: 2;
   column-count: 2;
 }
-/* line 90, ../sass/992.scss */
-.imgGroup.col3 {
+/* line 83, ../sass/992.scss */
+figure.col3 {
   -webkit-column-count: 3;
   -moz-column-count: 3;
   -o-column-count: 3;
   column-count: 3;
 }
-/* line 93, ../sass/992.scss */
-.imgGroup img {
+/* line 86, ../sass/992.scss */
+figure img {
   width: 90%;
+}
+/* line 89, ../sass/992.scss */
+figure iframe {
+  width: 700px;
+  height: 466px;
 }

@@ -61,33 +61,23 @@ section article div.entryMeta p, section article div.entryMeta a {
   margin: 0px;
 }
 
-/* line 66, ../sass/480.scss */
-.video {
-  width: 325px;
-}
 /* line 68, ../sass/480.scss */
-.video iframe {
-  width: 325px;
-  height: 216px;
-}
-
-/* line 74, ../sass/480.scss */
 #blogMobileNav li, #portfolioMobileNav li {
   padding: 27px 60px 26px 60px;
 }
 
-/* line 80, ../sass/480.scss */
+/* line 74, ../sass/480.scss */
 .sm li {
   padding: 5px 10px 5px 10px;
   width: 17%;
 }
 
-/* line 88, ../sass/480.scss */
+/* line 82, ../sass/480.scss */
 #cv a h3 {
   font-size: 26px;
 }
 
-/* line 94, ../sass/480.scss */
+/* line 88, ../sass/480.scss */
 #skills {
   -webkit-column-count: 1;
   -moz-column-count: 1;
@@ -95,30 +85,35 @@ section article div.entryMeta p, section article div.entryMeta a {
   column-count: 1;
 }
 
-/* line 97, ../sass/480.scss */
-.imgGroup {
+/* line 91, ../sass/480.scss */
+figure {
   width: 370px;
   height: auto;
   padding: 20px;
   margin: 20px auto;
   text-align: center;
 }
+/* line 97, ../sass/480.scss */
+figure .col2 {
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  -o-column-count: 1;
+  column-count: 1;
+}
+/* line 100, ../sass/480.scss */
+figure .col3 {
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  -o-column-count: 1;
+  column-count: 1;
+}
 /* line 103, ../sass/480.scss */
-.imgGroup .col2 {
-  -webkit-column-count: 1;
-  -moz-column-count: 1;
-  -o-column-count: 1;
-  column-count: 1;
-}
-/* line 106, ../sass/480.scss */
-.imgGroup .col3 {
-  -webkit-column-count: 1;
-  -moz-column-count: 1;
-  -o-column-count: 1;
-  column-count: 1;
-}
-/* line 109, ../sass/480.scss */
-.imgGroup img {
+figure img {
   width: 90%;
   padding: 10px;
+}
+/* line 107, ../sass/480.scss */
+figure iframe {
+  width: 325px;
+  height: 216px;
 }

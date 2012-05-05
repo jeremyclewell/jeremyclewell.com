@@ -60,17 +60,7 @@ section article div.entryMeta p, section article div.entryMeta a {
   margin: 0px;
 }
 
-/* line 66, ../sass/768.scss */
-.video {
-  width: 700px;
-}
-/* line 68, ../sass/768.scss */
-.video iframe {
-  width: 700px;
-  height: 466px;
-}
-
-/* line 74, ../sass/768.scss */
+/* line 67, ../sass/768.scss */
 section[id="header"] div.content article p.featureLeft {
   background-image: url("../img/h/home_divide_bg.png");
   width: 60%;
@@ -79,30 +69,30 @@ section[id="header"] div.content article p.featureLeft {
   background-position: right -8px;
 }
 
-/* line 82, ../sass/768.scss */
+/* line 75, ../sass/768.scss */
 #blogSlider, #portfolioSlider {
   display: block;
 }
 
-/* line 86, ../sass/768.scss */
+/* line 79, ../sass/768.scss */
 #blogMobileNav, #portfolioMobileNav {
   display: none;
 }
 
-/* line 90, ../sass/768.scss */
+/* line 83, ../sass/768.scss */
 #tree {
   position: absolute;
   right: 50px;
   top: 0;
 }
 
-/* line 96, ../sass/768.scss */
+/* line 89, ../sass/768.scss */
 #cv {
   float: left;
   margin-left: 60px;
 }
 
-/* line 101, ../sass/768.scss */
+/* line 94, ../sass/768.scss */
 section[id="about"] div.content article p.featureRight {
   background-image: url("../img/h/about_divide_bg.png");
   width: 60%;
@@ -114,7 +104,7 @@ section[id="about"] div.content article p.featureRight {
   top: 0px;
 }
 
-/* line 118, ../sass/768.scss */
+/* line 111, ../sass/768.scss */
 section[id="contact"] div.content article p.featureLeft {
   background-image: url("../img/h/contact_divide_bg.png");
   width: 40%;
@@ -123,7 +113,7 @@ section[id="contact"] div.content article p.featureLeft {
   background-position: right -8px;
 }
 
-/* line 126, ../sass/768.scss */
+/* line 119, ../sass/768.scss */
 section[id="contact"] div.content article form {
   width: 45%;
   position: absolute;
@@ -133,22 +123,22 @@ section[id="contact"] div.content article form {
   float: right;
 }
 
-/* line 135, ../sass/768.scss */
+/* line 128, ../sass/768.scss */
 #blogSlider, #portfolioSlider {
   width: 750px;
 }
 
-/* line 139, ../sass/768.scss */
+/* line 132, ../sass/768.scss */
 .sm {
   width: 650px;
 }
-/* line 141, ../sass/768.scss */
+/* line 134, ../sass/768.scss */
 .sm li {
   padding: 5px 10px 5px 10px;
   width: 17%;
 }
 
-/* line 147, ../sass/768.scss */
+/* line 140, ../sass/768.scss */
 #skills {
   -webkit-column-count: 2;
   -moz-column-count: 2;
@@ -156,28 +146,33 @@ section[id="contact"] div.content article form {
   column-count: 2;
 }
 
-/* line 151, ../sass/768.scss */
-.imgGroup {
+/* line 144, ../sass/768.scss */
+figure {
   width: 690px;
   height: auto;
   padding: 20px;
   margin: 20px 0 20px 0;
 }
-/* line 156, ../sass/768.scss */
-.imgGroup.col2 {
+/* line 149, ../sass/768.scss */
+figure.col2 {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   -o-column-count: 2;
   column-count: 2;
 }
-/* line 159, ../sass/768.scss */
-.imgGroup.col3 {
+/* line 152, ../sass/768.scss */
+figure.col3 {
   -webkit-column-count: 3;
   -moz-column-count: 3;
   -o-column-count: 3;
   column-count: 3;
 }
-/* line 162, ../sass/768.scss */
-.imgGroup img {
+/* line 155, ../sass/768.scss */
+figure img {
   width: 90%;
+}
+/* line 158, ../sass/768.scss */
+figure iframe {
+  width: 700px;
+  height: 466px;
 }
