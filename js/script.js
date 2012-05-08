@@ -226,7 +226,7 @@ $(document).ready(function(){
 
 	});
 
-	$("#blogMobileNav li.prev").live("click", function(evt) {
+	$("#blogMobileNav li.prev").live("click touchEnd", function(evt) {
 			if (blogPageIndex > 0) {
 				blogPageIndex--;
 				$.getJSON("http://blog.jeremyclewell.com/?json=get_recent_posts&post_type=blog_post&count=1&page=" + blogPageIndex + '&callback=?', function(data) {
@@ -236,7 +236,7 @@ $(document).ready(function(){
 			}
 		});
 
-		$("#blogMobileNav li.next").live("click", function(evt) {
+		$("#blogMobileNav li.next").live("click touchEnd", function(evt) {
 			if (blogPageIndex < blogTotal-1) {
 				blogPageIndex++;
 				$.getJSON("http://blog.jeremyclewell.com/?json=get_recent_posts&post_type=blog_post&count=1&page=" + blogPageIndex + '&callback=?', function(data) {
@@ -245,7 +245,7 @@ $(document).ready(function(){
 			}
 		});
 
-		$("#portfolioMobileNav li.prev").live("click", function(evt) {
+		$("#portfolioMobileNav li.prev").live("click touchEnd", function(evt) {
 			if (portfolioPageIndex > 0) {
 				portfolioPageIndex--;
 				$.getJSON("http://blog.jeremyclewell.com/?json=get_recent_posts&post_type=portfolio_entry&count=1&page=" + portfolioPageIndex + '&callback=?', function(data) {
@@ -254,7 +254,7 @@ $(document).ready(function(){
 			}
 		});
 
-		$("#portfolioMobileNav li.next").live("click", function(evt) {
+		$("#portfolioMobileNav li.next").live("click touchEnd", function(evt) {
 			if (portfolioPageIndex < portfolioTotal - 1) {
 				portfolioPageIndex++;
 				$.getJSON("http://blog.jeremyclewell.com/?json=get_recent_posts&post_type=portfolio_entry&count=1&page=" + portfolioPageIndex + '&callback=?', function(data) {
