@@ -38,46 +38,62 @@ h1 {
 section header h1, section header h2, section header h4 {
   width: 460px;
 }
-/* line 44, ../sass/480.scss */
-section nav {
-  width: 400px;
+/* line 43, ../sass/480.scss */
+section header .headerTools {
+  right: -150px;
 }
-/* line 46, ../sass/480.scss */
-section nav ul {
-  width: 400px;
-}
-/* line 50, ../sass/480.scss */
+/* line 54, ../sass/480.scss */
 section article {
   width: 420px;
 }
-/* line 55, ../sass/480.scss */
+/* line 59, ../sass/480.scss */
 section article div.entryMeta {
   width: 350px;
   text-align: left;
 }
-/* line 56, ../sass/480.scss */
+/* line 60, ../sass/480.scss */
 section article div.entryMeta p, section article div.entryMeta a {
   font-size: 11px !important;
   margin: 0px;
 }
 
-/* line 68, ../sass/480.scss */
+/* line 70, ../sass/480.scss */
+#blog {
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(3%, rgba(0, 0, 0, 0.2)), color-stop(20%, rgba(0, 0, 0, 0.1)), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.1)), color-stop(97%, rgba(0, 0, 0, 0.2))), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background_2.jpg");
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background_2.jpg");
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background_2.jpg");
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background_2.jpg");
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background_2.jpg");
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background_2.jpg");
+}
+
+/* line 74, ../sass/480.scss */
+#portfolio {
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(3%, rgba(0, 0, 0, 0.2)), color-stop(20%, rgba(0, 0, 0, 0.1)), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.1)), color-stop(97%, rgba(0, 0, 0, 0.2))), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background_2.jpg");
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background_2.jpg");
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background_2.jpg");
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background_2.jpg");
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background_2.jpg");
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background_2.jpg");
+}
+
+/* line 78, ../sass/480.scss */
 #blogMobileNav li, #portfolioMobileNav li {
   padding: 27px 60px 26px 60px;
 }
 
-/* line 74, ../sass/480.scss */
+/* line 84, ../sass/480.scss */
 .sm li {
   padding: 5px 10px 5px 10px;
   width: 17%;
 }
 
-/* line 82, ../sass/480.scss */
+/* line 92, ../sass/480.scss */
 #cv a h3 {
   font-size: 26px;
 }
 
-/* line 88, ../sass/480.scss */
+/* line 98, ../sass/480.scss */
 #skills {
   -webkit-column-count: 1;
   -moz-column-count: 1;
@@ -85,7 +101,7 @@ section article div.entryMeta p, section article div.entryMeta a {
   column-count: 1;
 }
 
-/* line 91, ../sass/480.scss */
+/* line 101, ../sass/480.scss */
 figure {
   width: 370px;
   height: auto;
@@ -93,26 +109,26 @@ figure {
   margin: 20px auto;
   text-align: center;
 }
-/* line 97, ../sass/480.scss */
+/* line 107, ../sass/480.scss */
 figure .col2 {
   -webkit-column-count: 1;
   -moz-column-count: 1;
   -o-column-count: 1;
   column-count: 1;
 }
-/* line 100, ../sass/480.scss */
+/* line 110, ../sass/480.scss */
 figure .col3 {
   -webkit-column-count: 1;
   -moz-column-count: 1;
   -o-column-count: 1;
   column-count: 1;
 }
-/* line 103, ../sass/480.scss */
+/* line 113, ../sass/480.scss */
 figure img {
   width: 90%;
   padding: 10px;
 }
-/* line 107, ../sass/480.scss */
+/* line 117, ../sass/480.scss */
 figure iframe {
   width: 325px;
   height: 216px;

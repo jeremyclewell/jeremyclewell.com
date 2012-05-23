@@ -40,9 +40,19 @@ section{
 		h1, h2, h4 {
 			width: 760px;
 		}
+		.headerTools {
+			right: -300px;
+		}
 	}
 	nav {
-		width: 650px;
+		width: 450px;
+		&>ul {
+			@include column-count(2);	
+		}
+		ul {
+		
+		}
+		
 	}
 	article {
 		width: 730px;
@@ -51,7 +61,7 @@ section{
 		}
 		div.entryMeta {
 			position: absolute;
-			top: 17px;
+			top: 102px;
 			right: 0;
 			width: 250px;
 			text-align: right;

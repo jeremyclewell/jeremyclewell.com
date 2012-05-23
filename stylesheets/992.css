@@ -32,66 +32,66 @@ COLOURS
 section header h1, section header h2, section header h4 {
   width: 960px;
 }
-/* line 40, ../sass/992.scss */
-section nav {
-  width: 750px;
+/* line 39, ../sass/992.scss */
+section header .headerTools {
+  right: -350px;
 }
-/* line 43, ../sass/992.scss */
+/* line 46, ../sass/992.scss */
 section article {
   width: 830px;
 }
 
-/* line 51, ../sass/992.scss */
+/* line 54, ../sass/992.scss */
 section[id="header"] div.content article p.featureLeft {
   padding: 0 55px 0 0;
 }
 
-/* line 56, ../sass/992.scss */
+/* line 59, ../sass/992.scss */
 #blogSlider, #portfolioSlider {
   width: 750px;
 }
 
-/* line 62, ../sass/992.scss */
+/* line 65, ../sass/992.scss */
 #cv a h3 {
   font-size: 30px;
 }
 
-/* line 68, ../sass/992.scss */
+/* line 71, ../sass/992.scss */
 .sm {
   width: 650px;
 }
-/* line 70, ../sass/992.scss */
+/* line 73, ../sass/992.scss */
 .sm li {
   padding: 5px 10px 5px 10px;
   width: 17%;
 }
 
-/* line 75, ../sass/992.scss */
+/* line 78, ../sass/992.scss */
 figure {
   width: 790px;
   height: auto;
   padding: 20px;
   margin: 20px 0 20px 0;
 }
-/* line 80, ../sass/992.scss */
+/* line 83, ../sass/992.scss */
 figure.col2 {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   -o-column-count: 2;
   column-count: 2;
 }
-/* line 83, ../sass/992.scss */
+/* line 86, ../sass/992.scss */
 figure.col3 {
   -webkit-column-count: 3;
   -moz-column-count: 3;
   -o-column-count: 3;
   column-count: 3;
 }
-/* line 86, ../sass/992.scss */
+/* line 89, ../sass/992.scss */
 figure img {
   width: 90%;
 }
-/* line 89, ../sass/992.scss */
+/* line 92, ../sass/992.scss */
 figure iframe {
   width: 700px;
   height: 466px;

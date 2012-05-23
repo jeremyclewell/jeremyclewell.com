@@ -7,6 +7,16 @@
 
 $base-font-size: 16px;
 
+@mixin pad($base-color) {
+	cursor: pointer;
+	color: $base-font-color;
+	background: $base-color;
+	@include background-image(linear-gradient(top, $base-color, $base-color*0.8));
+	border: 1px solid $base-color*0.75;
+	border-bottom: 1px solid $base-color*0.25;
+	border-top: 1px solid $base-color*1.7;
+}
+
 html {
 	//background-image: url("../img/h/html_bg_2.png"), url("../img/h/html_bg_1.jpg");
 	@include background-image( linear-gradient(left, rgba(0, 0, 0, .25) 3%, rgba(0, 0, 0, .1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .1) 80%, rgba(0, 0, 0, .25) 97%), url("../img/h/html_bg_2.png"), url("../img/h/html_bg_1.jpg"));
@@ -95,6 +105,10 @@ input {
 	margin-bottom: 10px;
 }
 
+hr {
+	margin-top: 0.5em;
+}
+
 label {
 	width: 37%;
 	padding: 6px 10px 0 0;
@@ -169,26 +183,14 @@ footer {
 
 #blog {
 	background-color: $color-palette-3;
- 	@include background-image( linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg"));
+ 	@include background-image( linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background_3.jpg"));
 	background-repeat: repeat-x, repeat-x, repeat;
 	background-position: left top, left top, left top, left 74px;
 	text-align: left;
-	.sm li,  #blogMobileNav li.button {
-		background-color: #3c3d1c;
-		@include background-image(url("../img/h/nav_texture.png"), linear-gradient(#787746 #646334)); 
-		height: 78px;
-		border: solid 1px #464723;
-		border-right: solid 1px #353619;
-		border-top: solid 1px #353619;
-		text-align: left;
-		p {
-			text-align: left;	
-		}
-	}
 	a {
-		color: #ff4100 !important;
+		color: #ff4100;
 		&:hover {
-			color: #ff7b4e !important;
+			color: #ff7b4e;
 			text-decoration: underline;
 		}
 	}
@@ -196,20 +198,9 @@ footer {
 
 #portfolio {	
 	background-color: $color-palette-4;
- 	@include background-image( linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg"));
+ 	@include background-image( linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background_3.jpg"));
 	background-repeat: repeat-x, repeat-x, repeat;
 	background-position: left top, left top, left top, left 74px;
-	.sm li, #portfolioMobileNav li.button {
-		background-color: #434420;
-		@include background-image(url("../img/h/nav_texture.png"), linear-gradient(#494a23 #3b3c1b));
-		height: 78px;
-		border-left: solid 1px #55562c;
-		border-right: solid 1px #3a3b1b;
-		text-align: left;
-		p {
-			text-align: left;	
-		}
-	}
 	a {
 		color: #ff5f29 !important;
 		&:hover {
@@ -373,20 +364,142 @@ section{
 		h1+h4 {
 			padding: 0;
 		}
+		.headerTools {
+			width: 250px;
+			position: relative;
+			right: -100px;
+			margin: -53px auto 0px auto;
+			
+			.search {
+				width: 150px;
+				
+				//float: right;
+			}
+			.menuButton {
+				display: inline;
+				width: 46px;
+				height: 44px;
+				margin: 0;
+				//float: right;
+				//background-image: url('../img/h/blog_menu_button.png');
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+			.searchButton {
+				display: inline;
+				width: 46px;
+				height: 44px;
+				margin: 0;
+				//float: right;
+				//background-image: url('../img/h/blog_menu_button.png');
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+		}
 	}
 	nav {
 		width: 280px;
-		position: relative;
+		height: 400px;
+		overflow: auto;
+		position: absolute;
+		left: 0;
+		right: 0;
 		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
+		margin: -70px auto 0 auto;
+		padding: 20px;
+		display: block;
+		z-index: 1000;
+		
+		@include pad($base-font-color);
+		@include background-image(url("../img/h/nav_texture.png"));
+		@include border-radius(15px);
+		border: 5px solid rgba(0,0,0,0.7);
+		box-shadow: 0px 0px 50px #000;
+		//visibility: hidden;
+
+		&>ul {
+			@include column-count(1);	
+		}
+
 		ul {
-			width: 280px;
+			
+			
+			text-align: left;
+			
+			li {
+				@include transition-property(background-color);
+				@include transition-duration(0.3s);
+				@include border-radius(10px);
+				text-align: left;
+				padding: 5px 5px;
+				font: 12px/14px 'BonvenoCFLight', Arial, sans-serif;
+				color: #666;
+				&:hover {
+					background-color: rgba(0,0,0,0.1);
+				}
+				a {
+					color: #666 !important;
+					text-shadow: none;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+				ul {
+					text-align: left;
+					padding-top: 3px;
+					li {
+						font: 9px/14px 'BonvenoCFLight', Arial, sans-serif;
+						display: inline;
+						padding: 1px 5px;
+						
+						@include border-radius(5px);
+						&.Development {
+							@include pad(#454526);
+						}
+						&.WebGL {
+							@include pad(#5d5c26);
+						}
+						&.Artwork {
+							@include pad(#636323);
+						}
+						&.RasberryPi {
+							@include pad(#72741d);
+						}
+						&.Blender {
+							@include pad(#807718);
+						}
+						&.ZBrush {
+							@include pad(#777111);
+						}
+					}
+
+				}
+				.prev {
+					padding: 27px 40px 26px 40px;
+					overflow:hidden;
+					&.button {
+						@include pad(#25260d);
+						font: 14px/14px 'BonvenoCFLight', Arial, sans-serif;
+						color: #fbf8e8;
+					}
+				}
+				.next {
+					@include pad(#25260d);
+					padding: 27px 40px 26px 40px;
+					overflow:hidden;
+					&.button {
+						border-left: solid 1px #616232;
+						border-right: solid 1px #25260d;
+						font: 14px/14px 'BonvenoCFLight', Arial, sans-serif;
+						color: #fbf8e8;
+					}
+				}
+			}
 		}
 	}
+	
 	article {
 		width: 300px;
-		margin-top: 20px;
 		margin-left: auto;
 		margin-right: auto;
 		padding: 10px;
@@ -397,7 +510,43 @@ section{
 		width: 100%;
 		display:none;
 		padding-bottom: 20px;
+		div.search {
+			width: 280px;
+			height: 30px;			
+			overflow: auto;
+			position: absolute;
+			left: 0;
+			right: 0;
+			text-align: center;
+			margin: -70px auto 0 auto;
+			padding: 20px;
+			display: none;
+			z-index: 1000;			
+			@include pad($base-font-color);
+			@include background-image(url("../img/h/nav_texture.png"));
+			@include border-radius(15px);
+			border: 5px solid rgba(0,0,0,0.7);
+			box-shadow: 0px 0px 50px #000;
+			input {
+				margin: 0;
+				padding: 0;
+				font-size: 28px;
+				color: #666;
+				border: none;
+				background-color: rgba(0,0,0,0);
+				background-image: none;
+				width: 100%;
+				height: 100%;
+				&:focus {
+					border: none;
+				}
+			}
+		}
 		article {
+			z-index: 1px;
+			h2 {
+				padding-bottom: 20px;
+			}
 			p, a {
 				font-size: $base-font-size/1.2;
 				line-height: $base-font-size*1.2;
@@ -514,63 +663,6 @@ section[id="portfolio"] div.content article p {
 
 
 *///////////////////////////////////////
-nav+article {
-	margin-top: 25px;
-}
-
-
-
-#blogSlider, #portfolioSlider { 
-	//width: 290px; 
-	width: 750px; 
-	height: 75px; 
-	top: 2px; 
-	display: none;
-}	
-#blogMobileNav, #portfolioMobileNav {
-	display: block;
-	position: absolute;
-	height: 75px; 
-	top: 30px; 
-	list-style:none;  
-	li {
-		padding: 27px 40px 26px 40px;
-		display:inline;
-		overflow:hidden;
-		&.button {
-			border-left: solid 1px #616232;
-			border-right: solid 1px #25260d;
-			font: 14px/14px 'BonvenoCFLight', Arial, sans-serif;
-			color: #fbf8e8;
-		}
-	}
-}
-
-
-.sm {
-
-	width: 650px;
-	float: left;
-	list-style:none;  
-	height:100px; 
-	display:block; 
-	overflow:hidden;
-	@include transition-property(position);
-	@include transition-duration(0.5s);
-	li {
-		padding: 5px 10px 5px 10px;
-		float:left; 
-		display:inline;
-		overflow:hidden;
-		width: 17%;
-		border-left: solid 1px #616232;
-		border-right: solid 1px #25260d;
-		font: 14px/14px 'BonvenoCFLight', Arial, sans-serif;
-		color: #fbf8e8;
-		@include transition-property(width);
-		@include transition-duration(0.5s);
-	}
-}
 
 .title {
 	

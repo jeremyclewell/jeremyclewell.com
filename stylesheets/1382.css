@@ -41,16 +41,16 @@ section article {
   width: 830px;
 }
 
-/* line 46, ../sass/1382.scss */
+/* line 47, ../sass/1382.scss */
 #blogSlider, #portfolioSlider {
   width: 750px;
 }
 
-/* line 50, ../sass/1382.scss */
+/* line 51, ../sass/1382.scss */
 .sm {
   width: 650px;
 }
-/* line 52, ../sass/1382.scss */
+/* line 53, ../sass/1382.scss */
 .sm li {
   padding: 5px 10px 5px 10px;
   width: 17%;

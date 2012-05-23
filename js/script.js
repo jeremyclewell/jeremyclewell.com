@@ -10,10 +10,13 @@ var blogTotal = 15;
 var portfolioIndex = 0;
 var portfolioCount = 5;
 var portfolioTotal = 15;
+var state = "header";
 
 function getURLParameter(name, src) {
     return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(src)||[,""])[1].replace(/\+/g, '%20'))||null;
 }
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 
 var History = window.History;
 
@@ -28,7 +31,16 @@ History.Adapter.bind(window,'statechange',function(){ // Note: We are using stat
 });
 
 $(document).ready(function(){
+		$("#blogNav").css("display", "none");
+		$("#portfolioNav").css("display", "none");	
+		$(".headerTools").css("display", "none");	
 
+	
+	function scroll() {
+				blogMenu = new iScroll('blogNav', { hideScrollbar: false});
+				portfolioMenu = new iScroll('portfolioNav', { hideScrollbar: false});
+	}
+	var timeout = setTimeout(scroll, 200);
 	
 	// Run Matt Kersley's jQuery Responsive menu plugin (see plugins.js)
 	if ($.fn.mobileMenu) {
@@ -50,119 +62,137 @@ $(document).ready(function(){
 	});
 
 	$("#heroImg").live("click", function(evt) {
-		console.log("fbdhsjfbds");
 	//	$("#content").toggleClass("rotate");
 	});
 	
-	$("section header").click(function()
-    {
-		$(this).next(".content").slideToggle(300).parent("section").siblings("section").children(".content").slideUp(300);
+	$("section>header").click(function(evt) {
+		blogMenu.refresh();
+		portfolioMenu.refresh();
+		var thisObj = this;
+		if ($(evt.target).hasClass("menuButton")) {
+			if (this.parentNode["id"] == "blog") {
+				if ($("#blogNav").css("display") == "block") {
+					$("#blogNav").fadeOut("fast");
+					return;
+				} else {
+					$("#blogNav").fadeIn("fast");
+					return;
+				}
+			} else if (this.parentNode["id"] == "portfolio") {
+				if ($("#portfolioNav").css("display") == "block") {
+					$("#portfolioNav").fadeOut("fast");
+					return;
+				} else {
+					$("#portfolioNav").fadeIn("fast");
+					return;
+				}
+			}
+		}
+
+		if ($(evt.target).hasClass("searchButton")) {
+			if (this.parentNode["id"] == "blog") {
+				if ($("#blogNav").css("display") == "block") {
+					$("#blogNav").fadeOut("fast");
+					return;
+				} else {
+					$("#blogNav").fadeIn("fast");
+					return;
+				}
+			} else if (this.parentNode["id"] == "portfolio") {
+				if ($("#portfolioNav").css("display") == "block") {
+					$("#portfolioNav").fadeOut("fast");
+					return;
+				} else {
+					$("#portfolioNav").fadeIn("fast");
+					return;
+				}
+			}
+		}
+		
+		state = (state == this.parentNode["id"]) ? "none" : this.parentNode["id"];
+		
+		//console.log(state);
+		if (state == "blog") {
+			$("#blog header div.headerTools").fadeIn("fast");
+			$("#portfolio header div.headerTools").fadeOut("fast");
+		} else if (state == "portfolio") {
+			$("#portfolio header div.headerTools").fadeIn("fast");			
+			$("#blog header div.headerTools").fadeOut("fast");
+		} else {
+			$("#blog header div.headerTools").fadeOut("fast");
+			$("#portfolio header div.headerTools").fadeOut("fast");
+		}
+
+//		if (evt.target != this) return false;
+
+		
+		if ($("#blogNav").css("display") == "block") {
+			$("#blogNav").fadeOut("_default", function () {
+				$(thisObj).next(".content").slideToggle(500).parent("section").siblings("section").children(".content").slideUp(500);
+			});
+		} else if ($("#portfolioNav").css("display") == "block") {
+			$("#portfolioNav").fadeOut("_default", function () {
+				$(thisObj).next(".content").slideToggle(500).parent("section").siblings("section").children(".content").slideUp(500);
+			});
+		} else {
+			$(thisObj).next(".content").slideToggle(500).parent("section").siblings("section").children(".content").slideUp(500);
+		}
+
+		blogMenu.refresh();
+		
+		
 
 		// TODO - implement scrollTo
 		//$(this).scrollTo($(this));
 //       	$(this).siblings().css({backgroundImage:"url(lezzzft.png)"});
 	});
-	
-	function subnavOver() {
-		$($(this).parent().parent()).css({"width": "32%"});
-		$($(this).parent().parent()).siblings().css({"width": "13%"});
-	}
-	
-	function subnavOff() {
-		
-	}
-	
-	//$(".blogTitle").hoverIntent(subnavOver, subnavOff);
-	
-	// $(".title").live("mouseover", function(evt) {
-	// 	$($(this).parent().parent()).css({"width": "32%"});
-	// 	$($(this).parent().parent()).siblings().css({"width": "13%"});
-	// 	$($(this).next().find("p")).css({"opacity": 1})
-	// });
 
-	$("#blogSlider").mouseout(function(evt) {
-		// console.log(evt.target + this);
-		// if(evt.target == this){
-		// 	$(".sm li").css({"width": "17%"});
-		// }
-		
+	$("section div.content").live("click", function(evt) {
+		$("#blogNav").fadeOut("_default");
+		$("#portfolioNav").fadeOut("_default");
 	});
-	
-	
-
-	// $(".portfolioTitle").mouseover(function(evt) {
-	// 	$($(this).parent().parent()).css({"width": "32%"});
-	// 	$($(this).parent().parent()).siblings().css({"width": "13%"});
-	// 	$($(this).next().find("p")).css({"opacity": 1})
-	// });
-	
-	
-	
 	
 	var blogNavTemplate = Handlebars.compile($("#blog-nav-template").html());
 	var blogTemplate = Handlebars.compile($("#blog-template").html());
 	var portfolioNavTemplate = Handlebars.compile($("#portfolio-nav-template").html());
 	var portfolioTemplate = Handlebars.compile($("#portfolio-template").html());
 
-	$.getJSON('http://blog.jeremyclewell.com/?json=get_recent_posts&date_format=m/d/y&post_type=blog_post&count=5&page=1&callback=?', function(data) {//http://blog.jeremyclewell.com/?json=get_recent_posts&date_format=m/d/y&post_type=blog_post&count=5&page=1&callback=?
-		var tempStructure = "";
-		for (var i = 0; i < data.pages; i++) {
-			tempStructure += "<li><ul class='sm'><div style='width: 100%'>";
-			for (var j = 0; j < data.count; j++) {
-				if ((j + ((i)*data.count)) < data.count_total) {
-					tempStructure += "<li><div><img class='preloader' src='img/h/preloader_blog.gif'/></div></li>";
-				}
-			}
-			tempStructure += "</div></ul></li>";
-		}
-		$("#blogSlider").html(tempStructure);
-		$.each(data.posts, function(key, val) {
-			$($("#blogSlider .sm")[blogPageIndex]).html(blogNavTemplate(data));
-			blogPosts[key] = data.posts[key];
-		});
-		$('#blogSlider').anythingSlider({
-			  buildArrows         : true,      // If true, builds the forwards and backwards buttons
-			  buildNavigation     : false,      // If true, builds a list of anchor links to link to each panel
-			  buildStartStop      : false,      // If true, builds the start/stop button
-			  enableKeyboard      : false,      // if false, keyboard arrow keys will not work for this slider.
-			  hashTags            : false,      // Should links change the hashtag in the URL?
-			  infiniteSlides      : false,      // if false, the slider will not wrap & not clone any panels
-			  stopAtEnd           : true,     // If true & the slideshow is active, the slideshow will stop on the last page. This also stops the rewind effect when infiniteSlides is false.
-			  onSlideComplete     : function(slider) {
-				blogPageIndex = slider.currentPage;
-			  	if (blogPosts[blogPageIndex * 5] != undefined) return;
-			  	var request = 'http://blog.jeremyclewell.com/?json=get_recent_posts&date_format=m/d/y&post_type=blog_post&count=5&page=' + slider.currentPage + '&callback=?';
-			  	$.getJSON(request, function(data) {
-			  		blogPageIndex = slider.currentPage;
-					$.each(data.posts, function(key, val) {
-						$($("#blogSlider .sm")[blogPageIndex-1]).html(blogNavTemplate(data));
-						blogPosts[blogPageIndex * 5 + key] = data.posts[key];
+	$.getJSON('http://blog.jeremyclewell.com/?json=get_recent_posts&post_type=blog_post&include=date,title,id,tags&count=100&date_format=m/d/y&callback=?', function(data) {
+
+		$("#blogNav ul").html(blogNavTemplate(data));
+
+	 	
+		$("#blogNav li").live("click", function(evt) {
+
+			if ($(evt.target).hasClass("tag")) return false;
+			var request = 'http://blog.jeremyclewell.com/?json=get_post&post_type=blog_post&date_format=m/d/y&post_id=' + $($(this).find("a")).attr("data-postId") + '&callback=?';
+				$("#blog .content article").animate({opacity: 0}, 200, function() {
+					$("#blog .content article").html("<p>Loading...</p>");
+					$("#blog .content article").animate({opacity: 1}, 200, function() {
+						$.getJSON(request, function(data) {
+							$("#blog .content article").animate({opacity: 0}, 200, function() {
+								$("#blog .content article").html(blogTemplate(data["post"]));	
+								$("#blog .content article").animate({opacity: 1}, 200);
+//	    		History.pushState(null, blogPosts[blogPageIndex * 5 + $(thisObj).index()].title, "?blog=" + blogPosts[blogPageIndex * 5 + $(thisObj).index()].id);
+							});
+						});
 					});
 				});
-			  } 
+			
 		});
 
-		$("#blogSlider .sm li").live("click",  function(evt) {
-			var thisObj = this;
-			$("#blog .content article").animate({opacity: 0}, 200, function() {
-	    		$("#blog .content article").html(blogTemplate(blogPosts[blogPageIndex * 5 + $(thisObj).index()]));
-	    		$("#blog .content article").animate({opacity: 1}, 200);
-	    		History.pushState(null, blogPosts[blogPageIndex * 5 + $(thisObj).index()].title, "?blog=" + blogPosts[blogPageIndex * 5 + $(thisObj).index()].id);
-	    		//window.location.search = "blog=" + blogPosts[blogPageIndex * 5 + $(thisObj).index()].id;
-	  		});
-		});
 		var blogID = getURLParameter("blog", location.search);
-		if (blogID) {
-	$("#blog header").next(".content").slideToggle(300).parent("section").siblings("section").children(".content").slideUp(300);
-			$.getJSON("http://blog.jeremyclewell.com/?json=get_post&post_type=blog_post&post_id=" + blogID, function(data) {
-				$("#blog .content article").html(blogTemplate(data["post"]));	
-				$("#blog header").next(".content").slideToggle(300).parent("section").siblings("section").children(".content").slideUp(300);
-			});
-		} else {
-			$("#blog .content article").html(blogTemplate(blogPosts[0]));	
-		}
+		// if (blogID) {
+		// $("#blog header").next(".content").slideToggle(300).parent("section").siblings("section").children(".content").slideUp(300);
+		// 		$.getJSON("http://blog.jeremyclewell.com/?json=get_post&post_type=blog_post&post_id=" + blogID, function(data) {
+		// 			$("#blog .content article").html(blogTemplate(data["post"]));	
+		// 			$("#blog header").next(".content").slideToggle(300).parent("section").siblings("section").children(".content").slideUp(300);
+		// 		});
+		// 	} else {
+		// 		$("#blog .content article").html(blogTemplate(blogPosts[0]));	
+		// 	}
 	});
-
+	
 	$.getJSON('http://blog.jeremyclewell.com/?json=get_recent_posts&date_format=m/d/y&post_type=portfolio_entry&count=5&page=1&callback=?', function(data) {
 		var tempStructure = "";
 		for (var i = 0; i < data.pages; i++) {
@@ -174,43 +204,7 @@ $(document).ready(function(){
 			}
 			tempStructure += "</div></ul></li>";		
 		}
-		$("#portfolioSlider").html(tempStructure);
-		$.each(data.posts, function(key, val) {
-			$($("#portfolioSlider .sm")[portfolioIndex]).html(portfolioNavTemplate(data));
-			portfolioEntries[key] = data.posts[key];
-		});
-		$('#portfolioSlider').anythingSlider({
-			  buildArrows         : true,      // If true, builds the forwards and backwards buttons
-			  buildNavigation     : false,      // If true, builds a list of anchor links to link to each panel
-			  buildStartStop      : false,      // If true, builds the start/stop button
-			  enableKeyboard      : false,      // if false, keyboard arrow keys will not work for this slider.
-			  hashTags            : false,      // Should links change the hashtag in the URL?
-			  infiniteSlides      : false,      // if false, the slider will not wrap & not clone any panels
-			  stopAtEnd           : true,     // If true & the slideshow is active, the slideshow will stop on the last page. This also stops the rewind effect when infiniteSlides is false.
-			  onSlideComplete     : function(slider) {
-				portfolioIndex = slider.currentPage;
-				console.log("ola!");//portfolioEntries[portfolioIndex]);
-			  	if (portfolioEntries[portfolioIndex * 5] != undefined) return;
-			  	var request = 'http://blog.jeremyclewell.com/?json=get_recent_posts&date_format=m/d/y&post_type=portfolio_entry&count=5&page=' + slider.currentPage + '&callback=?';
-			  	$.getJSON(request, function(data) {
-			  		console.log(data);
-					$.each(data.posts, function(key, val) {
-						$($("#portfolioSlider .sm")[portfolioIndex-1]).html(portfolioNavTemplate(data));
-						portfolioEntries[portfolioIndex * 5 + key] = data.posts[key];
-					});
-				});
-			  } 
-		});
-
-		$("#portfolioSlider .sm li").live("click",  function(evt) {
-			var thisObj = this;
-			$("#portfolio .content article").animate({opacity: 0}, 200, function() {
-	    		$("#portfolio .content article").html(portfolioTemplate(portfolioEntries[portfolioIndex * 5 + $(thisObj).index()]));
-	    		$("#portfolio .content article").animate({opacity: 1}, 200);
-	    		History.pushState(null, portfolioEntries[portfolioIndex * 5 + $(thisObj).index()].title, "?portfolio=" + portfolioEntries[portfolioIndex * 5 + $(thisObj).index()].id);
-	    		//window.location.search = "portfolio=" + portfolioEntries[portfolioIndex * 5 + $(thisObj).index()].id;
-	  		});
-		});
+		
 
 		var portfolioID = getURLParameter("portfolio", location.search);
 		if (portfolioID) {
@@ -220,13 +214,11 @@ $(document).ready(function(){
 			});
 		} else {
 			$("#portfolio .content article").html(portfolioTemplate(portfolioEntries[0]));
-		}
-
-	//	$(".date").easydate();
-
+		}	
+	
 	});
 
-	$("#blogMobileNav li.prev").live("click touchEnd", function(evt) {
+	$("#blogMobileNav li.prev").live("click", function(evt) {
 			if (blogPageIndex > 0) {
 				blogPageIndex--;
 				$.getJSON("http://blog.jeremyclewell.com/?json=get_recent_posts&post_type=blog_post&count=1&page=" + blogPageIndex + '&callback=?', function(data) {
@@ -236,7 +228,7 @@ $(document).ready(function(){
 			}
 		});
 
-		$("#blogMobileNav li.next").live("click touchEnd", function(evt) {
+		$("#blogMobileNav li.next").live("click", function(evt) {
 			if (blogPageIndex < blogTotal-1) {
 				blogPageIndex++;
 				$.getJSON("http://blog.jeremyclewell.com/?json=get_recent_posts&post_type=blog_post&count=1&page=" + blogPageIndex + '&callback=?', function(data) {
@@ -245,7 +237,7 @@ $(document).ready(function(){
 			}
 		});
 
-		$("#portfolioMobileNav li.prev").live("click touchEnd", function(evt) {
+		$("#portfolioMobileNav li.prev").live("click", function(evt) {
 			if (portfolioPageIndex > 0) {
 				portfolioPageIndex--;
 				$.getJSON("http://blog.jeremyclewell.com/?json=get_recent_posts&post_type=portfolio_entry&count=1&page=" + portfolioPageIndex + '&callback=?', function(data) {
@@ -254,7 +246,7 @@ $(document).ready(function(){
 			}
 		});
 
-		$("#portfolioMobileNav li.next").live("click touchEnd", function(evt) {
+		$("#portfolioMobileNav li.next").live("click", function(evt) {
 			if (portfolioPageIndex < portfolioTotal - 1) {
 				portfolioPageIndex++;
 				$.getJSON("http://blog.jeremyclewell.com/?json=get_recent_posts&post_type=portfolio_entry&count=1&page=" + portfolioPageIndex + '&callback=?', function(data) {
@@ -266,6 +258,6 @@ $(document).ready(function(){
 	//$(document).ready(function(evt){
 		$("#header header").next(".content").slideToggle(300).parent("section").siblings("section").children(".content").slideUp(300);
 	//});
-    
+
 
 });

@@ -40,11 +40,15 @@ section{
 		h1, h2, h4 {
 			width: 460px;
 		}
+		.headerTools {
+			right: -150px;
+		}
 	}
 	nav {
-		width: 400px;
+		//width: 400px;
+		
 		ul {
-			width: 400px;
+			//width: 400px;
 		}
 	}
 	article {
@@ -63,7 +67,13 @@ section{
 	}
 }
 
+#blog {
+	@include background-image( linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background_2.jpg"));
+}
 
+#portfolio {	
+	@include background-image( linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background_2.jpg"));
+}
 
 #blogMobileNav li, #portfolioMobileNav li {
 	padding: 27px 60px 26px 60px;

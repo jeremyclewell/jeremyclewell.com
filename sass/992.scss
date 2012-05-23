@@ -36,9 +36,12 @@ section{
 		h1, h2, h4 {
 			width: 960px;
 		}
+		.headerTools {
+			right: -350px;
+		}
 	}
 	nav {
-		width: 750px;
+	//	width: 750px;
 	}
 	article {
 		width: 830px;

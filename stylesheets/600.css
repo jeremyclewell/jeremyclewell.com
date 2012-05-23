@@ -38,36 +38,52 @@ h1 {
 section header h1, section header h2, section header h4 {
   width: 580px;
 }
-/* line 44, ../sass/600.scss */
-section nav {
-  width: 500px;
+/* line 43, ../sass/600.scss */
+section header .headerTools {
+  right: -210px;
 }
-/* line 46, ../sass/600.scss */
-section nav ul {
-  width: 500px;
-}
-/* line 50, ../sass/600.scss */
+/* line 53, ../sass/600.scss */
 section article {
   width: 540px;
 }
 
-/* line 60, ../sass/600.scss */
+/* line 61, ../sass/600.scss */
+#blog {
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(3%, rgba(0, 0, 0, 0.2)), color-stop(20%, rgba(0, 0, 0, 0.1)), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.1)), color-stop(97%, rgba(0, 0, 0, 0.2))), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+}
+
+/* line 65, ../sass/600.scss */
+#portfolio {
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(3%, rgba(0, 0, 0, 0.2)), color-stop(20%, rgba(0, 0, 0, 0.1)), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.1)), color-stop(97%, rgba(0, 0, 0, 0.2))), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg");
+}
+
+/* line 70, ../sass/600.scss */
 section[id="contact"] div.content article form textarea {
   width: 55%;
 }
 
-/* line 65, ../sass/600.scss */
+/* line 75, ../sass/600.scss */
 #blogMobileNav li, #portfolioMobileNav li {
   padding: 27px 80px 26px 80px;
 }
 
-/* line 73, ../sass/600.scss */
+/* line 83, ../sass/600.scss */
 .sm li {
   padding: 5px 10px 5px 10px;
   width: 17%;
 }
 
-/* line 78, ../sass/600.scss */
+/* line 88, ../sass/600.scss */
 figure {
   width: 510px;
   height: auto;
@@ -75,12 +91,12 @@ figure {
   margin: 20px auto;
   text-align: center;
 }
-/* line 84, ../sass/600.scss */
+/* line 94, ../sass/600.scss */
 figure img {
   width: 90%;
   padding: 10px;
 }
-/* line 88, ../sass/600.scss */
+/* line 98, ../sass/600.scss */
 figure iframe {
   width: 450px;
   height: 300px;
