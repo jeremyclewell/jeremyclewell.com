@@ -41,7 +41,8 @@ section{
 			width: 580px;
 		}
 		.headerTools {
-			right: -210px;
+			//right: -210px;
+			right: -250px;
 		}
 	}
 	nav {
@@ -52,8 +53,12 @@ section{
 	}
 	article {
 		width: 540px;
-		div.content {
-			
+	}
+	div.content {
+		article {
+			h2 {
+				font-size: 36px;
+			}
 		}
 	}
 }
@@ -66,9 +71,13 @@ section{
 	@include background-image( linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg"));
 }
 
-section[id="contact"] div.content article form {
-	textarea {
-		width: 55%;
+section[id="contact"] div.content article {
+	//height: 300px;
+	padding-bottom: 70px;
+	form {
+		textarea {
+			width: 55%;
+		}	
 	}
 }
 

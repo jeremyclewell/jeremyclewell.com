@@ -41,7 +41,8 @@ section{
 			width: 760px;
 		}
 		.headerTools {
-			right: -300px;
+			//right: -300px;
+			right: -340px;
 		}
 	}
 	nav {
@@ -68,6 +69,13 @@ section{
 			p, a {
 				font-size: 11px !important;
 				margin: 0px;
+			}
+		}
+	}
+	div.content {
+		article {
+			h2 {
+				font-size: 40px;
 			}
 		}
 	}
@@ -135,17 +143,8 @@ section[id="contact"] div.content article form {
 	float: right;
 }
 
-#blogSlider, #portfolioSlider { 
-	width: 750px; 
-}
 
-.sm {
-	width: 650px;
-	li {
-		padding: 5px 10px 5px 10px;
-		width: 17%;
-	}
-}
+
 
 #skills {
 	@include column-count(2);
@@ -166,7 +165,7 @@ figure {
 		width: 90%;
 	}
 	iframe {
-		width: 700px;
+		width: 690px;
 		height: 466px;
 	}
 }

@@ -41,7 +41,8 @@ section{
 			width: 460px;
 		}
 		.headerTools {
-			right: -150px;
+			//right: -150px;
+			right: -190px;
 		}
 	}
 	nav {
@@ -65,14 +66,21 @@ section{
 			text-align: left;
 		}
 	}
+	div.content {
+		article {
+			h2 {
+				font-size: 30px;
+			}
+		}
+	}
 }
 
 #blog {
-	@include background-image( linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background_2.jpg"));
+	//@include background-image( linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background_2.jpg"));
 }
 
 #portfolio {	
-	@include background-image( linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background_2.jpg"));
+	//@include background-image( linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background_2.jpg"));
 }
 
 #blogMobileNav li, #portfolioMobileNav li {
