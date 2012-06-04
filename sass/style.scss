@@ -183,8 +183,8 @@ footer {
 
 #blog {
 	background-color: $color-palette-3;
- 	//@include background-image( linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background_3.jpg"));
- 	@include background-image( linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg"));
+ 	@include background-image( linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background_2.png"));
+ 	//@include background-image( linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg"));
 	background-repeat: repeat-x, repeat-x, repeat;
 	background-position: left top, left top, left top, left 74px;
 	text-align: left;
@@ -199,8 +199,8 @@ footer {
 
 #portfolio {	
 	background-color: $color-palette-4;
- 	//@include background-image( linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background_3.jpg"));
-	@include background-image( linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg"));
+ 	@include background-image( linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background_2.png"));
+	//@include background-image( linear-gradient(left, rgba(0, 0, 0, 0.2) 3%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 80%, rgba(0, 0, 0, 0.2) 97%), url("../img/h/nav_grad_top.png"), url("../img/h/nav_texture.png"), url("../img/h/sub_nav_background.jpg"));
 	background-repeat: repeat-x, repeat-x, repeat;
 	background-position: left top, left top, left top, left 74px;
 	a {
@@ -367,6 +367,7 @@ section{
 			padding: 0;
 		}
 		.headerTools {
+			display: none;
 			width: 250px;
 			position: relative;
 			//right: -100px;
@@ -434,6 +435,7 @@ section{
 				@include transition-duration(0.3s);
 				@include border-radius(10px);
 				text-align: left;
+
 				padding: 5px 5px;
 				font: 12px/14px 'BonvenoCFLight', Arial, sans-serif;
 				color: #666;
@@ -454,25 +456,76 @@ section{
 						font: 9px/14px 'BonvenoCFLight', Arial, sans-serif;
 						display: inline;
 						padding: 1px 5px;
-						
+						white-space: nowrap;
 						@include border-radius(5px);
 						&.Development {
-							@include pad(#454526);
+							@include pad($color-palette-1);
 						}
 						&.WebGL {
-							@include pad(#5d5c26);
+							@include pad($color-palette-2);
 						}
 						&.Artwork {
-							@include pad(#636323);
+							@include pad($color-palette-3);
 						}
 						&.RasberryPi {
-							@include pad(#72741d);
+							@include pad($color-palette-4);
 						}
 						&.Blender {
-							@include pad(#807718);
+							@include pad($color-palette-2);
 						}
 						&.ZBrush {
-							@include pad(#777111);
+							@include pad($color-palette-1);
+						}
+						&.Processing {
+							@include pad($color-palette-2);
+						}
+						&.Unity {
+							@include pad($color-palette-3);
+						}
+						&.Box2D {
+							@include pad($color-palette-4);
+						}
+						&.Flex {
+							@include pad($color-palette-2);
+						}
+						&.Papervision {
+							@include pad($color-palette-1);
+						}
+						&.iPhone {
+							@include pad($color-palette-2);
+						}
+						&.iOS {
+							@include pad($color-palette-3);
+						}
+						&.Web {
+							@include pad($color-palette-4);
+						}
+						&.Video {
+							@include pad($color-palette-4);
+						}
+						&.Coopers {
+							@include pad($color-palette-2);
+						}
+						&.Digital {
+							@include pad($color-palette-1);
+						}
+						&.Game {
+							@include pad($color-palette-1);
+						}
+						&.Family {
+							@include pad($color-palette-1);
+						}
+						&.Designer {
+							@include pad($color-palette-1);
+						}
+						&.Developer {
+							@include pad($color-palette-2);
+						}
+						&.Photography {
+							@include pad($color-palette-3);
+						}
+						&.Concept {
+							@include pad($color-palette-4);
 						}
 					}
 
@@ -549,7 +602,9 @@ section{
 			z-index: 1px;
 			h2 {
 				padding-bottom: 20px;
-				font-size: 22px;
+				padding-top: 10px;
+				font: 22px/28px 'BonvenoCFLight', Arial, sans-serif;
+
 			}
 			p, a {
 				font-size: $base-font-size/1.2;
@@ -704,12 +759,6 @@ section[id="portfolio"] div.content article p {
 #blogNav, #portfolioNav {
 	display: inline;
 }
-#blogNavForward, #portfolioNavForward {
-	float: right;
-}
-#blogNavBack, #portfolioNavBack {
-	float: left;
-}
 
 .preloader {
 	margin: 23px 0 0 43px;
@@ -758,30 +807,36 @@ article {
 figure {
 	text-align: center;
 	margin: 0 auto 20px auto;
-	width: 270px;
-	padding: 20px;
-	border-right: solid 1px rgba(255, 255, 255, 0.1);
-	border-left: solid 1px rgba(0, 0, 0, 0.1);
-	border-bottom: solid 1px rgba(255, 255, 255, 0.1);
-	border-top: solid 1px rgba(0, 0, 0, 0.1);
-	@include border-radius(10px);
-	@include background-image( linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.16) 20%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.06) 80%, rgba(0, 0, 0, 0.04) 100%) );
+	width: 260px;
 	figcaption {
 		font-size: 10px;
 		text-align: left;
 	}
-	iframe {
+	iframe, object, div {
 		width: 250px;
 		height: 166px;
+		padding: 20px;
+		border-right: solid 1px rgba(255, 255, 255, 0.1);
+		border-left: solid 1px rgba(0, 0, 0, 0.1);
+		border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+		border-top: solid 1px rgba(0, 0, 0, 0.1);
+		@include border-radius(10px);
+		@include background-image( linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.16) 20%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.06) 80%, rgba(0, 0, 0, 0.04) 100%) );
 	}
 	img {
-		width: 80%;
-		padding: 10px;
+		padding: 20px;
+		border-right: solid 1px rgba(255, 255, 255, 0.1);
+		border-left: solid 1px rgba(0, 0, 0, 0.1);
+		border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+		border-top: solid 1px rgba(0, 0, 0, 0.1);
+		@include border-radius(10px);
+		@include background-image( linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.16) 20%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.06) 80%, rgba(0, 0, 0, 0.04) 100%) );
 	}
 }
 
 #browseHappy {
 	visibility: hidden;
+	display: none;
 	padding: 5px;
 	a {
 		white-space: nowrap;
@@ -795,24 +850,29 @@ figure {
 }
 
 #modalWindow {
-	opacity: 0;
-	visibility: hidden;
-	position: absolute;
+	position: fixed;
+	top: 0;
+	left: 0;
 	text-align: center;
-	top: 40%;
-	left: 40%;
-	width: 20%;
-	padding-top: 8px; 
-	height: 50px;
-	
-	@include pad($base-font-color);
-	@include border-radius(15px);
-		border: 5px solid rgba(0,0,0,0.7);
-		box-shadow: 0px 0px 50px #000;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	div {
+		margin: 30% auto;
+		width: 180px;
+		padding-top: 8px; 
+		height: 50px;
+		
+		@include pad($base-font-color);
+		@include border-radius(15px);
+			border: 5px solid rgba(0,0,0,0.7);
+			box-shadow: 0px 0px 50px #000;
 
-	h3 {
-		color: $base-font-color/4;
-		text-shadow: #FFF 1px 1px 1px;
+		h3 {
+			color: $base-font-color/4;
+			text-shadow: #FFF 1px 1px 1px;
+		}
 	}
 }
 img.searchButton {

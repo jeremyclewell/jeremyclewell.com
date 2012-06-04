@@ -75,7 +75,7 @@ section{
 	div.content {
 		article {
 			h2 {
-				font-size: 40px;
+				font: 40px/54px 'BonvenoCFLight', Arial, sans-serif;
 			}
 		}
 	}
@@ -155,16 +155,16 @@ figure {
 	height: auto;
 	padding: 20px;
 	margin: 20px 0 20px 0;
+	img {
+	width: 90%;
+	}
 	&.col2 {
 		@include column-count(2);	
 	}
 	&.col3 {
 		@include column-count(3);
 	}
-	img {
-		width: 90%;
-	}
-	iframe {
+	iframe, div {
 		width: 690px;
 		height: 466px;
 	}

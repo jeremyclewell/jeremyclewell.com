@@ -11,6 +11,7 @@ var portfolioIndex = 0;
 var portfolioCount = 5;
 var portfolioTotal = 15;
 var state = "header";
+var mainScroll;
 
 Handlebars.registerHelper("each_with_comma", function(array, fn) {
 	var buffer = "";
@@ -29,19 +30,19 @@ function getURLParameter(name, src) {
     return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(src)||[,""])[1].replace(/\+/g, '%20'))||null;
 }
 
-document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+//document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 
-var History = window.History;
+// var History = window.History;
 
-// Bind to StateChange Event
-History.Adapter.bind(window,'statechange',function(){ // Note: We are using statechange instead of popstate
-    var State = History.getState(); // Note: We are using History.getState() instead of event.state
-    History.log(State.data, State.title, State.url);
-    var blogID = getURLParameter("blog", State.url);
-    if (blogID) {
+// // Bind to StateChange Event
+// History.Adapter.bind(window,'statechange',function(){ // Note: We are using statechange instead of popstate
+//     var State = History.getState(); // Note: We are using History.getState() instead of event.state
+//     History.log(State.data, State.title, State.url);
+//     var blogID = getURLParameter("blog", State.url);
+//     if (blogID) {
 
-    }
-})
+//     }
+// })
 
 $(document).ready(function(){
 		$("#blogNav").css("display", "none");
@@ -52,7 +53,7 @@ $(document).ready(function(){
 	function scroll() {
 				blogMenu = new iScroll('blogNav', { hideScrollbar: false});
 				portfolioMenu = new iScroll('portfolioNav', { hideScrollbar: false});
-				//mainScroll = new iScroll('body', { hideScrollbar: false});
+				mainScroll = new iScroll('wrapper', { hideScrollbar: false});
 	}
 	var timeout = setTimeout(scroll, 200);
 	
@@ -246,9 +247,14 @@ $(document).ready(function(){
 		$("#browseHappy").css("display", "block");
 	}
 
-	//$(document).ready(function(evt){
+	$(document).ready(function(evt){
 		$("#header header").next(".content").slideToggle(300).parent("section").siblings("section").children(".content").slideUp(300);
-	//});
+		
+		$("#modalWindow").animate({opacity: 0}, 200, function() {
+			$("#modalWindow").css("visibility", "hidden");
+		});
+	});
+	
 
 
 

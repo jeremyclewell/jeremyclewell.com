@@ -87,10 +87,7 @@ figure {
 	&.col3 {
 		@include column-count(3);
 	}
-	img {
-		width: 90%;
-	}
-	iframe {
+	iframe, div {
 		width: 780px;
 		height: 496px;
 	}

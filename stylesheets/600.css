@@ -48,7 +48,7 @@ section article {
 }
 /* line 59, ../sass/600.scss */
 section div.content article h2 {
-  font-size: 36px;
+  font: 36px/52px "BonvenoCFLight", Arial, sans-serif;
 }
 
 /* line 66, ../sass/600.scss */
@@ -101,11 +101,10 @@ figure {
 }
 /* line 103, ../sass/600.scss */
 figure img {
-  width: 90%;
   padding: 10px;
 }
-/* line 107, ../sass/600.scss */
-figure iframe {
+/* line 106, ../sass/600.scss */
+figure iframe, figure div {
   width: 450px;
   height: 300px;
 }
