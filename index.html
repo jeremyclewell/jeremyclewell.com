@@ -402,6 +402,15 @@ License: http://creativecommons.org/licenses/MIT
 	{{/each_with_comma}}
 	</p>
 	{{/if}}
+	{{#if custom_fields}}
+
+		
+		{{custom_fields.prodLink.0.toString}}
+		Live Link: <a href="{{this}}">{{this}}</a>
+	<p>
+	
+	</p>
+	{{/if}}
 	<hr>
 	{{{content}}}
 </script>

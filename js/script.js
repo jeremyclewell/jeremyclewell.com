@@ -236,7 +236,7 @@ $(document).ready(function(){
 	$("#portfolioNav li").live("click", function(evt) {
 
 		if ($(evt.target).hasClass("tag")) return false;
-		var request = 'http://blog.jeremyclewell.com/?json=get_post&post_type=portfolio_entry&date_format=m/d/y&post_id=' + $($(this).find("a")).attr("data-postId") + '&callback=?';
+		var request = 'http://blog.jeremyclewell.com/?json=get_post&post_type=portfolio_entry&date_format=m/d/y&custom_fields=prodlink&post_id=' + $($(this).find("a")).attr("data-postId") + '&callback=?';
 		portfolioRequest(request);	
 		$("#portfolioNav").fadeOut("fast");
 		
