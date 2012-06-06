@@ -42,17 +42,6 @@ section header h1, section header h2, section header h4 {
 section header .headerTools {
   right: -340px;
 }
-/* line 48, ../sass/768.scss */
-section nav {
-  width: 450px;
-}
-/* line 50, ../sass/768.scss */
-section nav > ul {
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  -o-column-count: 2;
-  column-count: 2;
-}
 /* line 58, ../sass/768.scss */
 section article {
   width: 730px;

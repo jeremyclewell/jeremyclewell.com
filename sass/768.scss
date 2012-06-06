@@ -46,9 +46,9 @@ section{
 		}
 	}
 	nav {
-		width: 450px;
+	//	width: 450px;
 		&>ul {
-			@include column-count(2);	
+			//@include column-count(2);	
 		}
 		ul {
 		

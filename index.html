@@ -339,6 +339,7 @@ License: http://creativecommons.org/licenses/MIT
 	{{#each posts}}
 	<li>
 		<a href="#" data-postID="{{id}}" title="{{title}}">{{title}}</a>
+		<br />{{excerpt}}
 		{{#if tags}}
 		<ul>
 		{{#each tags}}
@@ -381,6 +382,7 @@ License: http://creativecommons.org/licenses/MIT
 	{{#each posts}}
 	<li>
 		<a href="#" data-postID="{{id}}" title="{{title}}">{{title}}</a>
+		<br />{{excerpt}}
 		{{#if tags}}
 		<ul>
 		{{#each tags}}
@@ -400,15 +402,6 @@ License: http://creativecommons.org/licenses/MIT
 	Role:
 	{{#each_with_comma tags}}
 	{{/each_with_comma}}
-	</p>
-	{{/if}}
-	{{#if custom_fields}}
-
-		
-		{{custom_fields.prodLink.0.toString}}
-		Live Link: <a href="{{this}}">{{this}}</a>
-	<p>
-	
 	</p>
 	{{/if}}
 	<hr>
