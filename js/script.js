@@ -329,14 +329,14 @@ $("#contactForm").submit(function(evt) {
         fn = $form.find( 'input[name="firstName"]' ).val(),
         ln = $form.find( 'input[name="lastName"]' ).val(),
         em = $form.find( 'input[name="email"]' ).val(),
-        com = $form.find( 'input[name="comment"]' ).val(),
+        com = $form.find( 'textarea[name="comment"]' ).val(),
         url = $form.attr( 'action' );
 
     $.post( url, { firstName: fn, lastName: ln, email: em, comment: com  },
       function( data ) {
       	  $("#submitButton").text("Complete!");
           //var content = $( data ).find( '#content' );
-          $form.append( data );
+          $form.append( "<p>" + data + "</p>" );
       }
     );
   });
