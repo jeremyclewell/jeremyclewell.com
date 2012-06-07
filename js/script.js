@@ -334,9 +334,9 @@ $("#contactForm").submit(function(evt) {
 
     $.post( url, { firstName: fn, lastName: ln, email: em, comment: com  },
       function( data ) {
-      	  $("#submitButton").text("Complete!");
+      	  $("#submitButton").text("Got it! Thanks!");
           //var content = $( data ).find( '#content' );
-          $form.append( "<p>" + data + "</p>" );
+          //$form.append( "<p>" + data + "</p>" );
       }
     );
   });
