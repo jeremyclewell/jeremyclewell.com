@@ -12,6 +12,7 @@ var portfolioCount = 5;
 var portfolioTotal = 15;
 var state = "header";
 var mainScroll;
+var scrolling = false;
 
 Handlebars.registerHelper("each_with_comma", function(array, fn) {
 	var buffer = "";
@@ -51,9 +52,21 @@ $(document).ready(function(){
 
 	
 	function scroll() {
-				blogMenu = new iScroll('blogNav', { hideScrollbar: false});
-				portfolioMenu = new iScroll('portfolioNav', { hideScrollbar: false});
-				mainScroll = new iScroll('wrapper', { hideScrollbar: false});
+				blogMenu = new iScroll('blogNav', { 
+					hideScrollbar: false,
+					onScrollMove: function() {
+						scrolling = true;
+					}
+				});
+					
+				
+				portfolioMenu = new iScroll('portfolioNav', { 
+					hideScrollbar: false,
+					onScrollMove: function() {
+						scrolling = true;
+					}
+				});
+//				mainScroll = new iScroll('wrapper', { hideScrollbar: false});
 	}
 	var timeout = setTimeout(scroll, 200);
 	
@@ -216,30 +229,16 @@ $(document).ready(function(){
 	$.getJSON('http://blog.jeremyclewell.com/?json=get_recent_posts&post_type=blog_post&include=date,title,id,tags,excerpt&count=100&date_format=m/d/y&callback=?', function(data) {
 
 		$("#blogNav ul").html(blogNavTemplate(data));
-
-	});
-	
-	$("#blogNav li").live("click", function(evt) {
-
-		if ($(evt.target).hasClass("tag")) return false;
-		var request = 'http://blog.jeremyclewell.com/?json=get_post&post_type=blog_post&date_format=m/d/y&post_id=' + $($(this).find("a")).attr("data-postId") + '&callback=?';
-		blogRequest(request);	
-		$("#blogNav").fadeOut("fast");
+		$("#blogNav li").on("click.navlink", blogMenuClickHandler);
 	});
 
 	$.getJSON('http://blog.jeremyclewell.com/?json=get_recent_posts&post_type=portfolio_entry&include=date,title,id,tags,excerpt&count=100&date_format=m/d/y&callback=?', function(data) {
 		
 		$("#portfolioNav ul").html(portfolioNavTemplate(data));
-		
-	});
-	
-	$("#portfolioNav li").live("click", function(evt) {
-
-		if ($(evt.target).hasClass("tag")) return false;
-		var request = 'http://blog.jeremyclewell.com/?json=get_post&post_type=portfolio_entry&date_format=m/d/y&custom_fields=prodlink&post_id=' + $($(this).find("a")).attr("data-postId") + '&callback=?';
-		portfolioRequest(request);	
-		$("#portfolioNav").fadeOut("fast");
-		
+		$("#portfolioNav li").on("click.navlink", portfolioMenuClickHandler);
+		$("#modalWindow").animate({opacity: 0}, 200, function() {
+			$("#modalWindow").css("visibility", "hidden");
+		});
 	});
 	
 	if (!$.support.opacity) {
@@ -250,12 +249,29 @@ $(document).ready(function(){
 	$(document).ready(function(evt){
 		$("#header header").next(".content").slideToggle(300).parent("section").siblings("section").children(".content").slideUp(300);
 		
-		$("#modalWindow").animate({opacity: 0}, 200, function() {
-			$("#modalWindow").css("visibility", "hidden");
-		});
+		
+
 	});
 	
-
+	function blogMenuClickHandler(event) {
+		if ($(event.target).hasClass("tag") || scrolling) {
+			scrolling = false;
+			return false;
+		}
+		var request = 'http://blog.jeremyclewell.com/?json=get_post&post_type=blog_post&date_format=m/d/y&post_id=' + $($(this).find("a")).attr("data-postId") + '&callback=?';
+		blogRequest(request);	
+		$("#blogNav").fadeOut("fast");
+	}
+	
+	function portfolioMenuClickHandler(event) {
+		if ($(event.target).hasClass("tag") || scrolling) {
+			scrolling = false;
+			return false;
+		}
+		var request = 'http://blog.jeremyclewell.com/?json=get_post&post_type=portfolio_entry&date_format=m/d/y&custom_fields=prodlink&post_id=' + $($(this).find("a")).attr("data-postId") + '&callback=?';
+		portfolioRequest(request);	
+		$("#portfolioNav").fadeOut("fast");
+	}
 
 
 	function blogRequest(url) {
@@ -335,6 +351,7 @@ $("#contactForm").submit(function(evt) {
     $.post( url, { firstName: fn, lastName: ln, email: em, comment: com  },
       function( data ) {
       	  $("#submitButton").text("Got it! Thanks!");
+      	  $("#contactForm input, #contactForm textarea").attr("disabled", "true");
           //var content = $( data ).find( '#content' );
           //$form.append( "<p>" + data + "</p>" );
       }

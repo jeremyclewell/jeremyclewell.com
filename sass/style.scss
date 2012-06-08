@@ -427,7 +427,7 @@ section{
 
 		ul {
 			
-			padding: 5px 0 5px 0;
+			padding: 10px 0 10px 0;
 			text-align: left;
 			
 			li {
@@ -498,6 +498,9 @@ section{
 						&.iOS {
 							@include pad($color-palette-3);
 						}
+						&.Simulation {
+							@include pad($color-palette-4);
+						}
 						&.Web {
 							@include pad($color-palette-4);
 						}
@@ -517,6 +520,9 @@ section{
 							@include pad($color-palette-1);
 						}
 						&.Designer {
+							@include pad($color-palette-1);
+						}
+						&.Design {
 							@include pad($color-palette-1);
 						}
 						&.Developer {
