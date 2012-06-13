@@ -52,7 +52,7 @@ $(document).ready(function(){
 
 	
 	function scroll() {
-				blogMenu = new iScroll('blogNav', { 
+				blogMenu = new iScroll('blogNavScroller', { 
 					hideScrollbar: false,
 					onScrollMove: function() {
 						scrolling = true;
@@ -60,7 +60,7 @@ $(document).ready(function(){
 				});
 					
 				
-				portfolioMenu = new iScroll('portfolioNav', { 
+				portfolioMenu = new iScroll('portfolioNavScroller', { 
 					hideScrollbar: false,
 					onScrollMove: function() {
 						scrolling = true;
