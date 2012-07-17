@@ -41,8 +41,7 @@ section{
 			width: 460px;
 		}
 		.headerTools {
-			//right: -150px;
-			right: -190px;
+			right: -150px;
 		}
 	}
 	nav {
@@ -110,7 +109,6 @@ figure {
 	width: 370px;
 	height: auto;
 	padding: 20px;
-	margin: 20px auto;
 	text-align: center;
 	.col2 {
 		@include column-count(1);	

@@ -374,7 +374,7 @@ section{
 			width: 250px;
 			position: relative;
 			//right: -100px;
-			right: -140px;
+			right: -85px;
 			margin: -53px auto 0px auto;
 			
 			.search {
@@ -713,6 +713,9 @@ section[id="about"] div.content article p:first-letter {
 	font-size: 28px;
 }
 
+section[id="blog"] div.content article form {
+}
+
 section[id="contact"] div.content article {
 	height: auto;
 }
@@ -845,7 +848,7 @@ figure {
 		width: 250px;
 		height: 166px;
 		padding: 20px;
-		margin: -20px;
+		margin: 0px;
 		border-right: solid 1px rgba(255, 255, 255, 0.1);
 		border-left: solid 1px rgba(0, 0, 0, 0.1);
 		border-bottom: solid 1px rgba(255, 255, 255, 0.1);
@@ -906,8 +909,24 @@ figure {
 	}
 }
 img.searchButton {
-	display: none !important;
+	//display: none !important;
 }
 #blogSearch {
-	display: none !important;
+	//display: none !important;
+}
+
+.comments {
+	margin:  0 auto;
+	text-align: center;
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+	
+}
+.commentForm {
+	margin:  0 auto;
+	text-align: center;
+	width: 80%;
+	padding: 0px;
+	//margin: 0px;
 }

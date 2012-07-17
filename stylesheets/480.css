@@ -40,44 +40,44 @@ section header h1, section header h2, section header h4 {
 }
 /* line 43, ../sass/480.scss */
 section header .headerTools {
-  right: -190px;
+  right: -150px;
 }
-/* line 55, ../sass/480.scss */
+/* line 54, ../sass/480.scss */
 section article {
   width: 420px;
 }
-/* line 60, ../sass/480.scss */
+/* line 59, ../sass/480.scss */
 section article div.entryMeta {
   width: 350px;
   text-align: left;
 }
-/* line 61, ../sass/480.scss */
+/* line 60, ../sass/480.scss */
 section article div.entryMeta p, section article div.entryMeta a {
   font-size: 11px !important;
   margin: 0px;
 }
-/* line 71, ../sass/480.scss */
+/* line 70, ../sass/480.scss */
 section div.content article h2 {
   font: 26px/28px "BonvenoCFLight", Arial, sans-serif;
 }
 
-/* line 86, ../sass/480.scss */
+/* line 85, ../sass/480.scss */
 #blogMobileNav li, #portfolioMobileNav li {
   padding: 27px 60px 26px 60px;
 }
 
-/* line 92, ../sass/480.scss */
+/* line 91, ../sass/480.scss */
 .sm li {
   padding: 5px 10px 5px 10px;
   width: 17%;
 }
 
-/* line 100, ../sass/480.scss */
+/* line 99, ../sass/480.scss */
 #cv a h3 {
   font-size: 26px;
 }
 
-/* line 106, ../sass/480.scss */
+/* line 105, ../sass/480.scss */
 #skills {
   -webkit-column-count: 1;
   -moz-column-count: 1;
@@ -85,33 +85,32 @@ section div.content article h2 {
   column-count: 1;
 }
 
-/* line 109, ../sass/480.scss */
+/* line 108, ../sass/480.scss */
 figure {
   width: 370px;
   height: auto;
   padding: 20px;
-  margin: 20px auto;
   text-align: center;
 }
-/* line 115, ../sass/480.scss */
+/* line 113, ../sass/480.scss */
 figure .col2 {
   -webkit-column-count: 1;
   -moz-column-count: 1;
   -o-column-count: 1;
   column-count: 1;
 }
-/* line 118, ../sass/480.scss */
+/* line 116, ../sass/480.scss */
 figure .col3 {
   -webkit-column-count: 1;
   -moz-column-count: 1;
   -o-column-count: 1;
   column-count: 1;
 }
-/* line 121, ../sass/480.scss */
+/* line 119, ../sass/480.scss */
 figure img {
   padding: 20px;
 }
-/* line 124, ../sass/480.scss */
+/* line 122, ../sass/480.scss */
 figure iframe, figure div {
   width: 325px;
   height: 216px;

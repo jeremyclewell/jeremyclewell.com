@@ -1110,7 +1110,7 @@ section header .headerTools {
   display: none;
   width: 250px;
   position: relative;
-  right: -140px;
+  right: -85px;
   margin: -53px auto 0px auto;
 }
 /* line 380, ../sass/style.scss */
@@ -1842,12 +1842,12 @@ section[id="about"] div.content article p:first-letter {
   font-size: 28px;
 }
 
-/* line 716, ../sass/style.scss */
+/* line 719, ../sass/style.scss */
 section[id="contact"] div.content article {
   height: auto;
 }
 
-/* line 720, ../sass/style.scss */
+/* line 723, ../sass/style.scss */
 section[id="contact"] div.content article p {
   background-image: url("../img/h/contact_divide_bg.png"), url("../img/h/contact_divide_bg.png");
   width: 100%;
@@ -1856,17 +1856,17 @@ section[id="contact"] div.content article p {
   background-position: -8px bottom, -8px top;
 }
 
-/* line 728, ../sass/style.scss */
+/* line 731, ../sass/style.scss */
 section[id="contact"] div.content article p:first-letter {
   font-size: 28px;
 }
 
-/* line 732, ../sass/style.scss */
+/* line 735, ../sass/style.scss */
 section[id="contact"] div.content article form {
   width: 100%;
 }
 
-/* line 736, ../sass/style.scss */
+/* line 739, ../sass/style.scss */
 section[id="contact"] div.content article form {
   width: 100%;
   padding-top: 10px;
@@ -1885,13 +1885,13 @@ section[id="portfolio"] div.content article p {
 
 
 */
-/* line 755, ../sass/style.scss */
+/* line 758, ../sass/style.scss */
 .title {
   width: 100px;
   text-align: center;
   margin: 0 auto;
 }
-/* line 760, ../sass/style.scss */
+/* line 763, ../sass/style.scss */
 .title p {
   text-align: center !important;
   margin: 0 auto;
@@ -1900,13 +1900,13 @@ section[id="portfolio"] div.content article p {
   margin-bottom: 7px;
 }
 
-/* line 768, ../sass/style.scss */
+/* line 771, ../sass/style.scss */
 .date {
   font-size: 11px;
   line-height: 12px;
 }
 
-/* line 774, ../sass/style.scss */
+/* line 777, ../sass/style.scss */
 .description p {
   font-size: 12px;
   line-height: 16px;
@@ -1924,48 +1924,48 @@ section[id="portfolio"] div.content article p {
   opacity: 0;
 }
 
-/* line 788, ../sass/style.scss */
+/* line 791, ../sass/style.scss */
 #blogNav, #portfolioNav {
   display: inline;
 }
 
-/* line 792, ../sass/style.scss */
+/* line 795, ../sass/style.scss */
 .preloader {
   margin: 23px 0 0 43px;
 }
 
-/* line 796, ../sass/style.scss */
+/* line 799, ../sass/style.scss */
 .small-text {
   font-size: 12.8px;
 }
 
-/* line 800, ../sass/style.scss */
+/* line 803, ../sass/style.scss */
 article {
   position: relative;
 }
-/* line 802, ../sass/style.scss */
+/* line 805, ../sass/style.scss */
 article p {
   text-shadow: 2px 2px 8px #000;
 }
-/* line 806, ../sass/style.scss */
+/* line 809, ../sass/style.scss */
 article div.entryMeta {
   width: 300px;
   text-align: left;
 }
-/* line 807, ../sass/style.scss */
+/* line 810, ../sass/style.scss */
 article div.entryMeta p, article div.entryMeta a {
   font-size: 11px !important;
   margin: 0px;
 }
 
-/* line 816, ../sass/style.scss */
+/* line 819, ../sass/style.scss */
 #skills {
   -webkit-column-count: 1;
   -moz-column-count: 1;
   -o-column-count: 1;
   column-count: 1;
 }
-/* line 818, ../sass/style.scss */
+/* line 821, ../sass/style.scss */
 #skills li, #skills span {
   color: #fbf8e8;
   -webkit-transition-property: color;
@@ -1979,35 +1979,35 @@ article div.entryMeta p, article div.entryMeta a {
   -o-transition-duration: 0.7s;
   transition-duration: 0.7s;
 }
-/* line 824, ../sass/style.scss */
+/* line 827, ../sass/style.scss */
 #skills:hover .veryOften {
   color: #fbf8e8;
 }
-/* line 827, ../sass/style.scss */
+/* line 830, ../sass/style.scss */
 #skills:hover .often {
   color: #a7a59a;
 }
-/* line 830, ../sass/style.scss */
+/* line 833, ../sass/style.scss */
 #skills:hover .rare {
   color: #53524d;
 }
 
-/* line 836, ../sass/style.scss */
+/* line 839, ../sass/style.scss */
 figure {
   text-align: center;
   width: 260px;
 }
-/* line 840, ../sass/style.scss */
+/* line 843, ../sass/style.scss */
 figure figcaption {
   font-size: 10px;
   text-align: left;
 }
-/* line 844, ../sass/style.scss */
+/* line 847, ../sass/style.scss */
 figure iframe, figure object, figure div {
   width: 250px;
   height: 166px;
   padding: 20px;
-  margin: -20px;
+  margin: 0px;
   border-right: solid 1px rgba(255, 255, 255, 0.1);
   border-left: solid 1px rgba(0, 0, 0, 0.1);
   border-bottom: solid 1px rgba(255, 255, 255, 0.1);
@@ -2024,7 +2024,7 @@ figure iframe, figure object, figure div {
   background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.16) 20%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.06) 80%, rgba(0, 0, 0, 0.04) 100%);
   background-image: linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.16) 20%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.06) 80%, rgba(0, 0, 0, 0.04) 100%);
 }
-/* line 856, ../sass/style.scss */
+/* line 859, ../sass/style.scss */
 figure img {
   padding: 20px;
   border-right: solid 1px rgba(255, 255, 255, 0.1);
@@ -2044,13 +2044,13 @@ figure img {
   background-image: linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.16) 20%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.06) 80%, rgba(0, 0, 0, 0.04) 100%);
 }
 
-/* line 867, ../sass/style.scss */
+/* line 870, ../sass/style.scss */
 #browseHappy {
   visibility: hidden;
   display: none;
   padding: 5px;
 }
-/* line 871, ../sass/style.scss */
+/* line 874, ../sass/style.scss */
 #browseHappy a {
   white-space: nowrap;
   cursor: pointer;
@@ -2072,7 +2072,7 @@ figure img {
   border-radius: 5px;
   padding: 3px 5px;
 }
-/* line 876, ../sass/style.scss */
+/* line 879, ../sass/style.scss */
 #browseHappy a:hover {
   cursor: pointer;
   color: #fbf8e8;
@@ -2088,7 +2088,7 @@ figure img {
   border-top: 1px solid #ff8100;
 }
 
-/* line 882, ../sass/style.scss */
+/* line 885, ../sass/style.scss */
 #modalWindow {
   position: fixed;
   top: 0;
@@ -2099,7 +2099,7 @@ figure img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
-/* line 891, ../sass/style.scss */
+/* line 894, ../sass/style.scss */
 #modalWindow div {
   margin: 30% auto;
   width: 180px;
@@ -2125,18 +2125,25 @@ figure img {
   border: 5px solid rgba(0, 0, 0, 0.7);
   box-shadow: 0px 0px 50px #000;
 }
-/* line 902, ../sass/style.scss */
+/* line 905, ../sass/style.scss */
 #modalWindow div h3 {
   color: #3e3e3a;
   text-shadow: #FFF 1px 1px 1px;
 }
 
-/* line 908, ../sass/style.scss */
-img.searchButton {
-  display: none !important;
+/* line 918, ../sass/style.scss */
+.comments {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
 }
 
-/* line 911, ../sass/style.scss */
-#blogSearch {
-  display: none !important;
+/* line 926, ../sass/style.scss */
+.commentForm {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  padding: 0px;
 }
